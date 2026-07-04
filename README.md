@@ -8,9 +8,9 @@
 
 사이트(`docs/`)와 번들 스킬(`SKILL.md`, `references/`, `scripts/`)은 분리되어 있습니다. GitHub Pages는 `docs/`만 배포 소스로 서빙하고, 스킬은 프로젝트 루트에서 바로 로드됩니다.
 
-- 정적 웹사이트(`docs/index.html`): 원칙 학습 → 프롬프트 조립 → 레퍼런스 탐색
-- 번들 스킬(`SKILL.md`): AI 에이전트가 같은 7원칙으로 프롬프트를 설계하게 하는 실행 규칙
-- 레퍼런스 라이브러리(`references/`): 31개 카테고리 파일, 160여 개의 큐레이션 프롬프트
+- **정적 웹사이트**(`docs/index.html`): 원칙을 익히고, 프롬프트를 조립하고, 레퍼런스를 탐색합니다.
+- **번들 스킬**(`SKILL.md`): AI 에이전트가 같은 7원칙으로 프롬프트를 설계하도록 안내하는 실행 규칙입니다.
+- **레퍼런스 라이브러리**(`references/`): 31개 카테고리 파일에 160여 개의 큐레이션 프롬프트를 담았습니다.
 
 ## 담긴 것
 
@@ -24,13 +24,13 @@
 
 이미지 모델의 실패는 대부분 "예쁘게", "고급스럽게", "감성적으로" 같은 모호한 형용사에서 나옵니다. 모델이 형용사를 상상으로 채우기 때문입니다. 7원칙은 그 빈칸을 결정 가능한 항목으로 바꿉니다.
 
-1. **결과물 유형을 정하기** — 포스터·인물 사진·UI·인포그래픽처럼 종류를 첫 줄에 고정
-2. **주 피사체를 고정하기** — 중심이 되는 대상·인물·제품을 하나로
-3. **구도와 비율을 지정하기** — 화면 비율, 피사체 위치, 여백, 시점
-4. **맥락과 배경을 설명하기** — 어디에서, 어떤 상황에서, 어떤 분위기로
-5. **스타일과 매체를 선택하기** — 사진·3D 렌더·수채화·포스터·편집 디자인
-6. **빛과 디테일을 구체화하기** — 조명·질감·재료·표면·카메라 렌즈
-7. **정확성 조건을 덧붙이기** — 텍스트, 금지 요소, 유지 요소, 왜곡 방지
+1. **결과물 유형을 정합니다.** 포스터, 인물 사진, UI, 인포그래픽처럼 결과물의 종류를 첫 줄에 고정합니다.
+2. **주 피사체를 고정합니다.** 화면 중심이 되는 대상, 인물, 제품을 하나로 좁힙니다.
+3. **구도와 비율을 지정합니다.** 화면 비율과 피사체 위치, 여백, 시점을 정합니다.
+4. **맥락과 배경을 설명합니다.** 어디에서 어떤 상황에, 어떤 분위기로 보일지 정합니다.
+5. **스타일과 매체를 선택합니다.** 사진, 3D 렌더, 수채화, 포스터, 편집 디자인 가운데 하나를 고릅니다.
+6. **빛과 디테일을 구체화합니다.** 조명, 질감, 재료, 표면, 카메라 렌즈를 지정합니다.
+7. **정확성 조건을 덧붙입니다.** 텍스트와 금지 요소, 유지 요소, 왜곡 방지 조건을 마지막에 붙입니다.
 
 핵심 규칙은 하나입니다. **모든 형용사를 명사·수치·배치로 환원합니다.** "고급스럽게"는 "무광 세라믹 + 석회석 받침대 + 스튜디오 조명"으로, "극적으로"는 "낮은 앵글 + 림 라이트"로 바꿉니다.
 
@@ -68,52 +68,52 @@
 10개 카테고리마다 레퍼런스 갤러리의 대표 프롬프트를 하나씩 골랐습니다. 각 카테고리의 전체 목록과 이미지, 전체 프롬프트는 링크된 파일에서 볼 수 있습니다.
 
 ### 웹툰
-액션·감정·컷 흐름 중심. 애니메이션 스틸과 만화 연출.
+액션과 감정, 컷 흐름을 중심으로 애니메이션 스틸과 만화 연출을 다룹니다.
 > **MAPPA 스타일 애니 액션 스틸** (16:9): "An anime action still in the visual style of MAPPA's Jujutsu Kaisen … a mid-fight stance, one palm extended outward releasing a swirling energy …"
 > 전체: [`references/gallery-anime-and-manga.md`](references/gallery-anime-and-manga.md)
 
 ### 일러스트
-선·색면·질감·장식이 하나의 작품처럼 균형 잡힌 화면.
+선과 색면, 질감, 장식이 하나의 작품처럼 균형을 이루는 화면입니다.
 > **빈티지 아말피 해안 여행 포스터** (@WolfRiccardo): "Modern pencil illustration of a vintage travel poster of the Amalfi Coast … 1960s white car on a curved seaside road, deep blue Mediterranean, pastel hillside village …"
 > 전체: [`references/gallery-illustration.md`](references/gallery-illustration.md)
 
 ### 게임
-플레이 공간·유닛 위치·지형·장르 규칙이 보이는 화면.
-> **Hitman 게임 화면 — OpenAI 본사** (@flowersslop): "A Hitman level where you are in the OpenAI HQ and your mission is to steal GPT-6 without getting caught."
+플레이 공간과 유닛 위치, 지형, 장르 규칙이 한눈에 드러나는 화면입니다.
+> **Hitman 게임 화면, OpenAI 본사** (@flowersslop): "A Hitman level where you are in the OpenAI HQ and your mission is to steal GPT-6 without getting caught."
 > 전체: [`references/gallery-gaming.md`](references/gallery-gaming.md)
 
 ### 시네마틱
-피사체·배경·빛·카메라·긴장점이 분명한 영화 한 장면.
+피사체와 배경, 빛, 카메라, 긴장점이 분명한 영화 한 장면입니다.
 > **픽사 스타일 3D 애니 스틸** (16:9): "A Pixar-quality 3D animation still … a cozy apartment kitchen at dawn, a small orange tabby kitten reaching a paw toward a rising soufflé, oven glow lighting the scene …"
 > 전체: [`references/gallery-cinematic-and-animation.md`](references/gallery-cinematic-and-animation.md)
 
 ### 포스터
-제목·부제·대표 이미지·여백의 위계가 멀리서도 읽히는 편집 디자인.
+제목과 부제, 대표 이미지, 여백의 위계가 멀리서도 읽히는 편집 디자인입니다.
 > **중국풍 차 브랜드 출시 포스터** (3:4): "Design a 3:4 vertical poster for a new Chinese tea launch … dark green, off-white and gold palette, rice-paper texture, elegant negative space, modern layout …"
 > 전체: [`references/gallery-typography-and-posters.md`](references/gallery-typography-and-posters.md)
 
 ### 제품 · 브랜드
-형태·소재·라벨·패키지가 제품을 중심으로 정리된 광고 마감.
+형태와 소재, 라벨, 패키지가 제품을 중심으로 정리된 광고 마감입니다.
 > **다이라인에서 만든 3D 제품 박스** (@Salmaaboukarr): "Assemble the dieline into a flawless 3D box with accurate panels, clean folds, undistorted type … minimal premium studio, diffused light, matte paperboard texture … front reads \"AURAE / COLD-BREW MATCHA / 12 fl oz\"."
 > 전체: [`references/gallery-product-and-food.md`](references/gallery-product-and-food.md)
 
 ### 인물 사진
-인물·의상·소품·카메라 거리가 실제 촬영처럼 정리된 화면.
-> **RAW 아이폰 촬영 — 42번가 지하철** (@WolfRiccardo): "A completely RAW, unprocessed image with full iPhone camera quality. A subway station, the subway in motion with a momentary blur, an elderly woman and man in front …"
+인물과 의상, 소품, 카메라 거리가 실제 촬영처럼 정리된 화면입니다.
+> **RAW 아이폰 촬영, 42번가 지하철** (@WolfRiccardo): "A completely RAW, unprocessed image with full iPhone camera quality. A subway station, the subway in motion with a momentary blur, an elderly woman and man in front …"
 > 전체: [`references/gallery-photography.md`](references/gallery-photography.md)
 
 ### 건물 사진
-규모·입구·동선·재료가 실제 사용성을 갖는 건축 시각화.
+규모와 입구, 동선, 재료가 실제 사용성을 갖춘 건축 시각화입니다.
 > **일본식 미니멀 거실** (28mm 시점): "Render a serene Japanese minimalist living room in photorealistic architectural visualization … light oak flooring, shoji-inspired sliding panels, low modular seating, a recessed tokonoma niche …"
 > 전체: [`references/gallery-architecture-and-interior.md`](references/gallery-architecture-and-interior.md)
 
 ### 인포그래픽
-제목·번호 단계·라벨·아이콘·그래프가 읽기 쉬운 순서로 정리된 설명 자료.
+제목과 번호 단계, 라벨, 아이콘, 그래프가 읽기 쉬운 순서로 정리된 설명 자료입니다.
 > **송나라 SNS 피드** (@Panda20230902): "\"SONG DYNASTY SOCIAL MEDIA FEED\" … a mobile social media interface, but the content is entirely Song Dynasty scenes, the avatar a Song-era portrait …"
 > 전체: [`references/gallery-infographics-and-field-guides.md`](references/gallery-infographics-and-field-guides.md)
 
 ### UI·대시보드
-상단 바·카드·그래프·버튼이 실제 제품 화면처럼 정렬된 목업.
+상단 바와 카드, 그래프, 버튼이 실제 제품 화면처럼 정렬된 목업입니다.
 > **모바일 가계부 앱 목업** (1290×2796): "Design a polished mobile finance app UI for a fictional neobank called AURAE … calm palette of deep navy, mint green, warm gray and white, a complete home screen …"
 > 전체: [`references/gallery-ui-ux-mockups.md`](references/gallery-ui-ux-mockups.md)
 
