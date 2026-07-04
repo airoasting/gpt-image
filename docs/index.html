@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GPT 이미지 생성 프롬프트 가이드</title>
+    <meta
+      name="description"
+      content="한국 사용자를 위한 GPT 이미지 생성 프롬프트 작성 가이드"
+    />
+
+    <!-- 소셜 공유 썸네일 (Open Graph / Twitter). 배포 도메인이 다르면 아래 og:url·og:image·twitter:image의 절대 URL을 교체하세요. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GPT 이미지 프롬프트 가이드" />
+    <meta property="og:title" content="GPT 이미지 생성 프롬프트 가이드" />
+    <meta
+      property="og:description"
+      content="한국어로 구상한 장면을 GPT에 바로 넣는 이미지 생성 프롬프트로. 7가지 품질 원칙, 프롬프트 도움창, 선별 레퍼런스."
+    />
+    <meta property="og:url" content="https://airoasting.github.io/gpt-image/" />
+    <meta property="og:image" content="https://airoasting.github.io/gpt-image/assets/gptimage2skill-banner.png" />
+    <meta property="og:image:width" content="1586" />
+    <meta property="og:image:height" content="992" />
+    <meta property="og:image:alt" content="GPT 이미지 생성 프롬프트로 만든 결과물 예시 모음" />
+    <meta property="og:locale" content="ko_KR" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GPT 이미지 생성 프롬프트 가이드" />
+    <meta
+      name="twitter:description"
+      content="한국어로 구상한 장면을 GPT에 바로 넣는 이미지 생성 프롬프트로. 7가지 품질 원칙, 프롬프트 도움창, 선별 레퍼런스."
+    />
+    <meta name="twitter:image" content="https://airoasting.github.io/gpt-image/assets/gptimage2skill-banner.png" />
+
+    <link rel="icon" href="./assets/logos/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="./assets/logos/favicon-32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="./assets/logos/favicon-180.png" sizes="180x180" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#start" aria-label="첫 화면으로 이동">
+          <span class="brand-mark" aria-hidden="true">
+            <img
+              class="brand-logo"
+              src="./assets/logos/logo1-transparent.png"
+              alt=""
+            />
+          </span>
+          <span>GPT 이미지 프롬프트 가이드</span>
+        </a>
+        <nav class="nav" aria-label="주요 섹션">
+          <a href="#principles">7가지 원칙</a>
+          <a href="#builder">프롬프트 만들기</a>
+          <a href="#gallery">갤러리</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="start">
+      <section class="hero" id="hero">
+        <div class="hero-inner">
+          <div class="hero-lede">
+            <p class="eyebrow hero-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>한국어 이미지 생성 가이드
+            </p>
+            <h1 class="hero-title">머릿속 장면을<br />정확한 이미지 프롬프트로.</h1>
+            <p class="lead">
+              한국어로 구상한 내용을 GPT에 바로 넣을 수 있는 이미지 생성 프롬프트로 바꿉니다.
+              7가지 품질 원리, 프롬프트 도움창, 엄선한 레퍼런스를 한곳에서 제공합니다.
+            </p>
+            <div class="quick-actions">
+              <a class="button ghost" href="#principles">7가지 원칙 보기</a>
+              <a class="button ghost" href="#builder">프롬프트 만들기</a>
+              <a class="button primary" href="#gallery"
+                >갤러리<span class="button-arrow" aria-hidden="true">→</span></a
+              >
+            </div>
+            <dl class="hero-stats">
+              <div class="hero-stat">
+                <dt>7</dt>
+                <dd>품질 원칙</dd>
+              </div>
+              <div class="hero-stat">
+                <dt>10</dt>
+                <dd>결과물 카테고리</dd>
+              </div>
+              <div class="hero-stat">
+                <dt>100</dt>
+                <dd>선별 레퍼런스</dd>
+              </div>
+            </dl>
+          </div>
+          <figure class="hero-frame">
+            <img
+              src="./assets/gptimage2skill-banner.png"
+              alt="GPT 이미지 생성 프롬프트로 만든 결과물 예시 모음"
+            />
+            <figcaption class="hero-frame-cap">
+              <span class="hero-frame-tag">SAMPLE OUTPUT</span>
+              <span>가이드로 만든 실제 결과물</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section" id="principles">
+        <div class="section-heading">
+          <p class="eyebrow">섹션 01.</p>
+          <h2>이미지 생성 프롬프트의 7가지 원칙</h2>
+          <p>
+            결과물 유형부터 정확성 조건까지 7가지를 차례대로 정리하면, 한국어로도
+            의도가 분명한 이미지 생성 프롬프트를 만들 수 있습니다.
+          </p>
+        </div>
+        <div class="principle-grid" id="principleGrid"></div>
+      </section>
+
+      <section class="section builder-section" id="builder">
+        <div class="section-heading">
+          <p class="eyebrow">섹션 02.</p>
+          <h2>이미지 생성용 프롬프트 만들기</h2>
+          <p>7가지 원칙을 순서대로 채우면 바로 복사할 수 있는 한국어 이미지 생성 프롬프트가 완성됩니다.</p>
+        </div>
+
+        <div class="builder">
+          <form class="builder-form" id="promptForm">
+            <label>
+              <span class="field-heading"><span class="number-pill form-number">01</span><span>결과물 유형</span></span>
+              <select id="purpose">
+                <option value="game">게임</option>
+                <option value="illustration-character">일러스트</option>
+                <option value="cinematic-storyboard">시네마틱</option>
+                <option value="posters-typography">포스터</option>
+                <option value="product-brand">제품 · 브랜드</option>
+                <option value="photo-fashion">인물 사진</option>
+                <option value="space-architecture">건물 사진</option>
+                <option value="infographic-education">인포그래픽</option>
+                <option value="interface-data">UI·대시보드</option>
+              </select>
+            </label>
+            <label>
+              <span class="field-heading"><span class="number-pill form-number">02</span><span>주 피사체</span></span>
+              <textarea id="subject" rows="5">중심 피사체 1개, 가장 먼저 보여야 하는 핵심 요소, 보조 요소의 역할, 유지해야 할 형태와 색상, 결과물의 목적이 분명한 장면</textarea>
+            </label>
+            <label>
+              <span class="field-heading"><span class="number-pill form-number">03</span><span>구도와 비율</span></span>
+              <select id="ratio">
+                <option value="3:4 세로형">3:4 세로형</option>
+                <option value="16:9 가로형">16:9 가로형</option>
+                <option value="1:1 square">1:1 정사각형</option>
+                <option value="9:16 모바일 세로형">9:16 모바일 세로형</option>
+                <option value="21:9 와이드">21:9 와이드</option>
+              </select>
+            </label>
+            <label>
+              <span class="field-heading"><span class="number-pill form-number">04</span><span>맥락과 배경</span></span>
+              <textarea id="context" rows="4">이미지가 사용될 상황, 배경 장소, 시간대, 분위기, 주변 요소를 구체적으로 설명하고 핵심 피사체를 보완하도록 구성</textarea>
+            </label>
+            <label>
+              <span class="field-heading"><span class="number-pill form-number">05</span><span>스타일과 매체</span></span>
+              <select id="style">
+                <option value="category-default">카테고리 기본 스타일</option>
+                <option value="photoreal">실사 사진</option>
+                <option value="product-render">3D 제품 렌더</option>
+                <option value="editorial-poster">포스터/편집 디자인</option>
+                <option value="illustrated">일러스트레이션</option>
+                <option value="watercolor-style">수채화</option>
+                <option value="pixel-style">픽셀 아트</option>
+                <option value="cinematic-style">시네마틱 장면</option>
+              </select>
+            </label>
+            <div class="builder-field">
+              <span class="field-heading"><span class="number-pill form-number">06</span><span>빛과 디테일</span></span>
+              <label class="nested-field">
+                <span class="nested-label">조명</span>
+                <select id="lighting">
+                  <option value="soft-studio">부드러운 스튜디오 조명</option>
+                  <option value="golden-hour">골든아워 자연광</option>
+                  <option value="dramatic-rim">극적인 림 라이트</option>
+                  <option value="neon-night">네온 야간 조명</option>
+                  <option value="overcast">흐린 날의 확산광</option>
+                  <option value="low-key">로우키 조명</option>
+                </select>
+              </label>
+              <label class="nested-field">
+                <span class="nested-label">카메라 시점</span>
+                <select id="camera">
+                  <option value="front-view">정면 보기</option>
+                  <option value="extreme-close-up">극단적 클로즈업</option>
+                  <option value="fisheye">어안 렌즈</option>
+                  <option value="extreme-wide">극단적 와이드</option>
+                  <option value="face-close-up">얼굴 클로즈업</option>
+                  <option value="high-angle">높은 앵글</option>
+                  <option value="low-angle">낮은 앵글</option>
+                  <option value="medium-shot">미디엄 샷</option>
+                  <option value="rear-view">후면 보기</option>
+                  <option value="side-view">측면 보기</option>
+                  <option value="dramatic-low-angle">극단적 낮은 앵글</option>
+                </select>
+              </label>
+            </div>
+            <label>
+              <span class="field-heading"><span class="number-pill form-number">07</span><span>정확성 조건</span></span>
+              <select id="detail">
+                <option value="final">최종 결과물</option>
+                <option value="exploration">아이디어 탐색</option>
+                <option value="text-heavy">텍스트/라벨 중심</option>
+                <option value="reference-edit">레퍼런스 편집</option>
+              </select>
+            </label>
+          </form>
+
+          <div class="generated-command">
+            <div class="code-meta">
+              <h3>생성된 GPT 이미지 프롬프트</h3>
+              <button class="copy-button" data-copy-target="builtCode">복사</button>
+            </div>
+            <pre><code id="builtCode"></code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="section-heading">
+          <p class="eyebrow">섹션 03.</p>
+          <h2>레퍼런스 갤러리</h2>
+          <p>
+            이미지 생성 프롬프트 작성에 도움이 되는 레퍼런스를 선별했습니다. 카드를 클릭하면
+            상세 페이지에서 이미지, 메타데이터, 전체 프롬프트를 볼 수 있습니다.
+          </p>
+        </div>
+
+        <div class="gallery-tools">
+          <div class="gallery-filter">
+            <div class="gallery-category-list" id="galleryCategoryList" aria-label="갤러리 카테고리"></div>
+          </div>
+          <p class="gallery-count" id="galleryCount" hidden>0개 레퍼런스</p>
+        </div>
+
+        <div class="gallery-grid full-gallery" id="galleryGrid" aria-live="polite"></div>
+
+        <div class="gallery-more" id="galleryMore" hidden>
+          <button class="button ghost gallery-more-button" id="galleryMoreButton" type="button"></button>
+        </div>
+      </section>
+
+      <section class="reference-detail section" id="referenceDetail" hidden>
+        <div class="detail-topbar">
+          <div class="detail-nav-actions">
+            <button class="button ghost" id="detailBackButton" type="button">← 갤러리로 돌아가기</button>
+            <button class="button ghost" id="detailCategoryButton" type="button"></button>
+          </div>
+          <span class="number-pill" id="detailNumber"></span>
+        </div>
+
+        <div class="detail-hero">
+          <div class="detail-copy">
+            <p class="eyebrow" id="detailCategory"></p>
+            <h2 id="detailTitle"></h2>
+            <dl class="modal-detail-list detail-list">
+              <div>
+                <dt>카테고리</dt>
+                <dd id="detailCategoryName"></dd>
+              </div>
+              <div>
+                <dt>사이즈</dt>
+                <dd id="detailMeta"></dd>
+              </div>
+            </dl>
+          </div>
+          <button class="detail-media-button" id="detailImageButton" type="button" aria-label="이미지 크게 보기">
+            <img id="detailImage" src="" alt="" />
+          </button>
+        </div>
+
+        <div class="detail-prompt-block">
+          <div class="detail-prompt-header">
+            <p class="eyebrow">프롬프트</p>
+            <div class="modal-actions">
+              <button class="copy-button" id="detailCopyButton" type="button">프롬프트 복사</button>
+              <a class="button ghost" id="detailSourceLink" href="#" download>MD 다운로드</a>
+            </div>
+          </div>
+          <pre class="detail-prompt-pre"><code id="detailPrompt"></code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#hero" aria-label="첫 화면으로 이동">
+            <span class="footer-mark" aria-hidden="true">
+              <img src="./assets/logos/logo1-transparent.png" alt="" />
+            </span>
+            <span>GPT 이미지 프롬프트 가이드</span>
+          </a>
+          <p class="footer-desc">
+            한국어로 구상한 장면을 GPT에 바로 넣을 수 있는 이미지 생성 프롬프트로
+            바꾸는 실전 가이드입니다. 7가지 원칙, 프롬프트 도움창, 100개 레퍼런스를
+            한곳에서 제공합니다.
+          </p>
+        </div>
+
+        <nav class="footer-col" aria-label="바로가기">
+          <h3 class="footer-col-title">바로가기</h3>
+          <a href="#principles">7가지 원칙</a>
+          <a href="#builder">프롬프트 만들기</a>
+          <a href="#gallery">레퍼런스 갤러리</a>
+        </nav>
+
+        <div class="footer-col">
+          <h3 class="footer-col-title">담긴 것</h3>
+          <ul class="footer-facts">
+            <li><strong>7</strong>가지 품질 원칙</li>
+            <li><strong>10</strong>개 결과물 카테고리</li>
+            <li><strong>100</strong>개 선별 레퍼런스</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 AIROASTING. All rights reserved.</span>
+        <a class="footer-top-link" href="#hero">맨 위로 ↑</a>
+      </div>
+    </footer>
+
+    <div class="modal image-modal" id="promptModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <section class="image-modal-panel" role="dialog" aria-modal="true" aria-label="확대 이미지">
+        <button class="modal-close" type="button" data-close-modal aria-label="닫기">×</button>
+        <img id="modalImage" src="" alt="" />
+      </section>
+    </div>
+
+    <script src="./js/gallery-data.js?v=20260701"></script>
+    <script src="./js/script.js?v=guidebook-redesign"></script>
+  </body>
+</html>
