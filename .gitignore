@@ -7,7 +7,7 @@
 # 의존성
 node_modules/
 
-# 상류 스킬 클론 (사이트는 docs/references/ 등 복사본만 사용)
+# 상류 스킬 클론 (스킬 번들은 루트의 references/ 등 복사본만 사용)
 GPT-Image2-Skill/
 
 # 이전 중첩 폴더 잔재

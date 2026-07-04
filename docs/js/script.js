@@ -616,7 +616,7 @@ function openReferencePage(item, updateHash = false) {
 
   if (item.categoryFile) {
     detailSourceLink.hidden = false;
-    detailSourceLink.href = `./references/${item.categoryFile}`;
+    detailSourceLink.href = `https://raw.githubusercontent.com/airoasting/gpt-image/main/references/${item.categoryFile}`;
   } else {
     detailSourceLink.hidden = true;
     detailSourceLink.removeAttribute("href");

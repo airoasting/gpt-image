@@ -14,8 +14,8 @@ import { basename, join } from "node:path";
 // 한국어 카테고리(웹툰, 일러스트 등)로 재매핑된 수작업 큐레이션본이므로, 이 스크립트로 재생성하면
 // 카테고리 이름과 구성이 달라질 수 있다. number/id 일관성만 보장한다.
 
-// docs/references 폴더 기준 (docs/ 폴더에서 `node js/build-gallery-data.mjs`로 실행).
-const referencesDir = "./references";
+// 루트의 references 폴더 기준 (docs/ 폴더에서 `node js/build-gallery-data.mjs`로 실행).
+const referencesDir = "../references";
 const files = readdirSync(referencesDir)
   .filter((file) => file.startsWith("gallery-") && file.endsWith(".md"))
   .sort();
