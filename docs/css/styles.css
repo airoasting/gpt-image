@@ -2648,3 +2648,83 @@ input[type="text"]:focus,
   background: var(--ink);
   color: var(--paper);
 }
+
+/* ── 브랜드 두 줄 표기 ── */
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  line-height: 1.12;
+}
+.brand-org {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  opacity: 0.72;
+}
+.brand-name {
+  font-size: 0.98rem;
+  letter-spacing: -0.01em;
+}
+
+/* ── 헤더 로고 호버: 360도 회전 + 물결(리플) ── */
+.brand-logo {
+  transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.brand:hover .brand-logo,
+.brand:focus-visible .brand-logo {
+  transform: rotate(360deg);
+}
+.brand .brand-mark {
+  position: relative;
+}
+.brand .brand-mark::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  opacity: 0;
+  pointer-events: none;
+}
+.brand:hover .brand-mark::after,
+.brand:focus-visible .brand-mark::after {
+  animation: brand-ripple 1.2s ease-out infinite;
+}
+@keyframes brand-ripple {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(2.15); opacity: 0; }
+}
+
+/* ── 페이지 로딩 진입 애니메이션 ── */
+@keyframes page-fade-down {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes page-fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: none; }
+}
+.topbar {
+  animation: page-fade-down 0.55s ease both;
+}
+.hero-lede > * {
+  animation: page-fade-up 0.7s ease both;
+}
+.hero-lede > *:nth-child(1) { animation-delay: 0.05s; }
+.hero-lede > *:nth-child(2) { animation-delay: 0.13s; }
+.hero-lede > *:nth-child(3) { animation-delay: 0.21s; }
+.hero-lede > *:nth-child(4) { animation-delay: 0.29s; }
+.hero-lede > *:nth-child(5) { animation-delay: 0.37s; }
+.hero-frame {
+  animation: page-fade-up 0.8s ease 0.2s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topbar,
+  .hero-lede > *,
+  .hero-frame { animation: none; }
+  .brand:hover .brand-logo,
+  .brand:focus-visible .brand-logo { transform: none; }
+  .brand:hover .brand-mark::after,
+  .brand:focus-visible .brand-mark::after { animation: none; }
+}
