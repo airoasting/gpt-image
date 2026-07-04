@@ -121,7 +121,15 @@
 
 ## 번들 스킬로 프롬프트 설계하기
 
-`SKILL.md`는 AI 에이전트(Claude Code 등)가 위 7원칙으로 프롬프트를 설계하게 하는 실행 규칙입니다. 스킬을 지원하는 환경에서 이미지 프롬프트 요청이 들어오면, 에이전트가 다음을 수행합니다.
+`SKILL.md`는 AI 에이전트가 위 7원칙으로 프롬프트를 설계하게 하는 실행 규칙입니다. `/gpt-image` 명령은 **Codex CLI**에서 작동합니다. 아래처럼 `SKILL.md`와 리소스를 Codex 스킬 폴더에 설치해 사용합니다.
+
+```bash
+mkdir -p ~/.codex/skills/gpt-image/docs/js
+cp -r SKILL.md references scripts ~/.codex/skills/gpt-image/
+cp docs/js/gallery-data.js ~/.codex/skills/gpt-image/docs/js/   # SKILL.md가 참조하는 사이트 갤러리
+```
+
+설치 후 이미지 프롬프트 요청이 들어오면, 에이전트가 다음을 수행합니다.
 
 1. 요청을 10개 카테고리 중 하나로 분류
 2. 1차로 `docs/js/gallery-data.js`의 사이트 실제 갤러리 예시(한국어 100개)를 찾아 참고하고, 세부 기법이 더 필요하면 2차로 `references/gallery.md`가 가리키는 해당 카테고리 파일을 로딩
