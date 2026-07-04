@@ -2649,23 +2649,6 @@ input[type="text"]:focus,
   color: var(--paper);
 }
 
-/* ── 브랜드 두 줄 표기 ── */
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
-  line-height: 1.12;
-}
-.brand-org {
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  opacity: 0.72;
-}
-.brand-name {
-  font-size: 0.98rem;
-  letter-spacing: -0.01em;
-}
-
 /* ── 헤더 로고 호버: 360도 회전 + 물결(리플) ── */
 .brand-logo {
   transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
