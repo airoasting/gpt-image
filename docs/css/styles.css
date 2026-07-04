@@ -146,6 +146,28 @@ img {
   color: var(--text);
 }
 
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.github-link:hover {
+  background: var(--sun-soft);
+  color: var(--text);
+}
+
 .section,
 .hero,
 .signal-strip,
@@ -1501,8 +1523,12 @@ body.reference-detail-open .footer {
     width: min(100% - 28px, 1180px);
   }
 
-  .nav {
+  .topbar-actions {
     width: 100%;
+  }
+
+  .nav {
+    flex: 1;
     justify-content: space-between;
   }
 
