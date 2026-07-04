@@ -121,7 +121,7 @@
 
 ## 번들 스킬로 프롬프트 설계하기
 
-`SKILL.md`는 AI 에이전트가 위 7원칙으로 프롬프트를 설계하게 하는 실행 규칙입니다. `/gpt-image` 명령은 **Codex CLI**에서 작동합니다. 아래처럼 `SKILL.md`와 리소스를 Codex 스킬 폴더에 설치해 사용합니다.
+`SKILL.md`는 AI 에이전트가 위 7원칙으로 프롬프트를 설계하게 하는 실행 규칙입니다. `/gpt-image` 명령은 **Codex**에서 작동합니다. 아래처럼 `SKILL.md`와 리소스를 Codex 스킬 폴더에 설치해 사용합니다.
 
 ```bash
 mkdir -p ~/.codex/skills/gpt-image/docs/js
