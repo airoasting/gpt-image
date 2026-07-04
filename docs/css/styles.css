@@ -1240,6 +1240,7 @@ body.reference-detail-open .hero,
 body.reference-detail-open #principles,
 body.reference-detail-open #builder,
 body.reference-detail-open #gallery,
+body.reference-detail-open #usage,
 body.reference-detail-open .footer {
   display: none;
 }
