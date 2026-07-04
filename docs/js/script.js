@@ -746,3 +746,45 @@ syncBuilderHeight();
 window.addEventListener("scroll", scheduleGalleryScrollSpy, { passive: true });
 window.addEventListener("resize", syncBuilderHeight);
 window.addEventListener("hashchange", openReferenceFromHash);
+
+/* ── 브랜드 글자 물결 애니메이션용: 문자 단위 span 분할 ── */
+(function setupBrandWave() {
+  const label = document.querySelector(".brand-label");
+  if (!label) return;
+  const text = label.textContent;
+  label.textContent = "";
+  [...text].forEach((ch, i) => {
+    const s = document.createElement("span");
+    s.className = "wc";
+    s.style.setProperty("--i", i);
+    s.textContent = ch === " " ? " " : ch;
+    label.appendChild(s);
+  });
+})();
+
+/* ── 모바일 햄버거 메뉴 토글 ── */
+(function setupMenu() {
+  const toggle = document.querySelector(".menu-toggle");
+  const topbar = document.querySelector(".topbar");
+  const actions = document.querySelector("#topbarActions");
+  if (!toggle || !topbar || !actions) return;
+  const setOpen = (open) => {
+    topbar.classList.toggle("nav-open", open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "메뉴 닫기" : "메뉴 열기");
+  };
+  toggle.addEventListener("click", () => setOpen(!topbar.classList.contains("nav-open")));
+  // 메뉴 안 링크 클릭 시 닫기
+  actions.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => setOpen(false))
+  );
+  // 바깥 클릭 시 닫기
+  document.addEventListener("click", (e) => {
+    if (!topbar.classList.contains("nav-open")) return;
+    if (!topbar.contains(e.target)) setOpen(false);
+  });
+  // 데스크톱으로 넓어지면 닫기
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) setOpen(false);
+  });
+})();

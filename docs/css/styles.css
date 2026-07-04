@@ -2660,22 +2660,22 @@ input[type="text"]:focus,
 .brand .brand-mark {
   position: relative;
 }
-.brand .brand-mark::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  border: 2px solid var(--ink);
-  opacity: 0;
-  pointer-events: none;
+/* 브랜드 글자 물결(파도) 애니메이션 */
+.brand-label {
+  white-space: pre;
 }
-.brand:hover .brand-mark::after,
-.brand:focus-visible .brand-mark::after {
-  animation: brand-ripple 1.2s ease-out infinite;
+.brand-label .wc {
+  display: inline-block;
+  will-change: transform;
 }
-@keyframes brand-ripple {
-  0% { transform: scale(1); opacity: 0.5; }
-  100% { transform: scale(2.15); opacity: 0; }
+.brand:hover .brand-label .wc,
+.brand:focus-visible .brand-label .wc {
+  animation: brand-wave 0.9s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.045s);
+}
+@keyframes brand-wave {
+  0%, 55%, 100% { transform: translateY(0); }
+  27% { transform: translateY(-5px); }
 }
 
 /* ── 페이지 로딩 진입 애니메이션 ── */
@@ -2708,6 +2708,137 @@ input[type="text"]:focus,
   .hero-frame { animation: none; }
   .brand:hover .brand-logo,
   .brand:focus-visible .brand-logo { transform: none; }
-  .brand:hover .brand-mark::after,
-  .brand:focus-visible .brand-mark::after { animation: none; }
+  .brand:hover .brand-label .wc,
+  .brand:focus-visible .brand-label .wc { animation: none; }
+}
+
+/* ── 햄버거 버튼 (모바일 전용) ── */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+  border: 1.5px solid var(--ink);
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.menu-toggle span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform 0.28s ease, opacity 0.2s ease;
+}
+.topbar.nav-open .menu-toggle span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.topbar.nav-open .menu-toggle span:nth-child(2) {
+  opacity: 0;
+}
+.topbar.nav-open .menu-toggle span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── 모바일 최적화 (≤768px): 햄버거 메뉴 ── */
+@media (max-width: 768px) {
+  .topbar {
+    position: sticky;
+  }
+  .topbar-inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+  /* 브랜드 글자 숨기고 로고만 */
+  .brand-label {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  /* nav + github를 드롭다운 패널로 */
+  .topbar-actions {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 12px;
+    left: 12px;
+    width: auto;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 12px;
+    border: 1.5px solid var(--ink);
+    border-radius: 12px;
+    background: var(--paper);
+    box-shadow: 0 14px 30px rgba(142, 45, 31, 0.18);
+  }
+  .topbar.nav-open .topbar-actions {
+    display: flex;
+  }
+  .topbar-actions .nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 4px;
+    width: 100%;
+  }
+  .topbar-actions .nav a {
+    flex: none;
+    min-width: 0;
+    width: 100%;
+    padding: 12px 14px;
+    text-align: left;
+    border-radius: 10px;
+  }
+  .topbar-actions .github-link {
+    width: auto;
+    align-self: flex-start;
+    margin-top: 2px;
+  }
+}
+
+/* ── 모바일 최적화 (≤768px): 갤러리 칩·상세 버튼 한 줄 ── */
+@media (max-width: 768px) {
+  /* 갤러리 카테고리 칩: 한 줄 가로 스크롤 */
+  .gallery-category-list {
+    display: flex;
+    grid-template-columns: none;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 6px;
+    padding-bottom: 4px;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+  }
+  .category-chip {
+    flex: 0 0 auto;
+    width: auto;
+    white-space: nowrap;
+  }
+  /* 상세: 프롬프트 복사 / MD 다운로드 한 줄 */
+  .detail-prompt-header {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .detail-prompt-header .modal-actions {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: auto;
+    gap: 8px;
+  }
+  /* 상세 상단: 갤러리로 돌아가기 / 카테고리 / 번호 한 줄 */
+  .detail-topbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
