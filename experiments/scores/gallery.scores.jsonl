@@ -1,0 +1,10 @@
+{"id": "ref-6", "category": "웹툰", "qa": {"goal_fit": 5, "text_accuracy": 4, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "지정 카피·구성 거의 완벽 일치, 약병 라벨 하단 소형 잉여 글자 일부."}
+{"id": "ref-16", "category": "일러스트", "qa": {"goal_fit": 5, "text_accuracy": null, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "비 오는 온실 수채화, 노트 필기는 판독 불가 텍스처로 처리(지시대로)."}
+{"id": "ref-26", "category": "게임", "qa": {"goal_fit": 5, "text_accuracy": 5, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "3영웅·HUD·점수/타이머/골드 등 모든 텍스트 정확."}
+{"id": "ref-36", "category": "시네마틱", "qa": {"goal_fit": 5, "text_accuracy": null, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "거석·탐사자 1인·역광 앰버 톤 거의 완전 일치, 텍스트 없음."}
+{"id": "ref-46", "category": "포스터", "qa": {"goal_fit": 5, "text_accuracy": 4, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "대부분 정확하나 '전국 주니어 챔피언십'에서 '전국' 누락."}
+{"id": "ref-56", "category": "제품 · 브랜드", "qa": {"goal_fit": 5, "text_accuracy": 4, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "제품 정렬·재질 사실적, UV 튜브 SPF/PA fine print 흐릿."}
+{"id": "ref-66", "category": "인물 사진", "qa": {"goal_fit": 5, "text_accuracy": null, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "포즈·의상·조명 패널 정확, 피부·의상 질감 자연, 글자 없음."}
+{"id": "ref-76", "category": "건물 사진", "qa": {"goal_fit": 5, "text_accuracy": null, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "대칭 신랑·스테인드글라스·god ray 사실적 구현."}
+{"id": "ref-86", "category": "인포그래픽", "qa": {"goal_fit": 5, "text_accuracy": 5, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "4단계 색상표·체크리스트·알림카드 오탈/중복 없이 렌더."}
+{"id": "ref-96", "category": "UI·대시보드", "qa": {"goal_fit": 5, "text_accuracy": 5, "material_realism": 5, "layout": 5}, "neg_rendered": false, "notes": "6도시 그리드·KPI·경보배지·이중축 그래프 정확·균일 정렬."}
