@@ -70,7 +70,7 @@
 ### 웹툰
 액션과 감정, 컷 흐름을 중심으로 애니메이션 스틸과 만화 연출을 다룹니다.
 > **MAPPA 스타일 애니 액션 스틸** (16:9): "An anime action still in the visual style of MAPPA's Jujutsu Kaisen … a mid-fight stance, one palm extended outward releasing a swirling energy …"
-> 전체: [`references/gallery-anime-and-manga.md`](references/gallery-anime-and-manga.md)
+> 전체: [`references/gallery-webtoon.md`](references/gallery-webtoon.md)
 
 ### 일러스트
 선과 색면, 질감, 장식이 하나의 작품처럼 균형을 이루는 화면입니다.

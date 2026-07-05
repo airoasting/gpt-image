@@ -8,7 +8,7 @@ Each `gallery-*.md` category file contains the concrete prompts, direct image pr
 
 | Category | File | Range | Count |
 |---|---|---:|---:|
-| 🎌 Anime & Manga | [`gallery-anime-and-manga.md`](gallery-anime-and-manga.md) | No. 1–12 | 12 |
+| 🎌 Anime & Manga | [`gallery-webtoon.md`](gallery-webtoon.md) | No. 1–12 | 12 |
 | 🎮 Gaming | [`gallery-gaming.md`](gallery-gaming.md) | No. 13–22 | 10 |
 | 🤖 Retro & Cyberpunk | [`gallery-retro-and-cyberpunk.md`](gallery-retro-and-cyberpunk.md) | No. 23–25 | 3 |
 | 🎬 Cinematic & Animation | [`gallery-cinematic-and-animation.md`](gallery-cinematic-and-animation.md) | No. 26–30 | 5 |

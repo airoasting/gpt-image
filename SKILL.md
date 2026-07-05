@@ -170,7 +170,7 @@ description이 약속하는 두 갈래다. 백지 작성과 절차는 같되 시
 
 | 카테고리 | 결과물(유형 블록) | 구도 초점(구성) | 스타일 기본값 | 2차 갤러리 파일(빈도순) |
 |---|---|---|---|---|
-| 웹툰 | 웹툰/만화 컷 (일러스트 계열) | 인물·표정·컷 구성·배경 | 애니·만화 화풍, 선택 매체의 개성 | `gallery-anime-and-manga.md` (10/10) |
+| 웹툰 | 웹툰/만화 컷 (일러스트 계열) | 인물·표정·컷 구성·배경 | 애니·만화 화풍, 선택 매체의 개성 | `gallery-webtoon.md` (10/10) |
 | 일러스트 | 일러스트 또는 캐릭터 중심 이미지 | 주 피사체·캐릭터성·배경·색·질감의 균형 | 선화/채색/회화/수채/픽셀/스티커/문신 중 선택 매체 | `gallery-character-design.md`, `gallery-illustration.md`, `gallery-watercolor.md`, `gallery-pixel-art.md`, `gallery-fine-art-painting.md` (각 2/10) |
 | 게임 | 게임 콘셉트 이미지 또는 게임 화면 | 플레이 공간·유닛 위치·지형·UI·장르 규칙 | 키아트/인게임, 강한 실루엣·깊은 배경 | `gallery-gaming.md` (7/10), `gallery-retro-and-cyberpunk.md` (1/10) |
 | 시네마틱 | 시네마틱 장면 또는 스토리보드 컷 | 피사체·배경·빛·카메라·긴장점 | 시네마틱 컬러, 감정 조명, 이야기 단서 | `gallery-cinematic-film-references.md` (5/10), `gallery-cinematic-and-animation.md` (4/10) |
