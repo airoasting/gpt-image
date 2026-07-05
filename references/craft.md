@@ -1,6 +1,6 @@
 # GPT Image 2 Prompt Craft
 
-Cross-cutting principles distilled from the full 162-prompt Gallery Atlas. Use this file as the prompt-design checklist; use `gallery.md` as the routing index for the split concrete reference/case atlas as `gallery-*.md` files.
+사이트 갤러리(`docs/js/gallery-data.js`)와 카테고리 레퍼런스(`gallery-*.md`)에서 뽑은 교차 원칙 체크리스트. 라우팅 인덱스는 `gallery.md`. (아래 본문의 일부 `No. XX` 표기는 구버전 예시 색인의 흔적이며, 실제 예시는 사이트 갤러리와 카테고리 파일에서 찾는다.)
 
 ## Table of contents
 
@@ -18,7 +18,7 @@ Cross-cutting principles distilled from the full 162-prompt Gallery Atlas. Use t
 11. Promotional hierarchy for commercial posters
 12. Material, lighting, and palette are separate controls
 13. Edit endpoint prompts must preserve invariants
-14. Negation is for strong priors
+14. 배제는 긍정형으로 재서술한다 (네거티브 최소화)
 15. Category-specific mini-schemas
 16. Dense Chinese and multilingual layouts need extra constraints
 17. Attribution and gallery metadata
@@ -28,13 +28,13 @@ Cross-cutting principles distilled from the full 162-prompt Gallery Atlas. Use t
 
 Before drafting a prompt, open `gallery.md` as the category index, then read 3–8 nearby cases from the matching `gallery-<category>.md` file. The skill should not behave like a bare CLI wrapper: it should remix the repo's collected patterns.
 
-Fast routing examples:
-- Anime/manga or multi-character boards → No. 1–12.
-- Product/food commercial render, especially structured config prompts → No. 56–58.
-- Brand, poster, typography, dense Chinese copy → No. 33–44, 59–61, 66–73.
-- Research, data, technical, scientific figures → No. 75–95, 107–128.
-- UI / app / dashboard mockups → No. 102–106.
-- Edit endpoint / reference transformations → No. 100–101.
+Fast routing (카테고리 파일 기준):
+- 웹툰/만화·멀티패널 → `gallery-webtoon.md`.
+- 제품/음식 커머셜 렌더(구조화 config 포함) → `gallery-product-and-food.md`.
+- 브랜드·포스터·타이포·밀집 한글/중문 → `gallery-typography-and-posters.md`, `gallery-brand-systems-and-identity.md`.
+- 연구·데이터·기술·과학 도해 → `gallery-infographics-and-field-guides.md`, `gallery-research-paper-figures.md`, `gallery-scientific-and-educational.md`.
+- UI/앱/대시보드 목업 → `gallery-ui-ux-mockups.md`, `gallery-data-visualization.md`.
+- 레퍼런스 편집/변형 → §13 편집 불변식.
 
 ## 1. Exact text goes in quotes
 
@@ -87,7 +87,7 @@ Recommended schema:
     "aspect_ratio": "2:3 vertical",
     "style": "hyper-realistic commercial photography",
     "clarity": "sharp foreground, micro-texture visibility",
-    "render_flags": ["8K_UHD", "sharp_foreground", "editorial_finish"]
+    "render_flags": ["sharp_foreground", "micro_texture_visible", "editorial_finish"]
   },
   "ENVIRONMENT": {
     "background": "warm gradient studio backdrop",
@@ -105,7 +105,7 @@ Recommended schema:
   ],
   "OUTPUT": {
     "mood": "premium, indulgent, editorial",
-    "avoid": ["cheap e-commerce banner", "plastic CGI", "fake brand logos"]
+    "finish": ["deliberate premium studio look", "true material response, not plastic CGI", "brand-free clean surfaces"]
   }
 }
 ```
@@ -115,7 +115,7 @@ Craft rules:
 - A short header comment can carry `VERSION:` and `AESTHETIC:`. The version is not for code execution; it makes the prompt feel like a deliberate spec and helps future agents compare variants.
 - Values should be concrete visual constraints, not vague praise.
 - Arrays are good for visible elements; nested objects are good for materials, physics, lighting, and output goals.
-- Use `render_flags` / `quality_flags` for output-level constraints such as `8K_UHD`, `sharp_foreground`, `micro_texture`, `editorial_finish`, or `no_CGI_tell`.
+- Use `render_flags` for **result-level** constraints such as `sharp_foreground`, `micro_texture_visible`, `soft_background_falloff`, or `editorial_finish`. Do **not** use SD-era resolution tokens (`8K_UHD`, `masterpiece`, `best quality`). 해상도 토큰은 통제가 아니라 노이즈다.
 - JSON does not have to be machine-valid if comments help the model, but keep it clean and readable.
 - Still include aspect ratio and output mood inside the schema.
 
@@ -305,17 +305,21 @@ Multi-reference rule:
 - Say exactly how references interact: apply style from Image 2 to subject from Image 1; place logo from Image 3 on the package; preserve layout from Image 1.
 - Repeat invariants on each iteration if identity, text, geometry, or brand elements must not drift.
 
-## 14. Negation is for strong priors
+## 14. 배제는 긍정형으로 재서술한다 (네거티브 최소화)
 
-Use explicit avoid-lines when the model has a likely bad default.
+GPT 이미지 모델은 장면 네거티브("군중 없이", "로고 없이")를 오히려 **렌더할 수 있다**. 빼고 싶은 것은 지우라고 말하지 말고, **원하는 상태를 긍정형으로 다시 쓴다**.
 
-Examples:
-- `Avoid anime style, avoid modern cyberpunk, avoid random fake kanji clutter.`
-- `Avoid motorcycle aggression, sci-fi excess, fake brand logos, and toy-like proportions.`
-- `Avoid generic festival chaos, fake sponsor logos, and unreadable microtext.`
-- `No gore, no body horror, no actual person, no photorealistic skin photo.`
+| 빼려는 것 | 나쁨(네거티브) | 좋음(긍정형 재서술) |
+|---|---|---|
+| 군중 | "사람 없이" | "프레임 안엔 인물 한 명, 단독" |
+| 잡다한 배경 | "배경 지저분하지 않게" | "깨끗한 단색 배경, 넉넉한 여백" |
+| 워터마크/로고 | "로고 없이" | "브랜드 표기 없는 클린 마감" |
+| 조잡한 스타일 | "애니풍 피하기" | "실사 사진 질감, 자연스러운 그림자" |
 
-Avoid lists should be short and targeted. Too many negatives can dominate the prompt.
+**유일한 예외 = 텍스트 렌더 가드.** 이미지 안에 따옴표 카피가 **실제로 있을 때만**, 가독성 화이트리스트 1줄을 붙일 수 있다:
+> `모든 글자는 한 번씩만, 또렷하게. 중복 글자·유령 글자·워터마크 없이.`
+
+이 한 줄은 장면 배제가 아니라 텍스트 결함 방지라서 안전하다(실측: 이런 텍스트 가드 문구는 이미지에 글자로 렌더되지 않는다). 그 밖의 `Avoid ...`, `No ...`, `Negative:` 라벨 섹션은 쓰지 않는다.
 
 ## 15. Category-specific mini-schemas
 
