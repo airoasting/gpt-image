@@ -2284,7 +2284,7 @@ input[type="text"]:focus,
 }
 
 /* ============================================================
-   Hero v2 — editorial split (text on paper + framed visual)
+   Hero v2: editorial split (text on paper + framed visual)
    Appended override. Supersedes .hero-copy / .hero-media layer.
    ============================================================ */
 .hero {
@@ -2454,7 +2454,7 @@ input[type="text"]:focus,
 }
 
 /* ============================================================
-   Footer v2 — multi-column brand footer
+   Footer v2: multi-column brand footer
    ============================================================ */
 .footer {
   display: block;

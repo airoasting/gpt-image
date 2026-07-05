@@ -275,7 +275,7 @@ cd docs && python3 -m http.server 8000
 # 브라우저에서 http://localhost:8000
 ```
 
-갤러리 데이터(`docs/js/gallery-data.js`)가 사이트의 정본입니다. 레퍼런스 `references/gallery-*.md`는 이 정본에서 생성된 사본입니다. `build-gallery-data.mjs`는 초기 빌드용 레거시 스크립트라 지금 실행하면 큐레이션을 덮어쓸 수 있으니 쓰지 않습니다.
+갤러리 데이터(`docs/js/gallery-data.js`)가 사이트의 정본입니다. 레퍼런스 `references/gallery-*.md`는 이 정본에서 생성된 사본입니다.
 
 ## 프로젝트 구조
 
@@ -294,8 +294,7 @@ cd docs && python3 -m http.server 8000
     ├── css/styles.css
     ├── js/
     │   ├── script.js              # 7원칙 데이터, 빌더, 갤러리 렌더링
-    │   ├── gallery-data.js        # 갤러리 데이터 (사이트 정본)
-    │   └── build-gallery-data.mjs # (레거시) 초기 빌드용
+    │   └── gallery-data.js        # 갤러리 데이터 (사이트 정본)
     └── assets/                    # 로고, 원칙 예시 이미지, 갤러리 이미지
 ```
 
