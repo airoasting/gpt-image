@@ -198,7 +198,7 @@ cp docs/js/gallery-data.js ~/.codex/skills/gpt-image/docs/js/
 <details>
 <summary>개발자·고급 사용자용 참고</summary>
 
-스킬에는 품질 도구가 함께 들어 있습니다. 규칙 검증기(`scripts/check_prompt.py`, `python3 scripts/check_prompt.py <파일>`로 `ok: true` 확인), 생성물 위 글자 후처리를 막는 훅(`hooks/block-text-overlay.sh`), 규칙의 근거가 된 실측 채점(`experiments/`, 카테고리당 10컷 비전 채점, 상세 결과는 `experiments/REPORT.md`). AI는 요청을 분류한 뒤 1차로 `docs/js/gallery-data.js`의 한국어 예시 100개를 참고하고, 세부 기법이 필요하면 `references/gallery.md`가 가리키는 카테고리 파일과 `references/craft.md`·`references/variation-recipes.md`를 추가로 읽습니다. 실제 이미지 생성은 호스트의 이미지 도구나 `scripts/generate.py`(+ `OPENAI_API_KEY`)로 실행합니다.
+스킬에는 품질 도구가 함께 들어 있습니다. 규칙 검증기(`scripts/check_prompt.py`, `python3 scripts/check_prompt.py <파일>`로 `ok: true` 확인), 생성물 위 글자 후처리를 막는 훅(`hooks/block-text-overlay.sh`), 규칙의 근거가 된 실측 채점(`experiments/`, 10개 카테고리 각 1컷씩 총 10컷 비전 채점, 상세 결과는 `experiments/REPORT.md`). AI는 요청을 분류한 뒤 1차로 `docs/js/gallery-data.js`의 한국어 예시 100개를 참고하고, 세부 기법이 필요하면 `references/gallery.md`가 가리키는 카테고리 파일과 `references/craft.md`·`references/variation-recipes.md`를 추가로 읽습니다. 실제 이미지 생성은 호스트의 이미지 도구나 `scripts/generate.py`(+ `OPENAI_API_KEY`)로 실행합니다.
 
 </details>
 
