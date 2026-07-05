@@ -26,13 +26,77 @@
 
 이미지 모델의 실패는 대부분 "예쁘게", "고급스럽게", "감성적으로" 같은 모호한 형용사에서 나옵니다. 모델이 형용사를 상상으로 채우기 때문입니다. 7원칙은 그 빈칸을 결정 가능한 항목으로 바꿉니다.
 
-1. **결과물 유형을 정합니다.** 포스터, 인물 사진, UI, 인포그래픽처럼 결과물의 종류를 첫 줄에 고정합니다.
-2. **주 피사체를 고정합니다.** 화면 중심이 되는 대상, 인물, 제품을 하나로 좁힙니다.
-3. **구도와 비율을 지정합니다.** 화면 비율과 피사체 위치, 여백, 시점을 정합니다.
-4. **맥락과 배경을 설명합니다.** 어디에서 어떤 상황에, 어떤 분위기로 보일지 정합니다.
-5. **스타일과 매체를 선택합니다.** 사진, 3D 렌더, 수채화, 포스터, 편집 디자인 가운데 하나를 고릅니다.
-6. **빛과 디테일을 구체화합니다.** 조명, 질감, 재료, 표면, 카메라 렌즈를 지정합니다.
-7. **정확성 조건을 덧붙입니다.** 텍스트와 금지 요소, 유지 요소, 왜곡 방지 조건을 마지막에 붙입니다.
+각 원칙을 같은 소재(노란 텀블러)로 **안 좋은 예(모호한 지시)**와 **좋은 예(구체적 지시)** 두 장씩 나란히 놓았습니다. 왼쪽이 모호할 때와 오른쪽이 결정 가능한 항목으로 바뀔 때 결과가 어떻게 달라지는지 비교해 보세요.
+
+### 1. 결과물 유형을 정하기
+포스터, 인물 사진, UI, 인포그래픽처럼 결과물의 종류를 첫 줄에 고정합니다.
+
+<p>
+  <img src="docs/assets/principles/principle-01-weak.png" height="200" alt="원칙 1 안 좋은 예: 노란 텀블러가 있는 멋진 카페 느낌" />
+  <img src="docs/assets/principles/principle-01-strong.png" height="200" alt="원칙 1 좋은 예: 브랜드 출시용 3:4 세로형 제품 포스터" />
+</p>
+
+`안 좋은 예` 노란 텀블러가 있는 멋진 카페 느낌 · `좋은 예` 선샤인 옐로우 세라믹 텀블러의 브랜드 출시용 3:4 세로형 제품 포스터, 제품이 중앙에 크게 보이는 인쇄물 스타일
+
+### 2. 주 피사체를 고정하기
+이미지의 중심이 되는 대상, 인물, 제품, 장면을 분명히 씁니다.
+
+<p>
+  <img src="docs/assets/principles/principle-02-weak.png" height="200" alt="원칙 2 안 좋은 예: 봄 카페 분위기, 꽃, 디저트, 음료" />
+  <img src="docs/assets/principles/principle-02-strong.png" height="200" alt="원칙 2 좋은 예: 텀블러를 화면 중앙에 크게 배치" />
+</p>
+
+`안 좋은 예` 봄 카페 분위기, 꽃, 디저트, 음료, 따뜻한 햇살 · `좋은 예` 선샤인 옐로우 세라믹 텀블러를 화면 중앙에 크게 배치, 뒤에는 봄꽃과 카페 배경을 부드럽게 흐리게 처리
+
+### 3. 구도와 비율을 지정하기
+화면 비율, 피사체 위치, 여백, 시점의 큰 틀을 정합니다.
+
+<p>
+  <img src="docs/assets/principles/principle-03-weak.png" height="200" alt="원칙 3 안 좋은 예: 여행 간 느낌의 적당히 예쁜 사진" />
+  <img src="docs/assets/principles/principle-03-strong.png" height="200" alt="원칙 3 좋은 예: 16:9 와이드, 텀블러는 오른쪽 1/3 지점" />
+</p>
+
+`안 좋은 예` 노란 텀블러를 들고 여행 간 느낌, 적당히 예쁜 사진 · `좋은 예` 16:9 가로형 와이드 제품 여행 사진, 노란 텀블러는 오른쪽 1/3 지점, 왼쪽에는 호수와 산맥의 넓은 여백
+
+### 4. 맥락과 배경을 설명하기
+어디에서, 어떤 상황에서, 어떤 분위기로 보일지 정합니다.
+
+<p>
+  <img src="docs/assets/principles/principle-04-weak.png" height="200" alt="원칙 4 안 좋은 예: 좋은 분위기에서 보여주기" />
+  <img src="docs/assets/principles/principle-04-strong.png" height="200" alt="원칙 4 좋은 예: 일요일 아침 주방 창가 루틴" />
+</p>
+
+`안 좋은 예` 노란 텀블러를 좋은 분위기에서 보여주기 · `좋은 예` 일요일 아침 주방 창가에서 쓰는 노란 텀블러, 반쯤 열린 노트와 커피 원두, 부드러운 아침 햇살로 차분한 루틴을 표현
+
+### 5. 스타일과 매체를 선택하기
+사진, 3D 렌더, 수채화, 포스터, 편집 디자인처럼 표현 방식을 정합니다.
+
+<p>
+  <img src="docs/assets/principles/principle-05-weak.png" height="200" alt="원칙 5 안 좋은 예: 고급스럽게, 예쁘고 세련된 느낌" />
+  <img src="docs/assets/principles/principle-05-strong.png" height="200" alt="원칙 5 좋은 예: 무광 세라믹 질감의 고급 제품 렌더" />
+</p>
+
+`안 좋은 예` 노란 텀블러를 고급스럽게, 예쁘고 세련된 느낌 · `좋은 예` 무광 세라믹 질감이 보이는 노란 텀블러의 고급 제품 렌더, 부드러운 스튜디오 조명, 석회석 받침대, 인디고 포인트
+
+### 6. 빛과 디테일을 구체화하기
+조명, 질감, 재료, 표면, 카메라 렌즈처럼 완성도를 좌우하는 요소를 씁니다.
+
+<p>
+  <img src="docs/assets/principles/principle-06-weak.png" height="200" alt="원칙 6 안 좋은 예: 극적으로 찍기, 분위기 있게" />
+  <img src="docs/assets/principles/principle-06-strong.png" height="200" alt="원칙 6 좋은 예: 낮은 앵글, 강한 림 라이트" />
+</p>
+
+`안 좋은 예` 노란 텀블러를 극적으로 찍기, 분위기 있게 · `좋은 예` 노란 텀블러를 바닥 가까운 낮은 앵글로 촬영, 강한 림 라이트와 젖은 돌 바닥의 노란빛 반사를 사용
+
+### 7. 정확성 조건을 덧붙이기
+텍스트, 금지 요소, 유지해야 할 요소, 왜곡 방지 조건을 마지막에 씁니다.
+
+<p>
+  <img src="docs/assets/principles/principle-07-weak.png" height="200" alt="원칙 7 안 좋은 예: 깔끔하게, 제목도 적당히" />
+  <img src="docs/assets/principles/principle-07-strong.png" height="200" alt="원칙 7 좋은 예: 제목 Morning Solar 정확히 표시" />
+</p>
+
+`안 좋은 예` 노란 텀블러 포스터를 깔끔하게, 제목도 적당히 넣기 · `좋은 예` 노란 텀블러 포스터, 제목은 "Morning Solar"로 정확히 표시, 로고와 깨진 글자와 뒤틀린 뚜껑은 넣지 않기
 
 핵심 규칙은 하나입니다. **모든 형용사를 명사·수치·배치로 환원합니다.** "고급스럽게"는 "무광 세라믹 + 석회석 받침대 + 스튜디오 조명"으로, "극적으로"는 "낮은 앵글 + 림 라이트"로 바꿉니다.
 
@@ -198,7 +262,7 @@ cp docs/js/gallery-data.js ~/.codex/skills/gpt-image/docs/js/
 <details>
 <summary>개발자·고급 사용자용 참고</summary>
 
-스킬에는 품질 도구가 함께 들어 있습니다. 규칙 검증기(`scripts/check_prompt.py`, `python3 scripts/check_prompt.py <파일>`로 `ok: true` 확인), 생성물 위 글자 후처리를 막는 훅(`hooks/block-text-overlay.sh`), 규칙의 근거가 된 실측 채점(`experiments/`, 10개 카테고리 각 1컷씩 총 10컷 비전 채점, 상세 결과는 `experiments/REPORT.md`). AI는 요청을 분류한 뒤 1차로 `docs/js/gallery-data.js`의 한국어 예시 100개를 참고하고, 세부 기법이 필요하면 `references/gallery.md`가 가리키는 카테고리 파일과 `references/craft.md`·`references/variation-recipes.md`를 추가로 읽습니다. 실제 이미지 생성은 호스트의 이미지 도구나 `scripts/generate.py`(+ `OPENAI_API_KEY`)로 실행합니다.
+스킬에는 품질 도구가 함께 들어 있습니다. 규칙 검증기(`scripts/check_prompt.py`, `python3 scripts/check_prompt.py <파일>`로 `ok: true` 확인), 생성물 위 글자 후처리를 막는 훅(`hooks/block-text-overlay.sh`), 규칙의 근거가 된 실측 채점(`experiments/`, 10개 카테고리 각 1컷씩 총 10컷 비전 채점, 상세 결과는 `experiments/REPORT.md`). AI는 요청을 분류한 뒤 1차로 `docs/js/gallery-data.js`의 한국어 예시 100개를 참고하고, 세부 기법이 필요하면 `references/gallery.md`가 가리키는 카테고리 파일과 `references/craft.md`·`references/variation-recipes.md`를 추가로 읽습니다. 실제 이미지 생성은 ChatGPT 등 호스트의 이미지 생성 도구에 완성 프롬프트를 붙여넣어 실행합니다.
 
 </details>
 
@@ -222,9 +286,7 @@ cd docs && python3 -m http.server 8000
 ├── README.md
 ├── SKILL.md                       # 번들 스킬 (7원칙 프롬프트 설계 규칙)
 ├── references/                    # 레퍼런스 (gallery-*.md, craft.md, variation-recipes.md, openai-cookbook.md)
-├── scripts/
-│   ├── generate.py                # (선택) 이미지 생성 CLI 런처
-│   └── check_prompt.py            # 프롬프트 규칙 검증기 (--test 셀프테스트)
+├── scripts/check_prompt.py        # 프롬프트 규칙 검증기 (--test 셀프테스트)
 ├── hooks/block-text-overlay.sh    # 생성물 위 글자 후처리 차단 훅
 ├── experiments/                   # 실측 채점 (RUBRIC · REPORT · scores · select_sample)
 └── docs/                          # 정적 사이트 배포 소스 (Vercel)

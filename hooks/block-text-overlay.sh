@@ -52,7 +52,7 @@ run_tests() {
   )
   # 통과돼야 하는 명령 (오버레이와 무관)
   local allow=(
-    'python scripts/generate.py "브랜드 포스터 프롬프트"'
+    'python3 scripts/check_prompt.py draft.txt'
     'cat references/craft.md'
     'ffmpeg -i a.mp4 -vf scale=1280:720 out.mp4'
     'echo "drawing board notes"'

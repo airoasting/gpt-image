@@ -37,7 +37,7 @@ STAGE_DIRECTIONS = ["어워드 수준", "전문가처럼", "최고급으로", "a
 
 
 def quoted_strings(text):
-    # 렌더 텍스트로 간주할 따옴표 문자열 (한글/영문 카피). 3자 이상만.
+    # 렌더 텍스트로 간주할 따옴표 문자열 (한글/영문 카피). 2자 이상만.
     out = []
     for m in re.finditer(r'"([^"]{2,})"', text):
         out.append(m.group(1))
@@ -62,15 +62,15 @@ def check(text):
             errors.append({"code": "E-BLOCK-ORDER",
                            "msg": f"블록 순서가 정본과 다름: {' > '.join(order)}"})
 
-    # 2) 모호 형용사
+    # 2) 모호 형용사 (영어는 대소문자 무시)
     for w in VAGUE:
-        if w in text:
+        if w.lower() in low:
             errors.append({"code": "E-VAGUE",
-                           "msg": f"모호 형용사 '{w}' — 명사·수치·배치로 환원할 것"})
+                           "msg": f"모호 형용사 '{w}'. 명사·수치·배치로 환원할 것"})
     for w in STAGE_DIRECTIONS:
         if w.lower() in low:
             warnings.append({"code": "W-STAGE",
-                             "msg": f"무대 지정 '{w}' — 기준이 프롬프트 밖. 구체 명세로 대체"})
+                             "msg": f"무대 지정 '{w}'. 기준이 프롬프트 밖. 구체 명세로 대체"})
 
     # 3) 화면비 (5종 정본)
     ars = AR_ANY.findall(text)
@@ -80,22 +80,22 @@ def check(text):
         noncanon = [a for a in ars if a not in CANON_AR]
         if noncanon and not (set(ars) & CANON_AR):
             warnings.append({"code": "W-AR-NONCANON",
-                             "msg": f"비정본 화면비 {noncanon} — 5종(3:4·16:9·1:1·9:16·21:9) 권장"})
+                             "msg": f"비정본 화면비 {noncanon}. 5종(3:4·16:9·1:1·9:16·21:9) 권장"})
 
     # 4) 낡은 품질 토큰
     for w in DEAD:
         if re.search(rf"(?<![a-z0-9]){re.escape(w)}(?![a-z0-9])", low):
             errors.append({"code": "E-DEAD-WORD",
-                           "msg": f"낡은 품질 토큰 '{w}' — 결과를 구체 명세로 대체"})
+                           "msg": f"낡은 품질 토큰 '{w}'. 결과를 구체 명세로 대체"})
 
     # 5) 네거티브
     if re.search(r"(?mi)^\s*(negative|avoid)\s*:", text) or re.search(r"(?i)\bavoid\b\s+[a-z]", text):
         errors.append({"code": "E-NEG-LABEL",
-                       "msg": "라벨형 네거티브(Negative:/Avoid ...) — 긍정형으로 재서술"})
+                       "msg": "라벨형 네거티브(Negative:/Avoid ...). 긍정형으로 재서술"})
     ko_neg = re.findall(r"([^\s\"]{0,10}\s*(?:없이|피하기|피합니다|피해주세요|금지))", text)
     if ko_neg:
         warnings.append({"code": "W-NEG-KO",
-                         "msg": f"한국어 배제형 {len(ko_neg)}건(없이/피하기 등) — 원하는 상태를 긍정형으로 재서술 권장"})
+                         "msg": f"한국어 배제형 {len(ko_neg)}건(없이/피하기 등). 원하는 상태를 긍정형으로 재서술 권장"})
 
     # 6) 언어 혼용 (프롬프트 본문에 한글 서사 + 영문 문장이 동시에 많으면)
     body = re.sub(r'"[^"]*"', "", text)  # 따옴표 카피 제외
@@ -107,7 +107,7 @@ def check(text):
     latin_words = [w for w in latin_words if w.lower() not in allow]
     if hangul > 30 and len(latin_words) > 12:
         warnings.append({"code": "W-LANG-MIX",
-                         "msg": f"언어 혼용 의심(한글 {hangul}자 + 영문 단어 {len(latin_words)}개) — 한 프롬프트 한 언어"})
+                         "msg": f"언어 혼용 의심(한글 {hangul}자 + 영문 단어 {len(latin_words)}개). 한 프롬프트 한 언어"})
 
     # 7) 따옴표 텍스트 가독성 가드
     qs = quoted_strings(text)
@@ -115,7 +115,7 @@ def check(text):
         guard = re.search(r"(또렷|가독|legible|한 번씩|선명|crisp)", text)
         if not guard:
             warnings.append({"code": "W-TEXT-GUARD",
-                             "msg": f"렌더 텍스트 {len(qs)}개 있으나 가독성 가드 없음 — \"각 글자 한 번씩 또렷하게\" 1줄 추가"})
+                             "msg": f"렌더 텍스트 {len(qs)}개 있으나 가독성 가드 없음. \"각 글자 한 번씩 또렷하게\" 1줄 추가"})
 
     return {"ok": len(errors) == 0, "errors": errors, "warnings": warnings}
 
@@ -164,29 +164,61 @@ BAD = """결과물 유형:
 Negative: crowd, logo. 깨진 글자는 피하기."""
 
 
+USAGE = """gpt-image 7블록 프롬프트 규칙 검증기
+
+  python3 scripts/check_prompt.py <파일>      파일을 검증
+  echo "...프롬프트..." | python3 scripts/check_prompt.py   표준입력을 검증
+  python3 scripts/check_prompt.py --test      내장 픽스처 셀프테스트
+  python3 scripts/check_prompt.py --help      이 도움말
+
+종료 코드: errors 0이면 0, errors 있으면 1, 파일 입출력 실패면 2."""
+
+
 def selftest():
+    """GOOD은 통과하고 BAD는 대표 오류 코드를 전부 잡는지 확인한다."""
     g = check(GOOD)
     b = check(BAD)
+    bad_codes = {e["code"] for e in b["errors"]}
+    expected = {"E-VAGUE", "E-DEAD-WORD", "E-NEG-LABEL", "E-BLOCK-ORDER", "E-AR-MISSING"}
     okg = g["ok"] is True
-    okb = (b["ok"] is False
-           and any(e["code"] == "E-VAGUE" for e in b["errors"])
-           and any(e["code"] == "E-DEAD-WORD" for e in b["errors"])
-           and any(e["code"] == "E-NEG-LABEL" for e in b["errors"])
-           and any(e["code"] == "E-BLOCK-ORDER" for e in b["errors"]))
-    print(json.dumps({"good_pass": okg, "bad_caught": okb,
-                      "good": g, "bad": b}, ensure_ascii=False, indent=2))
-    sys.exit(0 if (okg and okb) else 1)
+    okb = b["ok"] is False and expected <= bad_codes
+    print(json.dumps({
+        "good_pass": okg,
+        "bad_caught": okb,
+        "missing_codes": sorted(expected - bad_codes),
+        "good": g,
+        "bad": b,
+    }, ensure_ascii=False, indent=2))
+    return 0 if (okg and okb) else 1
 
 
 def main():
-    if "--test" in sys.argv:
-        selftest(); return
-    args = [a for a in sys.argv[1:] if not a.startswith("-")]
-    text = open(args[0], encoding="utf-8").read() if args else sys.stdin.read()
+    argv = sys.argv[1:]
+    if "-h" in argv or "--help" in argv:
+        print(USAGE)
+        return 0
+    if "--test" in argv:
+        return selftest()
+
+    paths = [a for a in argv if not a.startswith("-")]
+    if paths:
+        try:
+            with open(paths[0], encoding="utf-8") as f:
+                text = f.read()
+        except OSError as e:
+            print(json.dumps(
+                {"ok": False,
+                 "errors": [{"code": "E-IO", "msg": f"파일을 읽을 수 없음: {e}"}],
+                 "warnings": []},
+                ensure_ascii=False, indent=2))
+            return 2
+    else:
+        text = sys.stdin.read()
+
     res = check(text)
     print(json.dumps(res, ensure_ascii=False, indent=2))
-    sys.exit(0 if res["ok"] else 1)
+    return 0 if res["ok"] else 1
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
