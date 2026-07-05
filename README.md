@@ -6,11 +6,13 @@
 
 한국어로 구상한 장면을 GPT 이미지 모델에 바로 넣을 수 있는 프롬프트로 바꾸는 실전 가이드입니다. **7가지 품질 원칙**, **프롬프트 도움창**, **선별 레퍼런스 갤러리**를 한곳에서 제공합니다.
 
-사이트(`docs/`)와 번들 스킬(`SKILL.md`, `references/`, `scripts/`)은 분리되어 있습니다. GitHub Pages는 `docs/`만 배포 소스로 서빙하고, 스킬은 프로젝트 루트에서 바로 로드됩니다.
+**▶ 라이브 사이트: [airoasting-image.vercel.app](https://airoasting-image.vercel.app)** · 버전 1.0 (2026-07-05, [변경 이력](CHANGELOG.md))
+
+사이트(`docs/`)와 번들 스킬(`SKILL.md`, `references/`, `scripts/`)은 분리되어 있습니다. 사이트는 Vercel에 `docs/`를 배포 소스로 서빙하고, 스킬은 프로젝트 루트에서 바로 로드됩니다.
 
 - **정적 웹사이트**(`docs/index.html`): 원칙을 익히고, 프롬프트를 조립하고, 레퍼런스를 탐색합니다.
 - **번들 스킬**(`SKILL.md`): AI 에이전트가 같은 7원칙으로 프롬프트를 설계하도록 안내하는 실행 규칙입니다.
-- **레퍼런스 라이브러리**(`references/`): 25개 카테고리 파일에 사이트 갤러리(100개)의 실제 프롬프트를 담았습니다. 작성 규칙(`craft.md`)과 변주 레시피(`variation-recipes.md`)도 함께 있습니다.
+- **레퍼런스 라이브러리**(`references/`): 10개 카테고리 파일에 각 10개씩, 사이트 갤러리(100개)의 실제 프롬프트를 담았습니다. 작성 규칙(`craft.md`)과 변주 레시피(`variation-recipes.md`)도 함께 있습니다.
 
 ## 담긴 것
 
@@ -71,8 +73,8 @@
 액션과 감정, 컷 흐름을 중심으로 웹툰·만화 연출을 다룹니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-001.png" width="49%" alt="웹툰 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-002.png" width="49%" alt="웹툰 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-001.png" height="220" alt="웹툰 샘플 — 용을 깨운 신입 기사 (세로 히어로컷)" />
+  <img src="docs/assets/generated-gallery/gallery-010.png" height="220" alt="웹툰 샘플 — 바다 마을의 기계 심장 (와이드 파노라마)" />
 </p>
 
 전체: [`references/gallery-webtoon.md`](references/gallery-webtoon.md)
@@ -81,8 +83,8 @@
 선과 색면, 질감, 장식이 하나의 작품처럼 균형을 이루는 화면입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-011.png" width="49%" alt="일러스트 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-012.png" width="49%" alt="일러스트 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-012.png" height="220" alt="일러스트 샘플 — 엘프 궁수 설정 시트 (세로 선화)" />
+  <img src="docs/assets/generated-gallery/gallery-020.png" height="220" alt="일러스트 샘플 — 해질녘 강가 인상주의 회화 (와이드)" />
 </p>
 
 전체: [`references/gallery-illustration.md`](references/gallery-illustration.md)
@@ -91,8 +93,8 @@
 플레이 공간과 유닛 위치, 지형, 장르 규칙이 한눈에 드러나는 화면입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-021.png" width="49%" alt="게임 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-022.png" width="49%" alt="게임 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-022.png" height="220" alt="게임 샘플 — 해변 오픈월드 게임 화면 (밝은 와이드)" />
+  <img src="docs/assets/generated-gallery/gallery-027.png" height="220" alt="게임 샘플 — 어두운 판타지 세계관 아홉 장면 (정사각 그리드)" />
 </p>
 
 전체: [`references/gallery-gaming.md`](references/gallery-gaming.md)
@@ -101,18 +103,18 @@
 피사체와 배경, 빛, 카메라, 긴장점이 분명한 영화 한 장면입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-031.png" width="49%" alt="시네마틱 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-032.png" width="49%" alt="시네마틱 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-033.png" height="220" alt="시네마틱 샘플 — 여섯 컷 영화 스토리보드 (정사각 그리드)" />
+  <img src="docs/assets/generated-gallery/gallery-036.png" height="220" alt="시네마틱 샘플 — 검은 기념비와 사막 공상과학 장면 (시네마스코프 와이드)" />
 </p>
 
-전체: [`references/gallery-cinematic-and-animation.md`](references/gallery-cinematic-and-animation.md)
+전체: [`references/gallery-cinematic.md`](references/gallery-cinematic.md)
 
 ### 포스터
 제목과 부제, 대표 이미지, 여백의 위계가 멀리서도 읽히는 편집 디자인입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-041.png" width="49%" alt="포스터 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-042.png" width="49%" alt="포스터 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-041.png" height="220" alt="포스터 샘플 — 미니멀 스릴러 영화 포스터 (여백 중심)" />
+  <img src="docs/assets/generated-gallery/gallery-048.png" height="220" alt="포스터 샘플 — 도시 재즈 페스티벌 포스터 (고밀도 컬러)" />
 </p>
 
 전체: [`references/gallery-typography-and-posters.md`](references/gallery-typography-and-posters.md)
@@ -121,18 +123,18 @@
 형태와 소재, 라벨, 패키지가 제품을 중심으로 정리된 광고 마감입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-051.png" width="49%" alt="제품 · 브랜드 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-052.png" width="49%" alt="제품 · 브랜드 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-053.png" height="220" alt="제품 · 브랜드 샘플 — 샐러드 재료가 흩어지는 음식 사진 (동적 촬영)" />
+  <img src="docs/assets/generated-gallery/gallery-055.png" height="220" alt="제품 · 브랜드 샘플 — 휴대용 라디오 브랜드 아이덴티티 보드 (정렬형)" />
 </p>
 
-전체: [`references/gallery-product-and-food.md`](references/gallery-product-and-food.md)
+전체: [`references/gallery-product-and-brand.md`](references/gallery-product-and-brand.md)
 
 ### 인물 사진
 인물과 의상, 소품, 카메라 거리가 실제 촬영처럼 정리된 화면입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-061.png" width="49%" alt="인물 사진 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-062.png" width="49%" alt="인물 사진 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-064.png" height="220" alt="인물 사진 샘플 — 숲속 탐험가 (와이드 다큐멘터리)" />
+  <img src="docs/assets/generated-gallery/gallery-068.png" height="220" alt="인물 사진 샘플 — 초현실주의 하이패션 화보 (세로 스튜디오)" />
 </p>
 
 전체: [`references/gallery-photography.md`](references/gallery-photography.md)
@@ -141,8 +143,8 @@
 규모와 입구, 동선, 재료가 실제 사용성을 갖춘 건축 시각화입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-071.png" width="49%" alt="건물 사진 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-072.png" width="49%" alt="건물 사진 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-071.png" height="220" alt="건물 사진 샘플 1 (아이소메트릭 거리)" />
+  <img src="docs/assets/generated-gallery/gallery-076.png" height="220" alt="건물 사진 샘플 2 (고딕 대성당 내부, 다른 구도)" />
 </p>
 
 전체: [`references/gallery-architecture-and-interior.md`](references/gallery-architecture-and-interior.md)
@@ -151,8 +153,8 @@
 제목과 번호 단계, 라벨, 아이콘, 그래프가 읽기 쉬운 순서로 정리된 설명 자료입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-081.png" width="49%" alt="인포그래픽 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-082.png" width="49%" alt="인포그래픽 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-082.png" height="220" alt="인포그래픽 샘플 — 서울 지하철 환승 안내 (세로 노선도)" />
+  <img src="docs/assets/generated-gallery/gallery-085.png" height="220" alt="인포그래픽 샘플 — 국민건강검진 절차 안내도 (와이드 플로우)" />
 </p>
 
 전체: [`references/gallery-infographics-and-field-guides.md`](references/gallery-infographics-and-field-guides.md)
@@ -161,36 +163,44 @@
 상단 바와 카드, 그래프, 버튼이 실제 제품 화면처럼 정렬된 목업입니다.
 
 <p>
-  <img src="docs/assets/generated-gallery/gallery-091.png" width="49%" alt="UI·대시보드 샘플 1" />
-  <img src="docs/assets/generated-gallery/gallery-092.png" width="49%" alt="UI·대시보드 샘플 2" />
+  <img src="docs/assets/generated-gallery/gallery-091.png" height="220" alt="UI·대시보드 샘플 — 월급 관리 가계부 앱 (모바일 세로)" />
+  <img src="docs/assets/generated-gallery/gallery-100.png" height="220" alt="UI·대시보드 샘플 — 지역 농산물 수확량 지도 (와이드 대시보드)" />
 </p>
 
 전체: [`references/gallery-ui-ux-mockups.md`](references/gallery-ui-ux-mockups.md)
 
 전체 카테고리 인덱스는 [`references/gallery.md`](references/gallery.md)에 있습니다.
 
-## 번들 스킬로 프롬프트 설계하기
+## 설치하고 사용하기 (비개발자용)
 
-`SKILL.md`는 AI 에이전트가 위 7원칙으로 프롬프트를 설계하게 하는 실행 규칙입니다. `/gpt-image` 명령은 **Codex**에서 작동합니다. 아래처럼 `SKILL.md`와 리소스를 Codex 스킬 폴더에 설치해 사용합니다.
+**이 도구가 하는 일.** 평소 말로 "카페 신메뉴 홍보용 세로 포스터 만들어줘"라고 하면, AI가 이 가이드의 7원칙에 맞춰 GPT 이미지 모델용 전문 프롬프트로 바꿔 줍니다. 프롬프트를 직접 배우지 않아도 됩니다.
+
+**준비물.** 컴퓨터에 **Codex**(터미널에서 쓰는 AI 도우미)가 설치되어 있으면 됩니다. Codex가 없다면 먼저 그것부터 설치합니다.
+
+**설치 방법 (택 1)**
+
+방법 A — 가장 쉬움. 이 폴더를 열어 둔 상태에서 Codex(또는 Claude Code 같은 터미널 AI)에게 이렇게 부탁하면 알아서 설치합니다.
+
+> 이 폴더를 `gpt-image`라는 이름의 Codex 스킬로 설치해 줘.
+
+방법 B — 직접 하기. 터미널을 열고 이 폴더 안에서 아래 세 줄을 그대로 복사해 붙여넣고 실행합니다. (스킬 파일들을 Codex가 찾는 폴더로 복사하는 명령입니다. 한 번만 하면 됩니다.)
 
 ```bash
 mkdir -p ~/.codex/skills/gpt-image/docs/js
 cp -r SKILL.md references scripts hooks ~/.codex/skills/gpt-image/
-cp docs/js/gallery-data.js ~/.codex/skills/gpt-image/docs/js/   # SKILL.md가 참조하는 사이트 갤러리
+cp docs/js/gallery-data.js ~/.codex/skills/gpt-image/docs/js/
 ```
 
-설치 후 이미지 프롬프트 요청이 들어오면, 에이전트가 다음을 수행합니다.
+**사용 방법.** 설치 후에는 Codex에게 평소 말로 요청하면 됩니다. 예: "분기 실적 발표용 표지 이미지가 필요해", "제품 상세페이지 상단 배너 만들어줘". AI가 요청을 10개 카테고리 중 하나로 알아보고, 이 저장소의 실제 예시 100개를 참고해, 바로 복사해 쓸 수 있는 프롬프트를 만들어 줍니다.
 
-1. 요청을 10개 카테고리 중 하나로 분류
-2. 1차로 `docs/js/gallery-data.js`의 사이트 실제 갤러리 예시(한국어 100개)를 찾아 참고하고, 세부 기법이 더 필요하면 2차로 `references/gallery.md`가 가리키는 해당 카테고리 파일을 로딩
-3. 7블록으로 조립하고 정본 필드 어휘로 정밀화. 빼려는 요소는 "없이/피하기" 대신 원하는 상태를 긍정형으로 재서술
-4. 이미지 속 글자·다이어그램·UI는 `references/craft.md`, "시안 여러 개·차별화" 요청은 `references/variation-recipes.md`로 보강
-5. 품질 체크리스트를 통과할 때까지 다듬어 복사용 프롬프트로 전달
-6. 고가치 산출물은 `python3 scripts/check_prompt.py <파일>`로 규칙 위반을 기계 검증 (`ok: true` 확인)
+**만든 프롬프트로 실제 이미지 뽑기.** 프롬프트를 ChatGPT의 이미지 생성이나 다른 이미지 도구에 붙여넣으면 됩니다. 프롬프트를 만드는 것 자체에는 추가 비용이 없고, 실제 이미지 생성은 선택입니다. (이미지 생성 API를 직접 호출하면 사용량에 따라 요금이 부과될 수 있습니다.)
 
-스킬에는 품질 도구가 함께 있습니다: 규칙 검증기(`scripts/check_prompt.py`), 생성물 위 글자 후처리를 막는 훅(`hooks/block-text-overlay.sh`), 규칙의 근거가 된 실측 채점(`experiments/` — 카테고리당 1개 10컷 비전 채점, 상세 `experiments/REPORT.md`).
+<details>
+<summary>개발자·고급 사용자용 참고</summary>
 
-프롬프트 작성 자체에는 외부 도구가 필요 없습니다. 실제 이미지 생성은 선택 사항이며, 호스트의 이미지 생성 도구나 `scripts/generate.py`(+ `OPENAI_API_KEY`)로 실행할 수 있습니다. API 호출은 과금될 수 있습니다.
+스킬에는 품질 도구가 함께 들어 있습니다. 규칙 검증기(`scripts/check_prompt.py`, `python3 scripts/check_prompt.py <파일>`로 `ok: true` 확인), 생성물 위 글자 후처리를 막는 훅(`hooks/block-text-overlay.sh`), 규칙의 근거가 된 실측 채점(`experiments/` — 카테고리당 10컷 비전 채점, 상세 `experiments/REPORT.md`). AI는 요청을 분류한 뒤 1차로 `docs/js/gallery-data.js`의 한국어 예시 100개를 참고하고, 세부 기법이 필요하면 `references/gallery.md`가 가리키는 카테고리 파일과 `references/craft.md`·`references/variation-recipes.md`를 추가로 읽습니다. 실제 이미지 생성은 호스트의 이미지 도구나 `scripts/generate.py`(+ `OPENAI_API_KEY`)로 실행합니다.
+
+</details>
 
 ## 로컬에서 보기
 
@@ -205,7 +215,7 @@ cd docs && python3 -m http.server 8000
 
 ## 프로젝트 구조
 
-사이트(`docs/`)와 번들 스킬(`SKILL.md`, `references/`, `scripts/`, `hooks/`, `experiments/`)이 분리되어 있습니다. GitHub Pages를 `docs/` 폴더에서 배포하도록 설정하면 사이트만 서빙되고, 스킬은 프로젝트 루트에서 그대로 로드됩니다. 사이트의 "MD 다운로드" 링크는 GitHub 원본 URL(`raw.githubusercontent.com`)을 가리켜, 레퍼런스가 사이트 배포본 밖에 있어도 항상 접근됩니다.
+사이트(`docs/`)와 번들 스킬(`SKILL.md`, `references/`, `scripts/`, `hooks/`, `experiments/`)이 분리되어 있습니다. Vercel 등으로 `docs/` 폴더를 배포하면 사이트만 서빙되고([airoasting-image.vercel.app](https://airoasting-image.vercel.app)), 스킬은 프로젝트 루트에서 그대로 로드됩니다. 사이트의 "MD 다운로드" 링크는 GitHub 원본 URL(`raw.githubusercontent.com`)을 가리켜, 레퍼런스가 사이트 배포본 밖에 있어도 항상 접근됩니다.
 
 ```
 .
@@ -217,7 +227,7 @@ cd docs && python3 -m http.server 8000
 │   └── check_prompt.py            # 프롬프트 규칙 검증기 (--test 셀프테스트)
 ├── hooks/block-text-overlay.sh    # 생성물 위 글자 후처리 차단 훅
 ├── experiments/                   # 실측 채점 (RUBRIC · REPORT · scores · select_sample)
-└── docs/                          # GitHub Pages 배포 소스
+└── docs/                          # 정적 사이트 배포 소스 (Vercel)
     ├── index.html                 # 가이드 사이트 (원칙 · 빌더 · 갤러리)
     ├── css/styles.css
     ├── js/
@@ -227,4 +237,8 @@ cd docs && python3 -m http.server 8000
     └── assets/                    # 로고, 원칙 예시 이미지, 갤러리 이미지
 ```
 
-© 2026 AIROASTING. All rights reserved.
+## 라이선스
+
+이 프로젝트는 **Apache License 2.0**으로 배포됩니다. 자유롭게 사용, 수정, 재배포, 상업적 이용이 가능하며, 수정한 파일에는 변경 사실을 표시하고 원저작권·라이선스 고지를 유지하면 됩니다. 전문은 [`LICENSE`](LICENSE)를 참고하세요.
+
+Copyright 2026 AIROASTING
