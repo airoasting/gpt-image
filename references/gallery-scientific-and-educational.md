@@ -1,68 +1,101 @@
-# 🔬 Scientific & Educational
+# 📊 인포그래픽
 
-Range: No. 122–128 · Count: 7
+파일: `gallery-scientific-and-educational.md` · 3개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 122 · Anatomy Poster
+---
 
-- Image: `docs/scientific-educational/human-anatomy-muscular-poster.png`
-- Metadata: Scientific & Educational · `tall` · `2160x3840` · Curated
+## 1. 분리배출 요일별 안내표
+
+![분리배출 요일별 안내표](../docs/assets/generated-gallery/gallery-084.png)
+
+- 카테고리: 인포그래픽
+- 사이즈: 인포그래픽 · 세로형 · 1536x2048
 
 ```text
-Create a clean educational anatomy poster showing the human muscular system in anterior and posterior views on a pale cream background. Use an academic but visually refined style with precise linework, muted reds and umbers for muscle groups, cool gray bones, and thin charcoal labels. Include a centered title with crisp in-image text "Human Muscular System" and a subtitle "Anterior and Posterior Views". Label key structures such as "Deltoid", "Pectoralis Major", "Rectus Abdominis", "Biceps Femoris", "Gastrocnemius", and "Trapezius". Add a compact scale note reading "Adult height reference 175 cm" and a small legend with "Superficial" and "Deep". Keep the composition symmetrical, scientifically accurate in appearance, and suitable for a classroom wall chart. Prioritize correct labels, crisp typography, clean hierarchy, subtle shading, and publication-quality educational clarity without gore or excessive realism.
+결과물 유형:
+생활 안내 인포그래픽. 주제는 "분리배출 요일별 안내표"입니다. 완성 이미지는 아파트 엘리베이터 게시판이나 주민 안내문에 바로 붙일 수 있는 실용적인 안내표처럼 보여야 합니다.
+
+주 피사체:
+한국 공동주택의 분리배출 규칙을 정리한 요일별 안내표. 상단 우측에는 지붕이 있는 "분리수거함" 일러스트가 있고 종이류, 플라스틱, 캔류, 유리병, 음식물, 일반쓰레기 순으로 색이 다른 여섯 개의 배출함이 나란히 서 있습니다. 그 오른쪽에는 페트병 여러 개를 그린 "투명 페트병 별도 배출" 패널을 둡니다. 중앙의 큰 표는 요일별로 배출 품목 아이콘(신문 묶음, 플라스틱 용기, 캔, 유리병, 과일 껍질, 종량제 봉투, 금지 표시)을 배치합니다.
+
+구도와 비율:
+3:4 세로형. 상단에는 제목과 짧은 안내 문구, 배출 시간 문구를 두고, 중앙에는 월요일부터 일요일까지 7개 열의 요일표를 배치합니다. 각 요일 열 아래에 품목명과 배출 방법, 그리고 "추가 안내" 행을 둡니다. 하단에는 "비우기", "헹구기", "분리하기", "묶지 않기" 4개 확인 항목을 체크리스트로, 그 오른쪽에 투명 페트병 별도 배출 안내 박스를 배치합니다. 각 쓰레기 종류는 요일 헤더 색상과 아이콘으로 구분합니다.
+
+맥락과 배경:
+한국 아파트 분리수거장, 투명 페트병 별도 배출, 종량제 봉투, 음식물쓰레기 통이 떠오르도록 구성합니다. 배경에는 아파트 단지 건물과 나무를 옅게 배치합니다. 실제 지역명이 아니라 일반적인 공동주택 안내로 보이게 하고 인물은 등장시키지 않습니다.
+
+스타일과 매체:
+주민 안내문과 카드뉴스를 결합한 깔끔한 벡터 디자인. 큰 표, 선명한 아이콘, 충분한 행간, 멀리서도 읽히는 제목을 사용합니다. 배경은 밝은 크림색, 표 헤더는 요일마다 다른 채도의 색 띠로 구분합니다.
+
+빛과 디테일:
+평면 안내표 스타일. 요일 칸, 쓰레기 종류 아이콘, 초록색 체크 표시, 금지 표시, 안내 화살표를 정돈합니다. 색상은 과하지 않게 절제해 사용합니다.
+
+정확성 조건:
+지역별 세부 규정이 다를 수 있으므로 특정 지자체 규칙처럼 단정하지 않습니다. 이미지에 보이는 문구는 다음과 같이 정확히 표기합니다. 상단 배지 "우리 아파트 깨끗한 생활", 제목 "분리배출 요일별 안내표", 부제 "올바른 분리배출로 깨끗한 환경을 만들어 주세요!", "배출 시간 : 전날 저녁 8시 ~ 당일 아침 6시", 요일 헤더 "월요일 화요일 수요일 목요일 금요일 토요일 일요일", 품목명 "종이류", "플라스틱류(일반)", "캔류(금속류)", "유리병류", "음식물쓰레기", "일반쓰레기", "수거 없음", 체크리스트 제목 "배출 전 꼭 확인해 주세요!"와 항목 "비우기 헹구기 분리하기 묶지 않기", 우측 박스 "투명 페트병 별도 배출", 하단 슬로건 "우리의 작은 실천이 깨끗한 아파트와 지구를 만듭니다!". 의미 없는 문자, 과도하게 작은 글자, 실제 기관 로고, 잘못된 분리배출 상징은 피합니다.
 ```
 
-### No. 123 · Skeletal System Poster
+---
 
-- Image: `docs/scientific-educational/human-anatomy-skeletal-poster.png`
-- Metadata: Scientific & Educational · `tall` · `2160x3840` · Curated
+## 2. 국민건강검진 절차 안내도
+
+![국민건강검진 절차 안내도](../docs/assets/generated-gallery/gallery-085.png)
+
+- 카테고리: 인포그래픽
+- 사이즈: 인포그래픽 · 와이드 · 2520x1080
 
 ```text
-Create a clean educational anatomy poster showing the human skeletal system in anterior and posterior views on a pale cream background. Use a refined academic wall-chart style with precise bone linework, cool gray and ivory bone shading, charcoal labels, and subtle blue accent rules. Include a centered title with crisp in-image text "Human Skeletal System" and subtitle "Anterior and Posterior Views". Label key structures such as "Skull", "Clavicle", "Sternum", "Humerus", "Radius", "Ulna", "Pelvis", "Femur", "Tibia", and "Fibula". Add a compact scale note reading "Adult height reference 175 cm" and a small legend with "Axial" and "Appendicular". Keep the composition symmetrical, scientifically accurate in appearance, suitable for a classroom wall chart, non-gory, clean, precise, and publication-quality.
+결과물 유형:
+건강 안내 인포그래픽. 주제는 "국민건강검진 절차 안내도"입니다. 상단 좌측에 방패형 로고와 함께 큰 제목 "국민건강검진 절차 안내도", 그 아래 부제 "건강한 삶을 위한 첫걸음, 정기적인 건강검진으로 시작하세요!"가 놓입니다. 완성 이미지는 병원 접수대, 회사 복지 안내, 사내 게시판에서 사용할 수 있는 절차 안내물처럼 보여야 합니다.
+
+주 피사체:
+한국에서 건강검진을 받는 과정을 설명하는 7단계 가로 도표. 왼쪽에서 오른쪽으로 "01 대상자 확인, 02 검진 예약, 03 문진표 작성, 04 검진 접수, 05 검진 실시, 06 결과 확인, 07 사후 상담"을 화살표로 연결합니다. 04 접수 단계와 07 사후 상담 단계에는 의료진과 대상자 인물 일러스트가 등장하고, 05 검진 실시 단계에는 "혈압 측정, 채혈, 시력·청력, 신장·체중, 흉부 X-ray, 소변 검사" 여섯 개의 세부 검사 아이콘이 배치됩니다. 각 단계 하단에는 파란 라벨의 요약 문구(예: "안내문, 문자, 앱으로 확인 가능", "신분증 지참 필수")가 붙습니다.
+
+구도와 비율:
+21:9 와이드. 가로 타임라인 구조로 7개 단계 카드를 균일하게 배치합니다. 상단 우측에는 "검진 대상" 안내 박스(지역가입자, 직장가입자, 의료급여수급권자 항목과 확인 안내 문구), 중앙에는 단계 아이콘과 화살표, 하단에는 준비물과 유의사항을 3개 카드로 정리합니다.
+
+맥락과 배경:
+한국 병원 검진센터의 차분한 분위기를 반영합니다. 건강보험, 신분증, 예약 문자, 금식 안내, 결과지 확인 같은 익숙한 요소를 실제 로고 없이 일반 아이콘으로 표현합니다. 하단 3개 카드는 "준비물"(신분증, 건강검진표, 복용 약 정보), "검진 전 유의사항"(전날 금식, 음주·과식 자제, 복용 약 문의), "검진 후 유의사항"(의사 상담, 정밀검사, 생활습관 관리)으로 구성하고, 맨 아래에 안내 문구를 한 줄 배치합니다.
+
+스타일과 매체:
+병원 안내판과 기업 복지 자료에 어울리는 신뢰감 있는 인포그래픽. 흰 배경, 파랑과 초록 포인트, 둥근 모서리의 단정한 카드, 읽기 쉬운 한국어 라벨을 사용합니다.
+
+빛과 디테일:
+평면 벡터 도표. 단계 번호, 아이콘, 연결 화살표, 준비물 카드, 유의사항 체크 배지를 균일한 크기로 정리합니다. 의료 정보는 차분하고 과장 없이 보여줍니다.
+
+정확성 조건:
+검진 항목과 대상자는 세부 조건이 다를 수 있으므로 일반 절차 안내로 구성합니다. 하단에는 "본 안내도는 일반적인 건강검진 절차를 설명한 것으로, 검진 항목과 내용은 연령, 성별, 대상자에 따라 다를 수 있습니다." 취지의 안내 문구를 넣습니다. 진단처럼 보이는 표현, 실제 기관 로고, 임의의 개인 정보, 읽기 어려운 작은 글자는 피합니다.
 ```
 
-### No. 124 · Circulatory System Poster
+---
 
-- Image: `docs/scientific-educational/human-anatomy-circulatory-poster.png`
-- Metadata: Scientific & Educational · `tall` · `2160x3840` · Curated
+## 3. 미세먼지 행동 요령 포스터
 
-```text
-Create a clean educational anatomy poster showing the human circulatory system in anterior and posterior views on a pale cream background. Use an academic but visually refined medical-wall-chart style with precise vascular linework, muted crimson and deep blue vessels, soft ivory body silhouettes, and thin charcoal labels. Include a centered title with crisp in-image text "Human Circulatory System" and subtitle "Major Arteries and Veins". Label key structures such as "Heart", "Aorta", "Carotid Artery", "Vena Cava", "Pulmonary Artery", "Radial Artery", "Femoral Artery", "Saphenous Vein", and "Capillary Beds". Add a compact legend with "Arteries" and "Veins" plus a note reading "Educational schematic". Keep the composition symmetrical, scientifically accurate in appearance, classroom-safe, non-gory, highly legible, and publication-quality.
-```
+![미세먼지 행동 요령 포스터](../docs/assets/generated-gallery/gallery-086.png)
 
-### No. 125 · Periodic Table Spectral Variant
-
-- Image: `docs/scientific-educational/periodic-table-spectral-variant.png`
-- Metadata: Scientific & Educational · `wide` · `2048x1152` · Curated
+- 카테고리: 인포그래픽
+- 사이즈: 인포그래픽 · 와이드 · 2520x1080
 
 ```text
-Design a distinctive periodic table poster variant where each element tile is colored by fictional emission-spectrum families while preserving clean scientific layout. Use a dark navy background with luminous but disciplined colors: cyan, magenta, amber, lime, and silver-white. Arrange the periodic table accurately with clear periods and groups, including separate lanthanide and actinide rows. Add a crisp title reading "Periodic Table of the Elements" and subtitle "Spectral Classification Variant". Ensure visible labels for representative tiles such as "H 1", "He 2", "C 6", "Fe 26", "Ag 47", and "U 92". Include side legends titled "Alkali", "Transition", "Metalloid", "Noble Gas", and "Actinide". Add small group numbers "1" through "18" and period numbers "1" through "7". The result should feel educational, modern, and highly legible, with precise typography, clean cell alignment, balanced glow effects, and accurate table structure.
-```
+결과물 유형:
+공공 건강 인포그래픽. 주제는 "미세먼지 행동 요령 포스터"입니다. 완성 이미지는 학교, 사무실, 지자체 홈페이지 배너에 사용할 수 있는 행동 안내 자료처럼 보여야 합니다. 상단 좌측에 "2026년 10월 기준" 배지와 "건강을 지키는 작은 습관, 우리 모두의 실천입니다!" 문구, 큰 제목 "미세먼지 행동 요령 포스터", 부제 "미세먼지 농도에 따라 이렇게 행동하세요!"를 둡니다.
 
-### No. 126 · Tree of Life Poster
+주 피사체:
+미세먼지 농도 단계와 행동 요령을 설명하는 포스터. 좌측에는 "좋음, 보통, 나쁨, 매우 나쁨" 4단계를 파랑·초록·주황·빨강 색으로 구분한 표를 두고, 각 행에 스마일 표정 아이콘과 "농도 단계 / 예상 공기 상태 / 행동 요령 한눈에 보기" 3열 정보를 담습니다. 우측에는 "미세먼지, 이렇게 행동하세요!" 제목 아래 원형 아이콘과 함께 "마스크 착용하기, 창문 닫고 환기 조절, 실외활동 조절하기, 공기청정기 사용하기, 물 자주 마시기" 5개 행동 체크리스트를 세로로 배치합니다.
 
-- Image: `docs/scientific-educational/tree-of-life-phylogeny-poster.png`
-- Metadata: Scientific & Educational · `wide` · `2048x1152` · Curated
+구도와 비율:
+21:9 와이드. 왼쪽에는 농도 단계 표, 중앙에는 도시 하늘과 마스크를 쓴 실사 스타일 일러스트 가족 3명(아버지, 어머니, 남자아이)과 대기질 알림 스마트폰 카드, 오른쪽에는 행동 요령 체크리스트를 둡니다. 핵심 행동은 5개로 정리하고, 하단에는 "추가로 지켜주세요!" 실천 바를 가로로 놓습니다.
 
-```text
-Generate an elegant scientific poster visualizing a stylized tree of life as a radial phylogeny diagram on an ivory background. Use fine botanical-meets-scientific linework with a restrained palette of moss green, deep teal, amber, plum, and charcoal. The diagram should branch outward from a central root labeled with crisp in-image text "Last Universal Common Ancestor". Main clades should be labeled "Bacteria", "Archaea", and "Eukaryota", with outer branches including "Plants", "Fungi", "Animals", "Protists", and "Cyanobacteria". Add a title at the top reading "Tree of Life" and a subtitle "Simplified Radial Phylogeny". Include a small scale note "Approximate branching only". Keep labels readable and branch geometry balanced, with clean hierarchy and educational clarity. The overall design should feel like a museum-science graphic: structured, accurate in spirit, visually rich, and rendered with crisp text and refined detail.
-```
+맥락과 배경:
+한국 도심의 봄·가을 미세먼지 상황이 떠오르게 합니다. N서울타워가 보이는 아파트 스카이라인, 학교 건물과 운동장에서 뛰노는 학생들, 마스크 쓴 출근·등굣길 가족, 휴대폰 대기질 알림을 표현합니다. 스마트폰 카드에는 "오늘의 미세먼지 / 오전 09:00 기준 / 나쁨 / 미세먼지(PM10) / 초미세먼지(PM2.5)" 정보와 주의보 알림을 담고, 날짜가 필요한 예시는 2026년 10월로 표기합니다.
 
-### No. 127 · Weather Systems Diagram
+스타일과 매체:
+공공 안내 배너 스타일의 인포그래픽. 회색 안개 배경에 파랑, 초록, 주황, 빨강 단계를 명확히 구분하고, 라벨은 짧고 굵게 처리합니다. 하단 실천 바에는 확성기, 자동차, 빗자루, 화분, 스마트폰 아이콘과 함께 "대중교통 이용, 실내 청결 유지, 실내 식물 키우기, 대기질 정보 수시 확인" 문구를 담습니다.
 
-- Image: `docs/scientific-educational/weather-systems-fronts-diagram.png`
-- Metadata: Scientific & Educational · `wide` · `2048x1152` · Curated
+빛과 디테일:
+평면 벡터 아이콘과 부드러운 실사풍 인물 일러스트, 약한 대기감 표현을 함께 사용합니다. 색상 단계 표, 행동 아이콘, 체크 표시, 도시 실루엣, 알림 카드가 서로 겹치지 않게 배치합니다.
 
-```text
-Create a polished meteorology infographic showing a mid-latitude cyclone system from a top-down synoptic view. Use a cool palette of ocean blue, cloud white, storm gray, crimson, and cobalt, with smooth contour lines and crisp symbols. Include pressure isobars, cloud bands, warm and cold fronts, arrows for wind direction, and rainfall zones. Add clear in-image text: "Mid-Latitude Cyclone", "Low Pressure 984 hPa", "Warm Front", "Cold Front", and "Occluded Front". Include city labels "Northport", "Elmside", and "Cedar Bay" for context, plus a legend reading "Rain", "Snow", and "Thunderstorm". Show temperature markers "8 C", "14 C", and "21 C" in different air masses. The composition should be educational and publication-ready, with sharp labels, clean hierarchy, accurate diagram conventions, and strong visual readability suitable for a textbook or science exhibit panel.
-```
-
-### No. 128 · Geological Strata Cross-Section
-
-- Image: `docs/scientific-educational/geological-strata-cross-section.png`
-- Metadata: Scientific & Educational · `wide` · `2048x1152` · Curated
-
-```text
-Produce a detailed geological cross-section poster of layered earth strata cutting through a fictional canyon basin. Use a natural scientific palette of sandstone beige, iron oxide red, shale gray, limestone cream, basalt charcoal, and muted green vegetation above ground. Show clearly differentiated layers, a fault line, an aquifer, fossil-bearing beds, and a volcanic intrusion. Add crisp in-image text: "Geological Cross-Section", "Solterra Basin", "Scale 0-500 m", and labels "Sandstone", "Shale", "Limestone", "Coal Seam", "Aquifer", and "Basalt Dike". Include a vertical scale with "0 m", "100 m", "250 m", and "500 m". Add small annotations "Marine fossils" and "Groundwater flow" with arrows. The composition should be highly legible, educational, and neatly diagrammed, with clean linework, correct label placement, balanced annotation density, and publication-quality scientific illustration clarity.
+정확성 조건:
+수치 기준은 실제 정책처럼 단정하지 말고 단계 안내 중심으로 구성합니다. 좌측 하단에 "전국 대기질 예보는 에어코리아, 날씨 앱, 지자체 알림을 확인하세요" 안내 문구와, 중앙 하단에 "민감군이란?" 설명 말풍선을 둡니다. 의미 없는 글자, 과장된 공포 이미지, 실제 기관 로고, 너무 작은 라벨은 피합니다.
 ```

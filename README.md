@@ -10,7 +10,7 @@
 
 - **정적 웹사이트**(`docs/index.html`): 원칙을 익히고, 프롬프트를 조립하고, 레퍼런스를 탐색합니다.
 - **번들 스킬**(`SKILL.md`): AI 에이전트가 같은 7원칙으로 프롬프트를 설계하도록 안내하는 실행 규칙입니다.
-- **레퍼런스 라이브러리**(`references/`): 31개 카테고리 파일에 160여 개의 큐레이션 프롬프트를 담았습니다.
+- **레퍼런스 라이브러리**(`references/`): 25개 카테고리 파일에 사이트 갤러리(100개)의 실제 프롬프트를 담았습니다.
 
 ## 담긴 것
 
@@ -18,7 +18,7 @@
 |---|---|---|
 | 품질 원칙 | 7가지 | `docs/index.html` 섹션 01 |
 | 결과물 카테고리 | 10개 | 갤러리 필터 |
-| 선별 레퍼런스 | 160여 개 | `references/gallery-*.md` |
+| 선별 레퍼런스 | 100개 | `references/gallery-*.md` |
 
 ## 7가지 원칙
 
@@ -65,59 +65,109 @@
 
 ## 카테고리별 샘플
 
-10개 카테고리마다 레퍼런스 갤러리의 대표 프롬프트를 하나씩 골랐습니다. 각 카테고리의 전체 목록과 이미지, 전체 프롬프트는 링크된 파일에서 볼 수 있습니다.
+10개 카테고리마다 사이트 갤러리의 대표 이미지 2장을 골랐습니다. 각 카테고리의 전체 목록과 프롬프트는 링크된 파일에서 볼 수 있습니다.
 
 ### 웹툰
-액션과 감정, 컷 흐름을 중심으로 애니메이션 스틸과 만화 연출을 다룹니다.
-> **MAPPA 스타일 애니 액션 스틸** (16:9): "An anime action still in the visual style of MAPPA's Jujutsu Kaisen … a mid-fight stance, one palm extended outward releasing a swirling energy …"
-> 전체: [`references/gallery-webtoon.md`](references/gallery-webtoon.md)
+액션과 감정, 컷 흐름을 중심으로 웹툰·만화 연출을 다룹니다.
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-001.png" width="49%" alt="웹툰 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-002.png" width="49%" alt="웹툰 샘플 2" />
+</p>
+
+전체: [`references/gallery-webtoon.md`](references/gallery-webtoon.md)
 
 ### 일러스트
 선과 색면, 질감, 장식이 하나의 작품처럼 균형을 이루는 화면입니다.
-> **빈티지 아말피 해안 여행 포스터** (@WolfRiccardo): "Modern pencil illustration of a vintage travel poster of the Amalfi Coast … 1960s white car on a curved seaside road, deep blue Mediterranean, pastel hillside village …"
-> 전체: [`references/gallery-illustration.md`](references/gallery-illustration.md)
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-011.png" width="49%" alt="일러스트 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-012.png" width="49%" alt="일러스트 샘플 2" />
+</p>
+
+전체: [`references/gallery-illustration.md`](references/gallery-illustration.md)
 
 ### 게임
 플레이 공간과 유닛 위치, 지형, 장르 규칙이 한눈에 드러나는 화면입니다.
-> **Hitman 게임 화면, OpenAI 본사** (@flowersslop): "A Hitman level where you are in the OpenAI HQ and your mission is to steal GPT-6 without getting caught."
-> 전체: [`references/gallery-gaming.md`](references/gallery-gaming.md)
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-021.png" width="49%" alt="게임 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-022.png" width="49%" alt="게임 샘플 2" />
+</p>
+
+전체: [`references/gallery-gaming.md`](references/gallery-gaming.md)
 
 ### 시네마틱
 피사체와 배경, 빛, 카메라, 긴장점이 분명한 영화 한 장면입니다.
-> **픽사 스타일 3D 애니 스틸** (16:9): "A Pixar-quality 3D animation still … a cozy apartment kitchen at dawn, a small orange tabby kitten reaching a paw toward a rising soufflé, oven glow lighting the scene …"
-> 전체: [`references/gallery-cinematic-and-animation.md`](references/gallery-cinematic-and-animation.md)
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-031.png" width="49%" alt="시네마틱 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-032.png" width="49%" alt="시네마틱 샘플 2" />
+</p>
+
+전체: [`references/gallery-cinematic-and-animation.md`](references/gallery-cinematic-and-animation.md)
 
 ### 포스터
 제목과 부제, 대표 이미지, 여백의 위계가 멀리서도 읽히는 편집 디자인입니다.
-> **중국풍 차 브랜드 출시 포스터** (3:4): "Design a 3:4 vertical poster for a new Chinese tea launch … dark green, off-white and gold palette, rice-paper texture, elegant negative space, modern layout …"
-> 전체: [`references/gallery-typography-and-posters.md`](references/gallery-typography-and-posters.md)
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-041.png" width="49%" alt="포스터 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-042.png" width="49%" alt="포스터 샘플 2" />
+</p>
+
+전체: [`references/gallery-typography-and-posters.md`](references/gallery-typography-and-posters.md)
 
 ### 제품 · 브랜드
 형태와 소재, 라벨, 패키지가 제품을 중심으로 정리된 광고 마감입니다.
-> **다이라인에서 만든 3D 제품 박스** (@Salmaaboukarr): "Assemble the dieline into a flawless 3D box with accurate panels, clean folds, undistorted type … minimal premium studio, diffused light, matte paperboard texture … front reads \"AURAE / COLD-BREW MATCHA / 12 fl oz\"."
-> 전체: [`references/gallery-product-and-food.md`](references/gallery-product-and-food.md)
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-051.png" width="49%" alt="제품 · 브랜드 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-052.png" width="49%" alt="제품 · 브랜드 샘플 2" />
+</p>
+
+전체: [`references/gallery-product-and-food.md`](references/gallery-product-and-food.md)
 
 ### 인물 사진
 인물과 의상, 소품, 카메라 거리가 실제 촬영처럼 정리된 화면입니다.
-> **RAW 아이폰 촬영, 42번가 지하철** (@WolfRiccardo): "A completely RAW, unprocessed image with full iPhone camera quality. A subway station, the subway in motion with a momentary blur, an elderly woman and man in front …"
-> 전체: [`references/gallery-photography.md`](references/gallery-photography.md)
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-061.png" width="49%" alt="인물 사진 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-062.png" width="49%" alt="인물 사진 샘플 2" />
+</p>
+
+전체: [`references/gallery-photography.md`](references/gallery-photography.md)
 
 ### 건물 사진
 규모와 입구, 동선, 재료가 실제 사용성을 갖춘 건축 시각화입니다.
-> **일본식 미니멀 거실** (28mm 시점): "Render a serene Japanese minimalist living room in photorealistic architectural visualization … light oak flooring, shoji-inspired sliding panels, low modular seating, a recessed tokonoma niche …"
-> 전체: [`references/gallery-architecture-and-interior.md`](references/gallery-architecture-and-interior.md)
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-071.png" width="49%" alt="건물 사진 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-072.png" width="49%" alt="건물 사진 샘플 2" />
+</p>
+
+전체: [`references/gallery-architecture-and-interior.md`](references/gallery-architecture-and-interior.md)
 
 ### 인포그래픽
 제목과 번호 단계, 라벨, 아이콘, 그래프가 읽기 쉬운 순서로 정리된 설명 자료입니다.
-> **송나라 SNS 피드** (@Panda20230902): "\"SONG DYNASTY SOCIAL MEDIA FEED\" … a mobile social media interface, but the content is entirely Song Dynasty scenes, the avatar a Song-era portrait …"
-> 전체: [`references/gallery-infographics-and-field-guides.md`](references/gallery-infographics-and-field-guides.md)
+
+<p>
+  <img src="docs/assets/generated-gallery/gallery-081.png" width="49%" alt="인포그래픽 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-082.png" width="49%" alt="인포그래픽 샘플 2" />
+</p>
+
+전체: [`references/gallery-infographics-and-field-guides.md`](references/gallery-infographics-and-field-guides.md)
 
 ### UI·대시보드
 상단 바와 카드, 그래프, 버튼이 실제 제품 화면처럼 정렬된 목업입니다.
-> **모바일 가계부 앱 목업** (1290×2796): "Design a polished mobile finance app UI for a fictional neobank called AURAE … calm palette of deep navy, mint green, warm gray and white, a complete home screen …"
-> 전체: [`references/gallery-ui-ux-mockups.md`](references/gallery-ui-ux-mockups.md)
 
-전체 카테고리 라우팅 인덱스는 [`references/gallery.md`](references/gallery.md)에 있습니다.
+<p>
+  <img src="docs/assets/generated-gallery/gallery-091.png" width="49%" alt="UI·대시보드 샘플 1" />
+  <img src="docs/assets/generated-gallery/gallery-092.png" width="49%" alt="UI·대시보드 샘플 2" />
+</p>
+
+전체: [`references/gallery-ui-ux-mockups.md`](references/gallery-ui-ux-mockups.md)
+
+전체 카테고리 인덱스는 [`references/gallery.md`](references/gallery.md)에 있습니다.
 
 ## 번들 스킬로 프롬프트 설계하기
 
@@ -173,9 +223,5 @@ cd docs && node js/build-gallery-data.mjs   # ../references/gallery-*.md → js/
     │   └── build-gallery-data.mjs # ../references → gallery-data.js 빌더
     └── assets/                    # 로고, 원칙 예시 이미지, 갤러리 이미지
 ```
-
-## 크레딧
-
-레퍼런스 갤러리의 각 프롬프트에는 원저자와 출처(X 등)가 `references/gallery-*.md`에 표기되어 있습니다. `Curated` 표기는 가이드용으로 정리한 예시입니다.
 
 © 2026 AIROASTING. All rights reserved.

@@ -1,32 +1,39 @@
-# 🧩 Brand Systems & Identity
+# 📦 제품 · 브랜드
 
-Range: No. 60–62 · Count: 3
+파일: `gallery-brand-systems-and-identity.md` · 1개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 60 · Moss Radio brand identity showcase board
+---
 
-- Image: `docs/brand-systems-identity/brand-identity-moss-radio.png`
-- Metadata: Brand Systems & Identity · `square` · `1024x1024` · Author: @LexnLin · Source: [X](https://x.com/LexnLin/status/2046952493213429886)
+## 1. 휴대용 라디오 브랜드 아이덴티티 보드
 
-```text
-Create a square high-end brand identity showcase board for a fictional brand called "Moss Radio". The brand should feel analog, cultured, warm, tactile, and design-forward. It operates in independent audio hardware and café-retail and should appeal to creative professionals and music obsessives. The overall mood should be nostalgic but modern. Design a polished modular grid of multiple tiles, each showing a different application of one cohesive visual identity system. Include logo explorations, wordmarks, app icon variations, editorial posters, product cards, landing page fragments, packaging concepts, typography specimens, interface snippets, color palette presentations, sticker systems, patterns, branded mockups, and small motion-inspired compositions. Use Swiss-inspired typography, rounded industrial shapes, and a moss green / parchment / charcoal / copper palette. Dense but elegant layout, sharp alignment, strong hierarchy, premium case-study presentation.
-```
+![휴대용 라디오 브랜드 아이덴티티 보드](../docs/assets/generated-gallery/gallery-055.png)
 
-### No. 61 · PS1 nostalgia reboot brand kit
-
-- Image: `docs/brand-systems-identity/ps1-reboot-brand-kit.png`
-- Metadata: Brand Systems & Identity · `square` · `1024x1024` · Author: @den_turbin · Source: [X](https://x.com/den_turbin/status/2046863385791467773)
+- 카테고리: 제품 · 브랜드
+- 사이즈: Brand Systems & Identity · square · 1024x1024
 
 ```text
-Create a clean brand kit presented as one square modular board for a fictional revival of the PlayStation One era called "PS1 1998 Reboot". The identity should merge Japanese editorial design, Y2K nostalgia, acid green accents, VHS texture, silver plastics, disc-menu UI motifs, retail stickers, controller packaging, startup-screen typography, and memory-card iconography. Show multiple coordinated tiles including posters, packaging, interface snippets, collectible cards, typography studies, icons, and branded mockups. Keep it polished, cohesive, art-directed, and emotionally nostalgic, like a real top-tier design studio case study rather than generic merch.
-```
+결과물 유형:
+브랜드 아이덴티티 보드. 주제는 "휴대용 라디오 브랜드 아이덴티티 보드"입니다. 편집 디자인처럼 여러 칸으로 나뉜 평면 레이아웃으로, 제품 제안서나 브랜드 발표 자료에 바로 넣을 수 있는 정돈된 원페이지 보드처럼 보여야 합니다.
 
-### No. 62 · Playful brand kit: Mochi Metro
+주 피사체:
+가상의 휴대용 라디오 브랜드 "WAVEPORT"(부제 "PORTABLE RADIO", 모델명 "WP-01")를 위한 아이덴티티 구성물. 산과 태양, 방송 전파를 결합한 로고 마크, 로고 카드, 3/4 투시로 렌더링한 크림색 레트로 휴대용 라디오(전면 스피커 그릴, 원형 금속 튜닝 다이얼, FM·AM 주파수 눈금, TUNE·POWER 버튼, 전면 "WAVEPORT" 네임플레이트, 노란 직물 스트랩), 색상 팔레트, 타이포그래피 견본, 패키지 박스, 명함 2종, 소재 샘플 3종을 하나의 보드 안에 배치합니다. 우측 상단의 라디오 제품 렌더가 시선의 중심이 되고, 나머지 요소는 브랜드 성격을 설명하는 보조 자료로 배치합니다.
 
-- Image: `docs/brand-systems-identity/playful-brand-kit-mochi-metro.png`
-- Metadata: Brand Systems & Identity · `square` · `1024x1024` · Author: @aleenaamiir · Source: [X](https://x.com/aleenaamiir/status/2047207315976368584)
+구도와 비율:
+1:1 정사각형 화면을 얇은 선으로 여러 구획으로 나눈 그리드 레이아웃. 맨 위에는 좌측 "BRAND IDENTITY", 우측 "FOR EVERY JOURNEY, YOUR SOUND" 헤더를 얹습니다. 좌상단에 네이비 로고 카드, 그 아래 브랜드 소개 문단과 COLOR PALETTE·TYPOGRAPHY 블록을 세로로 쌓고, 우측 큰 영역에 라디오 제품 렌더와 LOGO CONCEPT·모델 표기를 둡니다. 하단 행은 좌측부터 PACKAGE(패키지 박스), BUSINESS CARD(명함), MATERIAL(소재 샘플) 세 칸으로 나누고, 맨 아래에 VISUAL MOTIF - FREQUENCY SCALE 눈금 스트립을 배치합니다. 각 요소 사이에 충분한 여백을 두어 정보가 한눈에 읽히게 구성합니다.
 
-```text
-Playful brand kit for "Mochi Metro", bold colors, fun typography, modern layout, modular square board with logo studies, packaging snippets, posters, app icons, stickers, UI fragments, and a cheerful Tokyo-snack visual system. Crisp alignment, dense but clean, highly polished design presentation.
+맥락과 배경:
+따뜻한 크림색 종이 배경 위에 딥 인디고, 선샤인 옐로우, 웜 그레이를 핵심 색상으로 사용합니다. COLOR PALETTE 칩은 네 개로, 각각 "INDIGO #1F2A44", "SUNSHINE #FFC43D", "WARM GRAY #B8B6AE", "CREAM #F6F1E6"로 이름과 색상 코드를 붙입니다. 산·태양·전파 로고, 주파수 눈금, 직물 스트랩의 질감으로 여행과 야외의 순간을 함께하는 라디오 브랜드의 성격을 보여줍니다.
+
+스타일과 매체:
+상업용 브랜드 시스템 보드와 제품 렌더를 결합한 스타일. 편집 디자인처럼 정갈한 배열, 얇은 구획선, 명확한 색상 칩, 실제 제품 목업 같은 재질 표현을 사용합니다. 라디오 제품은 스톤 재질의 원형 받침 위에 올려 스튜디오에서 촬영한 것처럼 렌더링합니다.
+
+빛과 디테일:
+조명: 부드러운 스튜디오 조명. 라디오의 크림색 플라스틱 본체, 금속 다이얼, 직물 스트랩, 종이 패키지의 재질 차이가 분명하게 보이도록 합니다.
+카메라 시점: 보드 자체는 정면 평면 뷰로 읽히고, 우측의 메인 라디오 제품만 약간 높은 3/4 투시로 두께와 버튼 디테일이 보이게 합니다.
+디테일: 스피커 그릴의 촘촘한 구멍, 다이얼 눈금, FM(88~108 MHz)·AM(530~1600 kHz) 주파수 스케일, 스트랩 박음질, 패키지 접힘선, 색상 팔레트 칩, 명함 모서리를 선명하게 표현합니다.
+
+정확성 조건:
+가상의 브랜드처럼 보이게 구성하되 텍스트는 또렷하게 표기합니다. 브랜드명 "WAVEPORT", 부제 "PORTABLE RADIO", 모델명 "WP-01", 슬로건 "FOR EVERY JOURNEY, YOUR SOUND"와 한글 헤드라인 "작지만 선명한, 나만의 주파수", 타이포그래피 라벨 "WAVEPORT SANS", LOGO CONCEPT의 "여정 + 사운드 + 자유", 소재 라벨 "SOFT TOUCH PLASTIC / 바디", "ALUMINUM DIAL / 다이얼", "WOVEN STRAP / 스트랩", 명함 문구 "Explore. Listen. Connect."와 연락처 "waveport.audio"를 정확히 표기합니다. 인물은 등장하지 않습니다. 라디오 형태와 다이얼 위치는 제품 렌더·패키지 일러스트·명함 로고에서 일관되어야 합니다. 깨진 로고, 실제 브랜드와 혼동되는 표기, 의미 없는 글자, 과도한 장식, 제품 구조를 흐리는 반사는 피합니다.
 ```

@@ -1,108 +1,101 @@
-# 📊 Infographics & Field Guides
+# 📊 인포그래픽
 
-Range: No. 67–74 · Count: 8
+파일: `gallery-infographics-and-field-guides.md` · 3개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 67 · Song Dynasty social-media feed
+---
 
-- Image: `docs/infographics-field-guides/song-dynasty-feed.png`
-- Metadata: Infographics & Field Guides · `portrait` · `1024x1536` · Author: @Panda20230902 · Source: [X](https://x.com/Panda20230902)
+## 1. 장마철 침수 대피 안내도
+
+![장마철 침수 대피 안내도](../docs/assets/generated-gallery/gallery-081.png)
+
+- 카테고리: 인포그래픽
+- 사이즈: 인포그래픽 · 세로형 · 1536x2048
 
 ```text
-"Song Dynasty People's Moments"/"SONG DYNASTY SOCIAL MEDIA FEED", Ancient and modern time-travel humor fusion interface design style, The image simulates a mobile phone social media interface, but the content is entirely Song Dynasty scenes, The avatar is a portrait of a Song Dynasty literati, Username "Su Dongpo SuShi_Official", Post content "Just arrived in Huangzhou, demoted but feeling okay. Made Dongpo pork myself today, tastes amazing, recipe attached:", The attached image is a close-up of Dongpo pork in Gongbi painting style, Likes list "Huang Tingjian, Qin Guan, Fo Yin etc. 126 people", Comments section "Wang Anshi: Hehe" "Sima Guang: Still the same taste", Interface elements such as the like icon are replaced with Song Dynasty patterns, The status bar shows "Great Song Mobile 5G" and "Third Year of Yuanfeng", The color scheme is mobile phone dark mode paired with elegant Song Dynasty tones, A masterpiece of fun collision between history and social media
+결과물 유형:
+공공안전 인포그래픽. 주제는 "장마철 침수 대피 안내도"입니다. 완성 이미지는 주민센터, 아파트 게시판, 학교 가정통신문에 바로 붙일 수 있는 안내물처럼 보여야 하며, 위험 상황과 행동 순서가 먼저 읽혀야 합니다.
+
+주 피사체:
+한국 도심 주택가와 지하 공간을 기준으로 한 침수 대피 안내도. 아이소메트릭 도심 조감도 위에 지하주차장, 반지하 주택, 하천 산책로, 지하차도, 엘리베이터, 대피소를 배치하고 각 위험 장소에 붉은 접근 금지 아이콘과 짧은 경고 라벨을 답니다. 하단 "침수 발생 시 행동 순서" 04단계에만 여성 한 명, 아이 한 명, 노인 남성 한 명(총 3인)이 스마트폰으로 안부를 확인하는 일러스트를 넣고, 그 외 화면에는 인물을 넣지 않습니다.
+
+구도와 비율:
+3:4 세로형. 상단에는 제목과 핵심 경고 문구, 우상단에는 긴급재난문자 스마트폰 화면, 중앙에는 침수 위험 장소 아이소메트릭 지도, 하단에는 행동 순서 5단계와 참고 정보 박스를 배치합니다. 번호는 01부터 05까지 사용하고, 위험 장소는 붉은색, 안전 행동·대피 경로는 파란색, 대피소는 초록색으로 구분합니다.
+
+맥락과 배경:
+한국의 장마철 생활 환경이 느껴지게 합니다. 빗줄기, 아파트 단지, 지하주차장 경사로, 하천변 산책로, 물에 잠긴 도로와 차량, 맨홀, 긴급문자 화면을 넣습니다. 배경은 따뜻한 흰색 또는 연한 회색으로 두고 정보가 먼저 보이게 합니다.
+
+스타일과 매체:
+지자체 안내 포스터 수준의 깔끔한 벡터 인포그래픽. 두꺼운 제목, 짧은 라벨, 명확한 아이콘, 충분한 여백, 공공기관 안내물 같은 신뢰감 있는 편집 디자인을 사용합니다.
+
+빛과 디테일:
+평면 벡터 스타일로 그림자와 장식은 최소화합니다. 붉은 접근 금지 아이콘, 파란 대피 화살표, 초록 대피소 표식, 휴대폰 긴급재난문자 화면, 119 신고 아이콘을 명확히 표현하고 우측 하단에 아이콘 범례를 둡니다.
+
+정확성 조건:
+한국어 라벨은 짧고 읽기 쉬워야 합니다. 제목 "장마철 침수 대피 안내도"에서 "침수"는 붉은색으로 강조하고, 경고 배너 "집중호우 시, 신속한 대피가 생명을 지킵니다!"와 흐름 문구 "기상특보 확인 ▶ 위험지역 접근 금지 ▶ 신속히 안전한 곳으로 대피"를 넣습니다. 긴급재난문자에는 "[기상청] 00시 00분 호우경보 발효, 침수·하천 범람 주의, 안전한 곳으로 대피 바랍니다" 취지의 문구를 씁니다. 행동 순서는 "기상정보 확인 / 위험지역 피하기 / 신속히 대피하기 / 가족·이웃 안부 확인 / 신고 및 구조 요청"으로 하고, 하단 "알아두세요!" 박스에 "15cm 이상 물이 차면 보행 위험", "30cm 이상 차량은 주행 불가", "감전 주의", "비상용품 챙기기"를, "긴급신고" 박스에 "119 긴급구조", "112 범죄신고", "120 다산콜센터"를, 맨 아래에 "여러분의 작은 관심과 행동이 소중한 생명을 지킵니다"를 넣습니다. 의미 없는 글자, 중복 번호, 과장된 재난 장면, 실제 기관 로고, 공포를 조장하는 표현은 피합니다.
 ```
 
-### No. 68 · Museum catalog disassembly infographic (唐代襦裙)
+---
 
-- Image: `docs/infographics-field-guides/museum-infographic.png`
-- Metadata: Infographics & Field Guides · `portrait` · `1024x1536` · Author: @MrLarus · Source: [X](https://x.com/MrLarus)
+## 2. 서울 지하철 환승 안내 인포그래픽
+
+![서울 지하철 환승 안내 인포그래픽](../docs/assets/generated-gallery/gallery-082.png)
+
+- 카테고리: 인포그래픽
+- 사이즈: 인포그래픽 · 세로형 · 1024x1536
 
 ```text
-Please automatically generate a "museum catalog-style Chinese disassembly infographic" based on the [Subject].
+결과물 유형:
+교통 안내 인포그래픽. 주제는 "서울 지하철 환승 안내 인포그래픽"입니다. 완성 이미지는 지하철역 안내판이나 여행 안내서에 들어갈 수 있는 실용적이고 정돈된 초보자용 안내물처럼 보여야 합니다.
 
-The entire image is required to combine a realistic main visual, structural disassembly, Chinese annotations, material descriptions, pattern meanings, color meanings, and core feature summaries. You need to automatically determine the most appropriate main subject, clothing system, artifact structure, era style, key components, material craftsmanship, color scheme, and layout structure based on the [Subject], and the user does not need to provide any other information.
+주 피사체:
+서울 지하철을 처음 이용하는 사람을 위한 환승 절차 안내. 상단 헤더에는 지하철 픽토그램 로고와 큰 제목 "서울 지하철 환승 안내 인포그래픽"(가운데 '환승 안내'는 초록색 강조), 그 아래 부제 "처음 이용하세요? 차근차근 따라오시면 쉽게 환승할 수 있어요!", 우상단 흰 박스에 전구 아이콘과 "환승 유의사항" 및 체크 항목 "기본운임 내 환승 (30분 이내)", "교통카드 태그 필수", "반대 방향 승강장 이용 주의"를 둡니다. 중앙에는 원근감 있는 역 내부 씬(도착 열차, 승강장, 환승 통로, 계단, 에스컬레이터, 엘리베이터·화장실 아이콘)에 파란 픽토그램 승객 6~7명이 환승 동선을 따라 걷는 장면을 배치합니다. 하단에는 "환승 4단계 체크리스트" 카드 4장(내리는 문 확인, 환승 통로 이동, 승강장 방향 확인, 출구 번호 확인)과, 맨 아래 "알아두면 좋아요!" 정보 스트립(환승 시간, 교통카드 필수, 혼잡 시간 주의, 도움이 필요할 때 등 아이콘)을 둡니다.
 
-The overall style should be: national museum exhibition boards, historical clothing catalogs, and cultural/museum thematic infographics, rather than ordinary posters, ancient-style portraits, e-commerce detail pages, or anime illustrations. The background uses paper textures such as off-white, silk white, and light tea color, making the overall look premium, restrained, professional, and collectible.
+구도와 비율:
+2:3 세로형. 상단 제목·유의사항, 중앙에는 "환승 동선 한눈에 보기" 라벨과 함께 입체 역 단면 씬에 1~4번 단계 번호(1호선 도착 / 환승 통로 이동 / 다른 노선 승강장 / 출구로 나가기)를 얹고, 노란 점선 화살표 동선이 승객을 따라 굽이쳐 이어지게 합니다. 하단에는 4단계 체크리스트 카드를 노란 화살표로 좌에서 우로 연결합니다. 각 단계 옆에는 짧은 한국어 라벨을 둡니다.
 
-The layout is fixed as:
-- Top: Chinese main title + subtitle + introduction
-- Left: Structural disassembly area, with Chinese lead lines annotating key components, accompanied by close-up details
-- Upper right: Material / craftsmanship / texture area, displaying real texture samples with descriptions
-- Middle right: Pattern / color / meaning area, displaying the main color palette, pattern samples, and cultural explanations
-- Bottom: Dressing order / composition flowchart + core feature summary
+맥락과 배경:
+서울 지하철 특유의 노선 색상 범례(1호선 초록, 3호선 주황, 5호선 보라, 환승 동선은 노란 점선 화살표), 방향 표지판, 출구 번호, 교통카드 단말기와 태그하는 손, 승강장, 열차를 단순화해 표현합니다. 복잡한 실제 지도를 그대로 그리지 말고 초보자가 동선을 따라갈 수 있는 안내 구조로 정리합니다. 표지판 문구는 "내리는 문 ↓", "갈아타는 곳 ②③⑤", "대화 방면 →", "방화 방면 →", "나가는 곳 2 → Exit"를 그대로 사용합니다.
 
-If the subject is suitable for character display, use a full-body standing posture of a real person as the central subject; if it is more suitable for artifacts or single structures, change it to a central subject disassembly diagram, but the overall form remains a complete Chinese infographic. All text must be in Simplified Chinese, clear, neat, and readable, without garbled characters, typos, English, or pinyin.
+스타일과 매체:
+공공 교통 안내판과 여행 가이드 사이의 스타일. 짙은 남색 배경에 선명한 색상, 균일한 아이콘, 큰 글자, 고대비 라벨, 정돈된 카드 그리드를 사용합니다. 승객은 단색 파란 픽토그램으로 통일합니다.
 
-Avoid: poster feel, studio portrait feel, e-commerce feel, anime feel, cosplay feel, random annotations, incorrect structures, blurry text, fake materials, excessive decoration.
+빛과 디테일:
+반평면 벡터 그래픽에 약간의 원근과 명암을 준 역 씬. 노선 색상은 서로 구분되게 하고, 환승 방향 노란 화살표, 개찰구 단말기, 승강장, 계단·에스컬레이터·엘리베이터, 화장실, 출구 번호 표지판을 작지만 명확하게 표현합니다. 태그 장면에는 "띠링!" 효과음 텍스트를 넣습니다.
+
+정확성 조건:
+환승 동선은 노란 점선 화살표로 한눈에 따라갈 수 있어야 합니다. 노선 색상은 1호선 초록, 3호선 주황, 5호선 보라로 일관되게 유지합니다. 의미 없는 문자, 실제와 혼동되는 잘못된 역명, 지나치게 복잡한 노선도, 중복 번호, 읽기 어려운 작은 글자는 피합니다.
 ```
 
-### No. 69 · Encyclopedia field guide (Giant Panda)
+---
 
-- Image: `docs/infographics-field-guides/encyclopedia-panda.png`
-- Metadata: Infographics & Field Guides · `portrait` · `1024x1536` · Author: @MrLarus · Source: [X](https://x.com/MrLarus)
+## 3. 전기요금 누진제 한눈에 보기
 
-```text
-Generate a high-quality vertical encyclopedia-style infographic for [topic].
+![전기요금 누진제 한눈에 보기](../docs/assets/generated-gallery/gallery-083.png)
 
-This should not be a normal poster or a simple illustration. It should feel like a modular educational infographic that combines the clarity of a field guide, the structure of an encyclopedia page, the polish of a lifestyle knowledge card, and the shareability of a strong social-media explainer.
-
-The image should include:
-- a clear and appealing main visual of the topic
-- several enlarged detail callouts
-- multiple rounded modular information sections
-- strong title hierarchy and highlighted key labels
-- concise but information-rich educational content
-- visual scoring, quick takeaways, or a Top 5 module
-
-Adapt the content sections automatically based on the topic. Useful categories include: basic profile, classification, appearance, habits or ecology, formation mechanism or structure, growth or usage conditions, care or maintenance advice, risks and cautions, suitable users or use cases, pros and cons, and a quick scorecard.
-
-Visual requirements: use a clean light background, soft colors, subtle shadows, refined small icons, rounded information cards, and neat layout. The information density should be high but not crowded, and the final image should feel publishable, collectible, and repeatable as a knowledge-card format rather than an advertisement.
-
-Do not make it look like a commercial promo poster. Emphasize knowledge organization, modular information, and a field-guide presentation.
-```
-
-### No. 70 · Weekend Seoul travel guide poster
-
-- Image: `docs/infographics-field-guides/seoul-travel-guide.png`
-- Metadata: Infographics & Field Guides · `portrait` · `1024x1536` · Author: Unknown · Source: [Xiaohongshu](https://www.xiaohongshu.com/explore/69e8cd0d0000000023007215)
+- 카테고리: 인포그래픽
+- 사이즈: 인포그래픽 · 정사각형 · 1024x1024
 
 ```text
-Generate a polished one-page Chinese travel guide poster for a fast weekend trip from Nanjing to Seoul in May. Use LARGE highly legible Chinese text, short phrases only, and no paragraph blocks. Focus on shopping, skincare, and a stylish Seongsu-dong route. Layout: big title, 4 modules only (行程 / 区域推荐 / 购物清单 / 美妆护肤), each with 2 to 4 short bullet points, plus a small cute route map with icons. Clean editorial infographic style, soft pastel colors, neat spacing, high readability, modern Xiaohongshu travel card aesthetic. Avoid tiny text, avoid dense explanations, avoid garbled characters.
-```
+결과물 유형:
+생활 정보 인포그래픽. 주제는 "전기요금 누진제 한눈에 보기"입니다. 완성 이미지는 아파트 관리사무소 안내문이나 카드뉴스 첫 장처럼 핵심 구조가 빠르게 이해되어야 합니다.
 
-### No. 71 · Modular encyclopedia infographic card
+주 피사체:
+가정용 전기 사용량과 요금 구간을 설명하는 누진제 인포그래픽. 좌측에는 "누진제 3단계 구조 (주택용 저압, 예시)"를 3단계 색상 라벨(1단계 기본 사용 구간 0~200 kWh, 2단계 중간 사용 구간 201~400 kWh, 3단계 높은 사용 구간 400 kWh 초과)과 초록·노랑·빨강 3단 막대 그래프로 표현하고, 상승 화살표에 "사용량이 많을수록 단가가 올라가요!" 말풍선을 붙입니다. 우측에는 "가전제품별 월평균 사용량 (예시)" 표로 에어컨, 냉장고, 세탁기, 조명(LED), TV 아이콘과 사용량을 나열합니다. 요금이 올라가는 이유와 절약 포인트가 함께 보여야 합니다.
 
-- Image: `docs/infographics-field-guides/snow-leopard-encyclopedia-card.png`
-- Metadata: Infographics & Field Guides · `portrait` · `1024x1536` · Author: Unknown · Source: [Xiaohongshu](https://www.xiaohongshu.com/explore/69e832170000000023012116)
+구도와 비율:
+1:1 정사각형. 상단 왼쪽에는 제목, 상단 오른쪽에는 전기 계량기와 "전기요금 고지서 (예시)" 카드 및 에어컨 리모컨을 든 손을 둡니다. 중앙 왼쪽에는 3단계 사용량 구조와 막대 그래프, 중앙 오른쪽에는 가전제품별 사용량 표, 하단에는 절약 포인트 체크리스트 4개와 TIP 띠를 둡니다. 정보는 왼쪽에서 오른쪽, 위에서 아래로 자연스럽게 읽히게 배치합니다.
 
-```text
-Generate a high-quality vertical science encyclopedia card about "雪豹 Snow Leopard". It should feel like a collectible modular knowledge infographic rather than a normal poster. Include one beautiful hero illustration, several zoomed-in detail callouts, rounded information modules, clear title hierarchy, compact encyclopedia content, rating cards, and a Top 5 facts module. Suggested sections: basic profile, habitat, appearance, hunting behavior, conservation risks, climate adaptation, suitable environment, and quick scorecard. Visual style: clean light background, soft palette, subtle shadows, refined icons, rounded info boxes, dense but readable information, polished editorial layout, high collection value.
-```
+맥락과 배경:
+한국 아파트 여름철 전기 사용 상황이 느껴지게 합니다. 에어컨 리모컨("26℃"), 월별 고지서, 계량기 숫자, 대기전력 플러그를 간단한 아이콘으로 넣습니다. 좌상단에 "2026년 8월 예시"로 표기합니다.
 
-### No. 72 · Xiaohongshu cooking tutorial card
+스타일과 매체:
+금융·생활 카드뉴스 스타일의 편집 인포그래픽. 딥 인디고, 노란 강조색, 연한 회색 배경을 사용하고, 숫자와 구간은 굵고 명확하게 처리합니다.
 
-- Image: `docs/infographics-field-guides/cooking-tutorial-card.png`
-- Metadata: Infographics & Field Guides · `portrait` · `1024x1536` · Author: Unknown · Source: [Xiaohongshu](https://www.xiaohongshu.com/explore/69e8eeed0000000021004a54)
+빛과 디테일:
+평면 그래픽으로 구성합니다. 막대 그래프 구간, 전기 아이콘, 고지서 카드, 체크 아이콘, 구간 라벨을 균일한 선 두께로 정리합니다.
 
-```text
-Create a Xiaohongshu-style viral cooking tutorial image in a 3:4 vertical layout for homemade scallion oil noodles. Cozy home-cooking vibe, warm inviting lifestyle aesthetic, 4 to 6 step grid layout, clean spacing, realistic food photography, soft natural lighting, slight film tone, warm color grading, visible oil sheen, steam, sauce texture, and hands interacting with the food. Add small Chinese annotations such as 切葱, 熬油, 拌面, 出锅. Avoid overcrowding or excessive text.
-```
-
-### No. 73 · Camera styles reference board for iPhone photographers
-
-- Image: `docs/infographics-field-guides/camera-styles-infographic.png`
-- Metadata: Infographics & Field Guides · `landscape` · `1536x1024` · Author: @Vtrivedy10 · Source: [X](https://x.com/Vtrivedy10/status/2046771959157887014)
-
-```text
-Make me an image in 35 mm film style of a diagram showing the knowledge of camera styles, presets, and what to know about them as an aspiring iPhone photographer that wants to pursue their passion. Build it as a rich multi-panel reference board with labeled sections for film looks, digital presets, portrait approaches, street photography styles, color temperature, grain, contrast, flash, framing, and common mistakes. Each camera and preset style should appear in its actual style instead of being rendered uniformly in one style. Make it visually dense, highly educational, beautifully designed, and easy to scan.
-```
-
-### No. 74 · Chinese endangered-animal infographic
-
-- Image: `docs/infographics-field-guides/endangered-animal-chinese-infographic.png`
-- Metadata: Infographics & Field Guides · `portrait` · `1024x1536` · Author: @billtheinvestor · Source: [X](https://x.com/billtheinvestor/status/2047153211560399009)
-
-```text
-Create a visually rich infographic in Chinese about an endangered animal. Start by finding one online, research its habitat, diet, and unique traits. Present information through annotated visuals and structured callouts, not generic sections. Style it like a bold graphic illustration: a detailed, photorealistic central animal as the focal point, supported by diagrams, callouts, and concise text elements. Use clean backgrounds and a mix of photorealism with strong graphic elements (shapes, icons, color blocking) in a layered composition. Make it dense, tactile, and professionally authored.
+정확성 조건:
+구체적인 실제 요율을 단정하지 말고 예시 구조로 보여줍니다. 고지서 카드에는 "이번 달 사용량 560 kWh", "예상 요금 125,000원 (예시 금액)"처럼 예시임이 드러나게 표기하고, 하단 TIP은 "월별 사용량을 확인하고, 1단계(200kWh)와 2단계(400kWh) 구간을 넘지 않도록 관리해보세요!", 최하단에는 "※ 본 내용은 예시이며, 실제 요금은 지역·계약종별에 따라 다를 수 있습니다."를 넣습니다. 의미 없는 숫자, 잘못된 단위, 과도한 경고 문구, 실제 기관 로고는 피합니다.
 ```

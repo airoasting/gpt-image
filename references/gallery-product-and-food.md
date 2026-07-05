@@ -1,88 +1,139 @@
-# 📦 Product & Food
+# 📦 제품 · 브랜드
 
-Range: No. 56–59 · Count: 4
+파일: `gallery-product-and-food.md` · 4개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 56 · 3D product box from dieline
+---
 
-- Image: `docs/product-food/product-dieline-box.png`
-- Metadata: Product & Food · `portrait` · `1024x1536` · Author: @Salmaaboukarr · Source: [X](https://x.com/Salmaaboukarr)
+## 1. 전개도 기반 입체 제품 상자
+
+![전개도 기반 입체 제품 상자](../docs/assets/generated-gallery/gallery-051.png)
+
+- 카테고리: 제품 · 브랜드
+- 사이즈: Product & Food · portrait · 1536x2048
 
 ```text
-Assemble the dieline into a flawless 3D box with accurate panels, clean folds, undistorted type, and artwork preserved exactly. Shoot it upright at a refined three-quarter angle in a minimal premium studio setting with a soft neutral background, diffused light, subtle shadows, no props, true colours, matte paperboard texture, and realistic editorial detail. The box front reads "AURAE / COLD-BREW MATCHA / 12 fl oz" in clean sans-serif. Side panel shows small ingredient list in 8pt type, nutrition-facts-style block. Clean, editorial, award-winning packshot aesthetic.
+결과물 유형:
+상업용 제품 이미지 또는 브랜드 비주얼. 주제는 "입체 커피 패키지 상자 목업"입니다. 완성 이미지는 제품 판매 또는 브랜드 제안서에 바로 넣을 수 있는 품질이어야 하며, 형태와 재질을 오해 없이 보여야 합니다.
+
+주 피사체:
+낮은 3/4 앵글로 세워진 완성된 입체 커피 패키지 상자 하나. 정면에는 로고 배지 "SANDEUL BOM COFFEE", 상단 라벨 "No.1", 큰 한글 제품명 "산들봄 콜드브루", 그 아래 "부드럽고 깔끔한 풍미 / Smooth & Clean Taste"가 배치되고, 중앙에는 얼음이 담긴 아이스 콜드브루 커피 잔 일러스트와 커피 원두, 초록 잎 장식이 그려집니다. 하단 정보 영역에는 "더치 추출 / DUTCH BREW", "100% 아라비카 원두 / ARABICA COFFEE", 노란 띠 위 "250 mL (10 kcal)", "커피 / 냉장보관", "4 팩입 / 4 PACKS"가 있습니다. 상자는 하나만 등장하며 펼친 전개도나 별도 완성 상자는 두지 않습니다.
+
+구도와 비율:
+3:4 세로형 상업용 제품 이미지. 상자가 화면 중앙에서 약간 위로 정면과 우측면이 함께 보이는 낮은 3/4 시점으로 세워지고, 바닥에 부드러운 받침 그림자를 둡니다. 우측면 패널에는 브랜드 설명 문구 "산들봄은 매일의 순간을 더 향기롭게 만듭니다."와 아이콘이 붙은 3개의 짧은 특징 문구, 하단의 바코드가 세로로 이어집니다.
+
+맥락과 배경:
+따뜻한 베이지·크림 톤의 매끄러운 스튜디오 배경. 정확한 모서리와 무광 종이 질감으로 인쇄 디자인이 실제 패키지처럼 보이게 합니다. 배경은 제품을 차분히 받쳐 주며 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+상업용 제품 사진 또는 제품 렌더 수준의 마감. 정확한 재질, 은은한 반사, 또렷한 모서리, 포장 구조, 크림·네이비·연노랑을 쓴 브랜드 무드를 광고 이미지처럼 정리합니다.
+
+빛과 디테일:
+조명: 부드러운 확산광으로 무광 종이 질감을 살리고 정면과 측면의 밝기 차로 입체감을 만듭니다. 상자의 모서리, 표면 질감, 그림자 접지감이 과장되지 않게 조절됩니다.
+카메라 시점: 낮은 3/4 시점 하나로 정면과 우측면을 함께 보여 상자 형태가 가장 정확히 읽히게 합니다.
+디테일: 아이스커피 잔의 얼음과 물방울, 커피 원두 질감, 초록 잎맥, 인쇄 텍스트의 선명함, 우측 바코드 "8809123 456789"를 또렷하게 표현합니다.
+
+정확성 조건:
+상자 정면과 측면의 텍스트는 한 이미지 안에서 일관되어야 합니다. 이미지에 보이는 문구 "산들봄 콜드브루", "부드럽고 깔끔한 풍미", "Smooth & Clean Taste", "No.1", "SANDEUL BOM COFFEE", "더치 추출 / DUTCH BREW", "100% 아라비카 원두 / ARABICA COFFEE", "250 mL (10 kcal)", "커피 / 냉장보관", "4 팩입 / 4 PACKS"를 정확히 반영합니다. 의미 없는 글자, 어긋난 로고, 비현실적인 재질, 과장된 반사, 실제 브랜드와 혼동되는 표기는 피합니다.
 ```
 
-### No. 57 · Chocolate wafer product render (JSON-style)
+---
 
-- Image: `docs/product-food/product-chocolate-wafer.png`
-- Metadata: Product & Food · `portrait` · `1024x1536` · Author: @mehvishs25 · Source: [X](https://x.com/mehvishs25)
+## 2. 초콜릿 웨이퍼 제품 렌더
+
+![초콜릿 웨이퍼 제품 렌더](../docs/assets/generated-gallery/gallery-052.png)
+
+- 카테고리: 제품 · 브랜드
+- 사이즈: Product & Food · portrait · 1536x2048
 
 ```text
-/* PRODUCT_RENDER_CONFIG: Chocolate Wafer Hazelnut Edition
-   VERSION: 2.0.1
-   AESTHETIC: Premium Commercial Food Photography */
+결과물 유형:
+상업용 제품 이미지 또는 브랜드 비주얼. 주제는 "초콜릿 웨이퍼 롤 제품 렌더"입니다. 완성 이미지는 제품 판매 또는 브랜드 제안서에 바로 넣을 수 있는 품질이어야 하며, 형태와 재질을 오해 없이 보여야 합니다.
 
-{
-  "ENVIRONMENT": {
-    "Background": "Gradient(Dark_Warm_Brown)",
-    "Atmospheric_FX": ["Floating_Particles", "Depth_Blur", "Cinematic_Bokeh"],
-    "Lighting": { "Type": "Directional_Studio_Warmer", "Highlights": "Specular_Glossy_Reflections", "Shadow_Softness": "High" }
-  },
-  "CORE_ASSETS": {
-    "Primary_Subject": "Wafer_Rolls",
-    "Physics": "Zero_Gravity_Diagonal_X_Composition",
-    "Material_Properties": {
-      "Outer": "Milk_Chocolate_Coating",
-      "Surface_Texture": "Irregular_Nut_Clusters_Embedded",
-      "Interior_Cross_Section": { "Structure": "Crispy_Hollow_Wafer", "Core": "Silky_Chocolate_Cream_Filling" }
-    }
-  },
-  "PARTICLE_SYSTEMS": [
-    { "Object": "Chocolate_Blocks", "Detail": "Rectangular_Embossed_Letter_B", "State": "Floating" },
-    { "Object": "Hazelnuts", "State": "Halved_and_Fragmented", "Distribution": "Random_Orbit" }
-  ],
-  "FLUID_DYNAMICS": { "Element": "Chocolate_Splash", "Behavior": "Dynamic_Backdrop_Flow", "Viscosity": "Thick_Glossy" },
-  "RENDER_OUTPUT": { "Resolution": "8K_UHD", "Aspect_Ratio": "3:4", "Quality_Flags": ["Hyper_Realistic", "Sharp_Foreground", "Indulgent_Mood"] }
-}
+주 피사체:
+헤이즐넛 조각이 촘촘히 박힌 초콜릿 코팅의 원통형 웨이퍼 롤(스틱) 3개를 프리미엄 제품으로 렌더합니다. 두 개의 긴 롤이 X자로 교차하듯 비스듬히 놓이고, 세 번째 롤은 정면을 향한 잘린 단면을 보여 웨이퍼 나선층과 중앙의 초콜릿 헤이즐넛 크림 필링이 드러납니다. 중심 피사체의 형태, 위치, 단면 구조가 먼저 읽히고 보조 요소는 주제를 설명하는 단서로만 사용합니다.
+
+구도와 비율:
+3:4 세로형 상업용 제품 이미지 또는 브랜드 비주얼. 롤들이 화면 중앙을 대각선으로 가로지르며 가장 먼저 보이도록 배치하고, 공중에 떠오른 듯한 다이내믹한 부양 연출을 사용합니다. 인물은 등장하지 않으며, 포장이나 라벨, 글자 없이 제품 자체와 재료만으로 화면을 구성합니다.
+
+맥락과 배경:
+어두운 갈색 그라데이션 배경 위에서, 롤들을 감싸며 크게 튀어 오르는 윤기 있는 액체 초콜릿 스플래시가 중심을 이룹니다. 공중에는 초콜릿 사각 조각, 통 헤이즐넛과 반으로 쪼갠 헤이즐넛, 견과 부스러기가 흩날립니다. 배경은 주 피사체를 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+상업용 식품 광고 사진 또는 고급 제품 렌더 수준의 마감. 정확한 재질, 반사, 모서리, 웨이퍼 단면 구조, 브랜드 무드를 다이내믹한 광고 이미지처럼 정리합니다.
+
+빛과 디테일:
+조명: 극적인 방향성 조명으로 윤기 있는 초콜릿, 바삭한 웨이퍼 단면, 어두운 갈색과 카라멜 톤을 강조합니다. 튀는 초콜릿의 하이라이트와 헤이즐넛 조각의 질감이 과장되지 않게 보이도록 조절합니다.
+카메라 시점: 정면에 가까운 클로즈업으로, 롤의 형태와 정면 단면이 가장 정확히 보이는 시점을 사용합니다.
+디테일: 초콜릿 표면의 광택, 박힌 헤이즐넛 입자, 웨이퍼 나선층과 크림 필링, 튀는 액체 초콜릿의 흐름과 방울, 공중 재료의 순간 포착을 선명하게 표현합니다.
+
+정확성 조건:
+제품 형태와 재질은 한 이미지 안에서 일관되어야 합니다. 이미지에는 어떤 포장, 라벨, 글자, 로고도 넣지 않습니다. 의미 없는 글자, 비현실적인 재질, 과장된 반사, 실제 브랜드와 혼동되는 표기는 피합니다.
 ```
 
-### No. 58 · Salad-explosion food photography (JSON-style)
+---
 
-- Image: `docs/product-food/food-salad-explosion.png`
-- Metadata: Product & Food · `portrait` · `1024x1536` · Author: @ChillaiKalan__ · Source: [X](https://x.com/ChillaiKalan__)
+## 3. 샐러드 재료가 흩어지는 음식 사진
+
+![샐러드 재료가 흩어지는 음식 사진](../docs/assets/generated-gallery/gallery-053.png)
+
+- 카테고리: 제품 · 브랜드
+- 사이즈: Product & Food · portrait · 1536x2048
 
 ```text
-{
-  "global_settings": {
-    "resolution": "8K ultra high definition",
-    "aspect_ratio": "2:3 vertical",
-    "style": "hyper-realistic food photography",
-    "clarity": "extreme sharpness, micro-texture visibility",
-    "motion": "frozen action with suspended ingredients",
-    "lighting_quality": "studio-grade, high-contrast, cinematic"
-  },
-  "scene_description": "A dynamic salad explosion emerging from a matte black bowl placed on a round wooden surface. Ingredients are mid-air, scattered upward and outward, each ingredient lit by a directional key light that highlights surface moisture.",
-  "ingredients_visible": [
-    "green lettuce leaves", "cherry tomatoes (whole and sliced)", "cucumber slices arranged in a curved stack",
-    "black olives", "white cheese cubes", "orange citrus slice", "small broccoli florets",
-    "fresh green basil leaves", "a drizzle of olive oil caught mid-fall"
-  ],
-  "motion_details": {
-    "ingredients": "caught mid-arc, rotating slightly, some lightly blurred to convey motion",
-    "particles": "tiny droplets of olive oil and water beads floating between ingredients",
-    "bowl": "perfectly still, matte black, absorbing highlights"
-  },
-  "environment": { "background": "softly graded off-white to warm beige", "surface": "circular cut of raw oak wood" },
-  "render_flags": ["food photography award-winning", "no CGI tell", "editorial cookbook cover feel"]
-}
+결과물 유형:
+상업용 음식 광고 이미지. 주제는 "샐러드 재료가 흩어지는 음식 사진"입니다. 완성 이미지는 식품 브랜드 제안서나 메뉴 비주얼에 바로 넣을 수 있는 품질이어야 하며, 재료의 형태와 신선함을 오해 없이 보여야 합니다.
+
+주 피사체:
+무광 검정 볼에서 신선한 샐러드 재료가 위쪽으로 폭발하듯 흩어지는 광고용 음식 사진. 볼은 둥근 나무 도마 위에 놓이고, 프릴 상추와 바질 잎이 볼을 가득 채운 채 위로 솟구칩니다. 방울토마토(반으로 자른 것과 통째), 검정 올리브, 흰 페타 치즈 큐브, 오이 슬라이스, 브로콜리 송이가 공중에서 회전하듯 배치되고, 중앙에는 노란 레몬 슬라이스 한 조각이 정면으로 보입니다. 견과류나 포장 요소는 넣지 않습니다.
+
+구도와 비율:
+3:4 세로형 상업용 음식 이미지. 검정 볼과 나무 도마를 화면 하단에 안정적으로 두고, 흩어지는 재료가 세로 축을 따라 위로 뻗어 올라가는 다이내믹한 수직 구도로 정리합니다. 받침 그림자를 정돈하고, 배경 소품은 재질과 상황을 설명하는 정도로만 제한합니다.
+
+맥락과 배경:
+따뜻한 베이지·크림 톤의 부드러운 스튜디오 배경을 사용하고, 화면 왼쪽 아래에 리넨 천을 살짝 배치합니다. 배경은 재료의 신선함을 돋보이게 하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+고급 식품 광고 사진 수준의 마감. 정확한 재료 질감, 잎맥, 오일의 반짝임, 그림자 접지감을 실제 촬영한 광고 이미지처럼 정리합니다.
+
+빛과 디테일:
+조명: 따뜻하고 선명한 스튜디오 조명으로 재료 하나하나에 하이라이트를 살립니다. 공중을 나는 올리브 오일 방울과 튀는 오일 줄기를 흩뿌리되 과장되지 않게 조절합니다.
+카메라 시점: 정면에 가까운 눈높이 시점으로, 검정 볼과 솟구치는 재료가 가장 정확히 보이도록 합니다.
+디테일: 상추 잎맥, 페타 치즈 표면의 허브 조각, 방울토마토 단면의 씨, 오이 슬라이스의 투명도, 오일 방울의 광택을 선명하게 표현합니다.
+
+정확성 조건:
+재료의 형태와 색은 한 이미지 안에서 일관되어야 합니다. 인물은 등장하지 않으며, 이미지 안에 글자나 로고는 넣지 않습니다. 비현실적인 재질, 과장된 반사, 실제 브랜드와 혼동되는 표기는 피합니다.
 ```
 
-### No. 59 · Universal commercial poster template
+---
 
-- Image: `docs/product-food/aurora-oolong-poster.png`
-- Metadata: Product & Food · `portrait` · `1024x1536` · Author: Unknown · Source: [Xiaohongshu](https://www.xiaohongshu.com/explore/69e7878300000000230050bb)
+## 4. 상업 포스터 범용 템플릿
+
+![상업 포스터 범용 템플릿](../docs/assets/generated-gallery/gallery-054.png)
+
+- 카테고리: 제품 · 브랜드
+- 사이즈: Product & Food · portrait · 1536x2048
 
 ```text
-Design a high-end commercial poster for a product called "Aurora Oolong Cold Brew". Minimalist style, clean frame, centered hero bottle and tea glass, soft studio lighting, realistic material textures, elegant condensation details, generous negative space, premium brand visual language, cinematic light and shadow, refined packaging typography, and ultra-detailed finish. Make it feel like a luxury beverage campaign that could run in a subway lightbox or fashion magazine.
+결과물 유형:
+상업용 제품 포스터. 주제는 "상업 포스터 범용 템플릿"이며, 차 음료 브랜드의 완성형 광고 비주얼입니다. 제품 판매나 브랜드 제안서에 바로 넣을 수 있는 품질이어야 하며, 병의 형태와 투명 재질, 라벨 문구가 오해 없이 읽혀야 합니다.
+
+주 피사체:
+초록색 뚜껑을 씌운 투명 PET 병이 화면 중앙 오른쪽에 서 있고, 라벨에는 "맑은 하루", 그 아래 "유자 녹차", 하단에 초록 찻잎 일러스트와 "CITRON GREEN TEA", "500ml (0 kcal)"가 세로로 정렬됩니다. 병 안에는 맑은 황금빛 유자 녹차가 담겨 있습니다. 보조로 왼쪽에는 얼음과 녹차 잎 한 장을 띄운 아이스티 유리잔, 그 앞에 유자 통과일과 반달로 자른 유자 조각, 오른쪽에는 마른 녹차 잎을 담은 작은 돌 종지, 병 뒤로 뻗은 찻잎 가지를 배치합니다.
+
+구도와 비율:
+3:4 세로형 구도. 상단 약 3분의 2는 제품 촬영 영역, 하단 3분의 1은 카피 편집 영역으로 나눕니다. 병과 소품은 둥근 베이지색 돌 받침 위에 올려 정면 낮은 3/4 시점으로 담고, 병 라벨이 정면에서 또렷이 읽히도록 중심 축을 정리합니다.
+
+맥락과 배경:
+제품 뒤에는 큰 노란색 원형 색면을 두고, 전체 배경은 따뜻한 노란색에서 크림색으로 이어지는 그러데이션입니다. 하단 편집 영역은 옅은 크림색 바탕이며, 화면 가장자리에는 초점이 흐려진 녹차 잎이 프레임처럼 걸칩니다. 넉넉한 편집 여백을 유지합니다.
+
+스타일과 매체:
+상업용 제품 사진 수준의 마감에 편집 그래픽을 결합한 광고 포스터. 정확한 유리·플라스틱 재질, 물방울, 반사, 라벨 인쇄감을 사실적으로 정리하고, 노랑과 초록을 축으로 한 단정하고 산뜻한 무드를 유지합니다.
+
+빛과 디테일:
+조명: 따뜻한 자연광 톤으로 병 표면의 물방울과 얼음의 투명도, 유자 과육의 결, 마른 찻잎의 질감이 과장 없이 살아나게 합니다. 카메라 시점: 정면 낮은 3/4 한 가지로 통일합니다. 디테일: 라벨 위치, 뚜껑 나사산, 유리잔 결로, 돌 받침의 그림자 접지감, 잎맥까지 선명하게 표현합니다.
+
+정확성 조건:
+포스터에 들어가는 한글 카피를 정확히 반영합니다. 좌상단 "매일, 자연을 마시다", "순한 차의 여유로운 순간", 우상단 배지 "자연 원료 100%", "저카페인", 중앙 헤드라인 "맑은 하루, 가벼운 한 잔", 서브 "유자와 녹차의 산뜻한 만남", 본문 "국내산 녹차와 상큼한 유자를 블렌딩한 저칼로리 티.", "부담 없이 즐기는 자연 그대로의 깔끔한 맛을 경험해보세요.", 세 개 아이콘 문구 "국내산 녹차 100% 사용", "유자 과즙 자연 그대로", "0 kcal 저칼로리", 초록 이벤트 바 "출시 기념 한정 이벤트 2026. 9. 5 (토) - 2026. 10. 12 (월)", 우하단 "* 연출된 이미지입니다"를 표기합니다. 인물은 등장하지 않습니다. 글자는 또렷하고 오탈자 없이, 실제 브랜드와 혼동되지 않게 하며, 병 라벨과 카피의 문구가 한 이미지 안에서 일관되게 유지되도록 합니다.
 ```

@@ -1,23 +1,73 @@
-# 💄 Beauty & Lifestyle
+# 📦 제품 · 브랜드
 
-Range: No. 153–154 · Count: 2
+파일: `gallery-beauty-and-lifestyle.md` · 2개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 153 · Quiet-luxury skincare morning tray
+---
 
-- Image: `docs/beauty-lifestyle/skincare-morning-routine-tray.png`
-- Metadata: Beauty & Lifestyle · `portrait` · `1024x1536` · Curated
+## 1. 조용한 럭셔리 스킨케어 아침 트레이
+
+![조용한 럭셔리 스킨케어 아침 트레이](../docs/assets/generated-gallery/gallery-056.png)
+
+- 카테고리: 제품 · 브랜드
+- 사이즈: Beauty & Lifestyle · 정사각형 · 1024x1024
 
 ```text
-Create a 3:4 vertical beauty lifestyle photograph for a premium skincare morning routine. Scene: a travertine bathroom counter beside a soft frosted window, with a minimal glass serum bottle, ceramic cleanser tube, cream jar, folded linen towel, jade roller, small dish of pearl hair clips, and a single dewy white camellia flower. Lighting: natural morning side light, gentle reflections, realistic glass thickness, soft shadows, clean negative space. Aesthetic: quiet luxury, Japanese minimalism meets modern spa editorial, cream / warm stone / translucent pale green palette. No visible brand logos, no readable fake labels except a tiny generic mark "AM ROUTINE", no human face, no clutter, no overdone CGI shine.
+결과물 유형:
+상업용 제품 이미지 또는 브랜드 비주얼. 주제는 "조용한 럭셔리 스킨케어 아침 트레이"입니다. 완성 이미지는 제품 판매 또는 브랜드 제안서에 바로 넣을 수 있는 품질이어야 하며, 형태와 재질을 오해 없이 보여야 합니다.
+
+주 피사체:
+조용한 럭셔리 무드의 스킨케어 라인업 정물 사진. 크림색 스톤 트레이 위에 네 가지 제품을 나란히 배치합니다. 왼쪽부터 원통형 불투명 유리 토너 병, 골드 펌프가 달린 반투명 에센스 병, 골드 캡의 자외선차단제 튜브, 그리고 트레이 앞쪽에 낮은 크림 용기입니다. 모든 제품은 "LUMIÈRE DU MATIN" 브랜드의 미니멀한 아이보리 라벨을 공유합니다. 중심 제품군의 형태와 배치가 먼저 읽히고 주변 소품은 아침 무드를 설명하는 단서로만 사용합니다.
+
+구도와 비율:
+1:1 정사각형 상업용 제품 이미지 또는 브랜드 비주얼. 네 제품이 트레이 위에서 리듬 있게 정렬되어 가장 먼저 보이도록 하고, 받침 그림자와 반사를 정리합니다. 라벨 영역은 정면에서 읽히게 두고, 화병·찻잔·수건 같은 보조 소품은 재질과 사용 상황을 설명하는 정도로 프레임 가장자리에 제한합니다.
+
+맥락과 배경:
+크림색 대리석 벽과 왼쪽 위 창문에서 들어오는 부드러운 아침 자연광, 절제된 고급감을 표현합니다. 왼쪽에는 안개꽃을 꽂은 세라믹 화병, 앞쪽에는 따뜻한 차가 담긴 세라믹 컵과 받침, 금반지가 놓인 작은 황동 접시, 오른쪽에는 말린 수건과 올리브 가지를 배치해 조용한 아침 장면을 완성합니다. 배경은 주 피사체를 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+상업용 제품 사진 또는 제품 렌더 수준의 마감. 정확한 재질, 반사, 모서리, 포장 구조, 브랜드 무드를 광고 이미지처럼 정리합니다.
+
+빛과 디테일:
+조명: 창을 통한 부드러운 아침 자연광, 반투명 유리, 크림색 배경, 절제된 고급감을 표현합니다. 제품의 모서리, 표면 질감, 유리 투명도, 골드 캡의 금속 반사 하이라이트가 과장되지 않게 보이도록 조절합니다.
+카메라 시점: 살짝 위에서 비스듬히 내려다보는 낮은 3/4 앵글을 사용해 제품 라벨과 트레이 배치가 함께 읽히게 합니다.
+디테일: 라벨 문구와 용량 표기, 그림자 접지감, 스톤 트레이의 입자 질감, 찻잔 속 액체와 안개꽃·올리브 잎의 상태를 선명하게 표현합니다.
+
+정확성 조건:
+제품 형태와 라벨은 한 이미지 안에서 일관되어야 합니다. 라벨 문구는 "LUMIÈRE DU MATIN" 브랜드 아래 각각 "BALANCING TONER 150 ml / 5.07 fl. oz.", "BRIGHTENING ESSENCE 50 ml / 1.69 fl. oz.", "DAILY UV PROTECTOR SPF 50+ PA++++ 50 ml / 1.69 fl. oz.", "NOURISHING CREAM 50 ml / 1.69 fl. oz."로 읽히게 합니다. 의미 없는 글자, 어긋난 로고, 비현실적인 재질, 과장된 반사, 실제 브랜드와 혼동되는 표기는 피합니다.
 ```
 
-### No. 154 · Fragrance evening ritual vanity
+---
 
-- Image: `docs/beauty-lifestyle/fragrance-evening-ritual-vanity.png`
-- Metadata: Beauty & Lifestyle · `portrait` · `1024x1536` · Curated
+## 2. 향수와 저녁 의식 화장대
+
+![향수와 저녁 의식 화장대](../docs/assets/generated-gallery/gallery-057.png)
+
+- 카테고리: 제품 · 브랜드
+- 사이즈: Beauty & Lifestyle · portrait · 1536x2048
 
 ```text
-Create a portrait-oriented premium beauty and lifestyle editorial image for a boutique fragrance evening ritual. Scene: a warm marble vanity beside a softly lit bedroom window at blue hour, with two sculptural perfume bottles, a silk ribbon, pearl hair pins, a small handwritten note, a crystal glass of sparkling water, and a few dewy white flowers. Styling should feel quiet-luxury, feminine, modern, and aspirational, but natural rather than overproduced. Use a palette of champagne gold, warm ivory, dusty rose, soft lavender shadows, and clear glass highlights. Lighting: candle glow mixed with cool evening window light, glossy reflections on marble, shallow depth of field, premium product-photography realism. Composition: vertical magazine still life, elegant negative space, no brand logos, no real-person likeness, no clutter, no text except a tiny tasteful note reading "EVENING RITUAL".
+결과물 유형:
+상업용 제품 이미지 또는 브랜드 비주얼. 주제는 "향수와 저녁 의식 화장대"입니다. 완성 이미지는 제품 판매 또는 브랜드 제안서에 바로 넣을 수 있는 품질이어야 하며, 형태와 재질을 오해 없이 보여야 합니다.
+
+주 피사체:
+저녁 의식 분위기의 향수 제품 화장대 사진. 앰버빛 액체가 담긴 직사각 컷글라스 향수병을 화면 중앙 하단에 세우고, 원통형 금색 캡과 정면 라벨이 또렷이 읽히게 배치합니다. 라벨에는 "SOIR DORÉ", "EAU DE PARFUM", "50 ml 1.7 fl. oz." 문구가 들어갑니다. 왼쪽에는 리브드 유리 홀더의 켜진 촛불과 크림빛 장미가 담긴 유리 꽃병, 오른쪽에는 반지·진주·금목걸이가 놓인 금색 원형 트레이, 전경 하단에는 샴페인색 새틴 천 주름을 부재료로 둡니다. 중심 피사체의 형태와 위치가 먼저 읽히고 보조 요소는 주제를 설명하는 단서로만 사용합니다.
+
+구도와 비율:
+3:4 세로형 상업용 제품 이미지 또는 브랜드 비주얼. 제품이 가장 먼저 보이도록 중앙 축과 대리석 위 반사 그림자를 정리하고, 촛불·장미·트레이·새틴 같은 보조 소품은 재질과 사용 상황을 설명하는 정도로 제한합니다. 라벨 영역은 정면에서 읽히게 둡니다.
+
+맥락과 배경:
+검은 대리석 화장대 위, 낮은 따뜻한 조명과 유리·금속 반사로 고급스러운 밤 분위기를 만듭니다. 배경 우측에는 금테 원형 거울이 도시 야경의 보케 불빛을 담고, 배경은 주 피사체를 설명하는 근거가 되어야 하며 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+상업용 제품 사진 또는 제품 렌더 수준의 마감. 정확한 유리 재질, 금속 캡 반사, 라벨 모서리, 병 구조, 브랜드 무드를 광고 이미지처럼 정리합니다.
+
+빛과 디테일:
+조명: 촛불에서 번지는 낮고 따뜻한 조명, 유리 반사, 금속 캡 하이라이트, 깊은 그림자로 고급스러운 밤 분위기를 만듭니다. 병의 모서리, 유리 투명도, 액체 색, 반사 하이라이트가 과장되지 않게 보이도록 조절합니다.
+카메라 시점: 낮은 3/4 시점에서 병 형태와 라벨이 가장 정확히 보이게 합니다.
+디테일: 라벨 위치와 문구, 유리 컷 면, 대리석 위 그림자 접지감, 금속·새틴·꽃잎의 재질 입자, 촛불 불꽃의 상태를 선명하게 표현합니다.
+
+정확성 조건:
+제품 형태와 라벨 문구 "SOIR DORÉ / EAU DE PARFUM / 50 ml 1.7 fl. oz."는 한 이미지 안에서 일관되어야 합니다. 인물은 등장하지 않습니다. 의미 없는 글자, 어긋난 로고, 비현실적인 재질, 과장된 반사, 실제 브랜드와 혼동되는 표기는 피합니다.
 ```

@@ -1,23 +1,73 @@
-# 💧 Watercolor
+# 🎨 일러스트
 
-Range: No. 48–49 · Count: 2
+파일: `gallery-watercolor.md` · 2개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 48 · Dreamy watercolor — young woman at lily pond
+---
 
-- Image: `docs/watercolor/watercolor-lily-pond.png`
-- Metadata: Watercolor · `portrait` · `1024x1536` · Author: EvoLinkAI · Source: [GitHub archive](https://github.com/EvoLinkAI/awesome-gpt-image-2-prompts)
+## 1. 수련 연못의 몽환적 수채화
+
+![수련 연못의 몽환적 수채화](../docs/assets/generated-gallery/gallery-015.png)
+
+- 카테고리: 일러스트
+- 사이즈: Watercolor · portrait · 1536x2048
 
 ```text
-Dreamy watercolor illustration of a young woman in a cream linen dress sitting on a weathered stone bench, contemplating a lily pond at late golden hour. Impressionist-light aesthetic, loose confident brush strokes, translucent washes in muted teal and warm ochre tones with soft lavender shadows. Soft blur of water lilies and reflected clouds in the pond surface. Gentle sunlight filters through overhanging willow branches. Cold-pressed paper texture visible throughout, edges of wet-on-wet bleeds, delicate lighting, clean composition with generous negative space, minimalist focus on mood, sense of calm, lightness, and ephemeral beauty. Editorial high-quality illustration, in the tradition of Turner's watercolor studies and modern editorial magazine illustration.
+결과물 유형:
+완성형 일러스트 또는 캐릭터 아트워크. 주제는 "수련 연못의 몽환적 수채화"입니다. 완성 이미지는 하나의 매체로 끝까지 제작된 작품처럼 보여야 하며, 주 피사체의 형태가 장식보다 먼저 읽혀야 합니다.
+
+주 피사체:
+수련이 핀 넓은 연못을 바라보며 돌 벤치에 앉아 있는 젊은 여성의 몽환적 수채화. 인물은 화면 중앙 하단에 크게 뒷모습으로 앉아 있고, 긴 흑갈색 웨이브 머리에 리본을 묶었으며 크림색 드레스를 입었습니다. 인물 앞으로는 분홍 수련과 수련 잎이 연못 전체에 넓게 펼쳐집니다. 중심 피사체의 형태, 위치, 행동이 먼저 읽히고 보조 요소는 주제를 설명하는 단서로만 사용합니다.
+
+구도와 비율:
+3:4 세로형 완성형 일러스트. 주 피사체의 실루엣을 화면 중앙 하단에서 먼저 읽히게 배치하고, 화면 상단 왼쪽에서 늘어진 수양버들 가지와 연못, 배경이 이를 감싸도록 합니다. 보조 요소는 형태와 색을 설명하는 역할에 머물게 합니다.
+
+맥락과 배경:
+황혼빛 정원 연못. 왼쪽에는 아치형 돌다리, 오른쪽에는 원형 석조 정자와 사이프러스 나무가 있고, 하늘은 황금빛 노을과 부드러운 구름으로 물듭니다. 연못에는 분홍 수련이 떠 있고, 전경 좌우에는 보라색 붓꽃이 피어 있습니다. 배경은 주 피사체를 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+선택한 매체의 질감이 분명한 완성형 수채화 일러스트. 선, 색면, 질감, 장식, 여백이 하나의 제작 방식으로 통일되어야 합니다.
+
+빛과 디테일:
+조명: 투명한 물감 번짐, 황금빛 노을과 옅은 분홍·녹색·보라, 수면의 부드러운 반사, 종이 질감을 살립니다. 형태가 무너지지 않도록 그림자와 하이라이트를 절제합니다.
+카메라 시점: 인물을 뒤에서 바라보는 한 가지 시점으로 고정하고, 시선이 연못 너머 배경으로 자연스럽게 흐르도록 합니다.
+디테일: 머리카락의 결과 리본, 드레스 주름, 수련과 수련 잎, 돌 벤치의 질감을 또렷하게 표현합니다.
+
+정확성 조건:
+주 피사체가 장식에 묻히지 않아야 합니다. 인물은 한 명이며 뒷모습입니다. 손, 얼굴, 패턴, 글자 왜곡을 피하고 서로 다른 매체 질감을 섞지 않습니다. 이미지 안에 문구나 텍스트는 넣지 않습니다. 원작이 없는 신규 캐릭터와 장면으로 만듭니다.
 ```
 
-### No. 49 · Rainy botanical greenhouse watercolor
+---
 
-- Image: `docs/watercolor/rainy-botanical-greenhouse.png`
-- Metadata: Watercolor · `landscape` · `1536x1024` · Curated
+## 2. 비 오는 식물원 수채화
+
+![비 오는 식물원 수채화](../docs/assets/generated-gallery/gallery-016.png)
+
+- 카테고리: 일러스트
+- 사이즈: Watercolor · landscape · 1920x1080
 
 ```text
-Create a delicate watercolor illustration of a rainy botanical greenhouse in early morning. Landscape composition, transparent washes, granulating pigments, soft wet-on-wet blooms, visible cold-pressed paper texture. Scene: arched glass greenhouse ribs, raindrops streaming down panes, hanging ferns, orchids, clay pots, a narrow stone path, a wooden bench with an open gardening notebook, and diffused silver daylight. Palette: sage green, eucalyptus gray, pale lavender, warm terracotta, and tiny yellow flower accents. Keep the image airy and poetic, with preserved white paper highlights, no hard digital gradients, no photorealistic lens effects, and no heavy outlines.
+결과물 유형:
+완성형 수채화 장면 일러스트. 주제는 "비 오는 식물원 수채화"입니다. 완성 이미지는 수채라는 하나의 매체로 끝까지 제작된 작품처럼 보여야 하며, 온실 공간의 깊이와 식물의 형태가 장식보다 먼저 읽혀야 합니다.
+
+주 피사체:
+비 오는 날 빅토리아풍 유리 온실(온실 정원) 내부를 그린 수채화. 아치형 철골과 젖은 유리 지붕 아래로 매달린 고사리 화분들이 늘어지고, 양옆으로 보라색 호접란, 흰색과 노란색 꽃, 큰 열대 잎(몬스테라·필로덴드론), 테라코타와 함석 화분들이 가득합니다. 오른쪽 전경에는 낡은 나무 테이블 위에 펼쳐진 식물 도감 노트(식물 스케치와 손글씨가 있는 펼침면), 펜 한 자루, 함석 물뿌리개 두 개가 놓여 있습니다. 인물은 등장하지 않습니다.
+
+구도와 비율:
+16:9 가로형 완성형 일러스트. 화면 중앙으로 소실점이 모이는 원근 구도로, 젖은 타일 통로가 안쪽 문을 향해 뻗어 나갑니다. 양옆 식물 무리가 통로를 감싸고, 오른쪽 아래 나무 테이블과 노트가 가까운 전경을 이룹니다.
+
+맥락과 배경:
+빗물 번짐, 녹색 농담, 흐릿한 배경, 종이 위 물감이 퍼지는 느낌을 사용합니다. 유리에 맺힌 빗방울과 김 서린 표면, 젖은 돌바닥의 반사가 비 오는 날의 습한 공기를 설명합니다. 배경은 주 공간을 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+수채 질감이 분명한 완성형 일러스트. 부드러운 번짐, 투명한 색면, 종이 결의 질감, 절제된 윤곽선이 하나의 제작 방식으로 통일되어야 합니다.
+
+빛과 디테일:
+조명: 지붕 유리를 통해 스며드는 흐린 자연광과 안쪽 문에서 새어 들어오는 밝은 빛을 사용합니다. 형태가 무너지지 않도록 그림자와 하이라이트를 절제합니다.
+카메라 시점: 장면이 가장 잘 읽히는 한 가지 시점으로 고정합니다. 통로 눈높이에서 안쪽 문을 향해 바라보는 일점 투시 구도입니다.
+디테일: 난초 꽃잎, 고사리 잎맥, 화분 질감, 물뿌리개 금속면, 노트의 식물 스케치를 또렷하게 표현합니다.
+
+정확성 조건:
+주 공간과 식물이 장식에 묻히지 않아야 합니다. 인물, 벤치, 우산은 넣지 않습니다. 화분과 식물의 형태 왜곡을 피하고 서로 다른 매체 질감을 섞지 않습니다. 노트에는 알아볼 수 있는 특정 문구 대신 흘림체 필기 느낌의 텍스처만 표현합니다. 원작이 없는 신규 장면으로 만듭니다.
 ```

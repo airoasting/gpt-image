@@ -1,50 +1,37 @@
-# ⚙️ Technical Illustration
+# 📊 인포그래픽
 
-Range: No. 112–116 · Count: 5
+파일: `gallery-technical-illustration.md` · 1개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 112 · Mechanical Watch Exploded View
+---
 
-- Image: `docs/technical-illustration/mechanical-watch-exploded-view.png`
-- Metadata: Technical Illustration · `square` · `1024x1024` · Curated
+## 1. KTX 여행 짐 체크리스트
 
-```text
-Create a premium technical exploded-view illustration of a fictional mechanical wristwatch called the Meridian 8, centered on a dark slate background with fine blueprint grid accents. Show the watch components separated vertically with precise spacing: sapphire crystal, dial, hands, chapter ring, movement plates, escapement, balance wheel, mainspring barrel, case, crown, and leather strap sections. Use realistic brushed steel, brass, ruby jewel accents, and deep navy dial details. Add crisp callouts and labels with the in-image text "Meridian 8", "Exploded Assembly", "42 mm Case", "25 Jewels", and "Power Reserve 72 h". Include numbered callouts "01" through "10" with short labels like "Balance Wheel", "Mainspring Barrel", and "Sapphire Crystal". The result should be highly detailed, technically believable, sharply rendered, and suitable for an industrial design plate with clean hierarchy, exact labeling, and refined material realism.
-```
+![KTX 여행 짐 체크리스트](../docs/assets/generated-gallery/gallery-090.png)
 
-### No. 113 · Rocket Cutaway Diagram
-
-- Image: `docs/technical-illustration/rocket-cutaway-launch-vehicle.png`
-- Metadata: Technical Illustration · `tall` · `2160x3840` · Curated
+- 카테고리: 인포그래픽
+- 사이즈: 인포그래픽 · 정사각형 · 1024x1024
 
 ```text
-Generate a highly detailed vertical cutaway illustration of a fictional two-stage launch vehicle named Aster-9 on a clean white technical background. Show the full rocket from nose cone to engines, sliced to reveal internal tanks, avionics, payload fairing, interstage, turbopumps, and thrust structure. Use a restrained palette of white, gunmetal, orange, pale blue, and safety red accents. Add precise leader lines and crisp labels. Include in-image text: "ASTER-9", "Payload 8,400 kg", "Height 62.4 m", "Stage 1 RP-1 / LOX", and "Stage 2 Methalox". Label internal parts such as "Payload Bay", "Guidance Computer", "LOX Tank", "Fuel Tank", "Helium COPV", and "Engine Cluster x9". Add a small scale marker with "0 m", "20 m", "40 m", and "60 m". Prioritize accurate engineering-diagram composition, clean typography, believable hardware detail, and razor-sharp annotations optimized for gpt-image-2.
-```
+결과물 유형:
+여행 준비 인포그래픽. 주제는 "KTX 여행 짐 체크리스트"입니다. 완성 이미지는 여행 앱, 블로그 썸네일, 카드뉴스에 넣을 수 있는 실용적인 준비 자료처럼 보여야 합니다.
 
-### No. 114 · Mechanical Keyboard Exploded Assembly
+주 피사체:
+KTX로 국내 여행을 떠나는 사람을 위한 짐 체크리스트. 좌우로 10개 항목 카드를 번호와 함께 배치합니다. 왼쪽은 01 승차권(모바일 또는 실물 승차권), 02 신분증(주민등록증 또는 운전면허증), 03 보조배터리(스마트폰 충전용 필수 아이템), 04 이어폰(음악, 영상 감상 또는 통화용), 05 얇은 겉옷(기온 변화에 대비 가볍게 챙기기), 오른쪽은 06 물병(수분 보충을 위해 개인 물병 준비), 07 간식(출출할 때 든든한 간식 챙기기), 08 세면도구(칫솔, 치약 등 필수품 위주로), 09 접이식 우산(비 예보에 대비 가방에 쏙!), 10 작은 캐리어(기내 반입 사이즈 또는 소형 캐리어)입니다. 각 카드에는 체크 아이콘이 붙습니다.
 
-- Image: `docs/technical-illustration/mechanical-keyboard-exploded-assembly.png`
-- Metadata: Technical Illustration · `wide` · `2048x1152` · Curated
+구도와 비율:
+1:1 정사각형. 상단 배지에 "2026년 10월 여행 준비", 그 아래 두 줄 대형 제목 "KTX 여행"과 "짐 체크리스트", 그리고 부제 "필요한 것만 챙겨, 편안하고 즐거운 여행을"을 넣습니다. 중앙에는 뚜껑을 연 캐리어 일러스트가 크게 놓이고 그 안에 스마트폰, 티켓, 옷, 텀블러, 보조배터리, 파우치가 정리되어 담겨 있습니다. 캐리어를 감싸며 좌우로 준비물 카드 10개가 배치됩니다. 중앙 하단에는 "여행 더 편하게!" 팁 박스를 두어 좌석별 콘센트 위치 확인, 열차 Wi-Fi 미리 연결, 좌석 방향 미리 체크, 쓰레기는 깨끗하게 4개 팁을 아이콘과 함께 넣습니다.
 
-```text
-Design a crisp exploded-view product illustration of a custom mechanical keyboard named LUMEN K65, shown in three-quarter perspective on a pale gray background with subtle shadow. Separate the layers clearly: keycaps, switches, plate, PCB, foam, gasket mounts, case top, battery module, rotary knob, and case bottom. Use anodized silver, matte black, translucent smoke keycaps, and small teal accent parts. Add clean technical callouts and in-image text reading "LUMEN K65", "Exploded Assembly", "65% Layout", "Hot-Swap PCB", and "3,200 mAh". Include labels for "PBT Keycaps", "Linear Switch", "Aluminum Plate", "Poron Foam", "USB-C", and "Encoder Knob". Show a compact dimension note "317 mm x 112 mm x 31 mm". The composition should feel like an industrial design presentation board: precise spacing, realistic materials, sharp typography, correct labels, and highly legible component hierarchy.
-```
+맥락과 배경:
+한국 고속철 여행의 맥락이 느껴지게 합니다. 좌측 상단에는 역 플랫폼과 정차한 고속열차, 우측 상단에는 열차 좌석, 창밖 풍경, 콘센트, 컵홀더에 놓인 텀블러를 단순화한 배경 요소로 넣습니다.
 
-### No. 115 · Car Powertrain Transparent Cutaway
+스타일과 매체:
+친근하지만 정돈된 여행 카드뉴스 스타일. 딥 인디고 선, 노란 포인트, 연한 종이색 배경, 균일한 아이콘을 사용합니다.
 
-- Image: `docs/technical-illustration/car-powertrain-transparent-cutaway.png`
-- Metadata: Technical Illustration · `landscape` · `1536x1024` · Curated
+빛과 디테일:
+평면 벡터 인포그래픽. 준비물 아이콘, 체크박스, 캐리어, 티켓, 배지 요소가 서로 겹치지 않게 정리합니다. 작은 글자는 최소화하고 라벨은 짧게 유지합니다.
 
-```text
-Create a high-detail transparent cutaway illustration of a fictional hybrid sports coupe powertrain on a dark neutral studio background. Show the vehicle in side profile with semi-transparent bodywork revealing the front electric motor, battery pack, rear combustion engine, transmission tunnel, cooling loops, and rear differential. Use realistic metallic surfaces, matte graphite body panels, orange high-voltage cables, and blue coolant lines. Add clean engineering callouts with crisp in-image text: "Project VELA GT", "Hybrid Powertrain", "System Output 412 kW", "Battery 18.6 kWh", and "0-100 km/h 3.8 s". Label key parts "Inverter", "Motor", "Battery Pack", "Turbo Inline-4", "Radiator", and "Rear Differential". Include a simple legend showing cable colors for "HV", "Coolant", and "Fuel". The rendering should be technically believable, photorealistic where appropriate, sharply annotated, and composed like a premium automotive engineering poster.
-```
-
-### No. 116 · Smartphone Internals Layered View
-
-- Image: `docs/technical-illustration/smartphone-internals-layered-view.png`
-- Metadata: Technical Illustration · `portrait` · `1024x1536` · Curated
-
-```text
-Produce a sleek exploded-view illustration of a fictional flagship smartphone called the HELIX ONE, shown front and back in a vertically layered assembly on a soft charcoal gradient background. Separate the glass, OLED panel, midframe, battery, camera island, wireless charging coil, logic board, cooling vapor chamber, speakers, and rear shell. Use realistic materials including brushed titanium edges, ceramic back, black glass, copper thermal elements, and blue PCB traces. Add crisp labels and in-image text: "HELIX ONE", "Layered Internal Architecture", "6.7 in OLED", "5,100 mAh", and "Vapor Chamber 3,200 mm2". Label components "Main Camera 50 MP", "Ultrawide 13 MP", "Coil", "Battery", "Logic Board", and "Speaker Module". Keep the composition elegant, technical, and believable, with exact spacing, sharp typography, clean callout leaders, and premium product-visualization quality.
+정확성 조건:
+실제 KTX 로고나 특정 철도사 로고를 넣지 않습니다. 하단에는 화면 전체 폭의 네이비 바를 두고 시계 아이콘과 함께 "출발 전 10분 체크!" 문구, 이어서 "티켓 확인", "신분증", "소지품", "시간 여유", "안전하고 즐거운 여행 되세요!" 항목과 열차 아이콘을 배치합니다. 준비물은 일반적인 국내 여행 기준으로 구성합니다. 의미 없는 문자, 깨진 아이콘, 과도하게 많은 항목, 읽기 어려운 작은 글자는 피합니다.
 ```

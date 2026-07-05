@@ -1,23 +1,73 @@
-# 🕹️ Pixel Art
+# 🎨 일러스트
 
-Range: No. 52–53 · Count: 2
+파일: `gallery-pixel-art.md` · 2개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 52 · Pixel art car sprite sheet
+---
 
-- Image: `docs/pixel-art/pixel-sprite-cars.png`
-- Metadata: Pixel Art · `square` · `1024x1024` · Author: @RoundtableSpace · Source: [X](https://x.com/RoundtableSpace)
+## 1. 픽셀 자동차 스프라이트 시트
+
+![픽셀 자동차 스프라이트 시트](../docs/assets/generated-gallery/gallery-017.png)
+
+- 카테고리: 일러스트
+- 사이즈: Pixel Art · square · 1024x1024
 
 ```text
-A 10x10 pixel art sprite sheet of retro video game cars, 16-bit era aesthetic. Ten rows by ten columns of small vehicle sprites on a clean light-grey grid background, each cell 64x64 pixels. Variety across sprites: sedans, sports cars, muscle cars, SUVs, pickup trucks, vans, taxi cabs, police cruisers, convertibles, and hot rods, in a full rainbow of colors. All sprites rendered in a consistent 3/4 top-down perspective with matching shading, crisp pixel edges, no anti-aliasing, palette limited to ~16 tones per sprite, SNES / Super Nintendo cart-racing game tradition.
+결과물 유형:
+완성형 일러스트 또는 캐릭터 아트워크. 주제는 "픽셀 자동차 스프라이트 시트"입니다. 완성 이미지는 하나의 매체로 끝까지 제작된 작품처럼 보여야 하며, 주 피사체의 형태가 장식보다 먼저 읽혀야 합니다.
+
+주 피사체:
+레트로 게임용 자동차 스프라이트 시트. 6행 4열 격자로, 각 행은 하나의 차종을 정면, 측면, 후면, 그리고 3/4 사선 뷰의 순서로 나란히 배치합니다. 위에서부터 빨간 스포츠카, 노란 택시 세단, 파란 밴, 크림색 클래식 쿠페, 흑백 경찰차, 녹색 오프로드 SUV 여섯 종을 담습니다. 중심 피사체의 형태와 위치가 먼저 읽히고 보조 요소는 주제를 설명하는 단서로만 사용합니다.
+
+구도와 비율:
+1:1 정사각형 완성형 일러스트 또는 캐릭터 아트워크. 주 피사체의 실루엣을 먼저 읽히게 배치하고, 보조 요소는 형태와 색을 설명하는 역할에 머물게 합니다. 시트형 결과물은 각 칸의 크기와 간격을 일정하게 맞추고, 같은 행의 네 뷰는 동일한 차종으로 통일합니다.
+
+맥락과 배경:
+제한된 16색 팔레트, 또렷한 픽셀 실루엣, 회색 체커보드 무늬로 표현된 투명 배경 작업용 보드로 만듭니다. 배경은 주 피사체를 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+선택한 매체의 질감이 분명한 완성형 픽셀 일러스트. 선, 색면, 질감, 장식, 여백이 하나의 제작 방식으로 통일되어야 합니다.
+
+빛과 디테일:
+조명: 제한된 16색 팔레트, 또렷한 픽셀 실루엣, 체커보드 투명 배경의 단순한 작업용 보드로 만듭니다. 형태가 무너지지 않도록 그림자와 하이라이트를 절제합니다.
+카메라 시점: 각 차종을 정면, 측면, 후면, 3/4 사선의 네 시점으로 같은 높이에서 맞춰 정렬합니다.
+디테일: 바퀴, 창문, 라이트, 경찰차의 지붕 경광등, SUV의 루프 라이트 같은 부품의 반복 규칙을 또렷하게 표현합니다.
+
+정확성 조건:
+주 피사체가 장식에 묻히지 않아야 합니다. 노란 택시 차체에는 "TAXI", 흑백 경찰차 차체에는 "POLICE" 문구가 픽셀 글자로 또렷하게 보여야 합니다. 손, 얼굴, 패턴, 글자 왜곡을 피하고 서로 다른 매체 질감을 섞지 않습니다. 원작이 없는 신규 차량 디자인으로 만듭니다.
 ```
 
-### No. 53 · Pixel art breakfast still life
+---
 
-- Image: `docs/pixel-art/pixel-breakfast.png`
-- Metadata: Pixel Art · `square` · `1024x1024` · Author: Unknown · Source: [Reddit](https://www.reddit.com/r/midjourney/comments/1jmodcx/animated_pixel_art_food_prompts_included/)
+## 2. 픽셀 아트 아침 식사 정물
+
+![픽셀 아트 아침 식사 정물](../docs/assets/generated-gallery/gallery-018.png)
+
+- 카테고리: 일러스트
+- 사이즈: Pixel Art · square · 1024x1024
 
 ```text
-Create a nostalgic pixel-art breakfast still life. Show a tall stack of fluffy golden pancakes drizzled with glossy maple syrup, topped with strawberries and blueberries, with pixelated steam rising into the air. The plate sits on a pastel tablecloth and a hot cup of coffee rests in the background. Use rich breakfast colors, careful lighting, and delicious texture detail while staying true to clean, readable pixel art.
+결과물 유형:
+완성형 픽셀 아트 일러스트. 주제는 "픽셀 아트 아침 식사 정물"입니다. 완성 이미지는 하나의 매체로 끝까지 제작된 작품처럼 보여야 하며, 아침 식탁 정물의 형태가 장식보다 먼저 읽혀야 합니다.
+
+주 피사체:
+픽셀 아트로 표현한 아침 식사 정물. 중앙 앞쪽에 파란 테두리의 크림색 접시가 놓이고 그 위에 프라이드 에그(허브 조각이 올라간 노른자), 버터 조각이 녹아내리는 두툼한 토스트, 반으로 자른 딸기 두 조각이 담깁니다. 왼쪽에는 파란 기하 문양이 들어간 크림색 커피 머그가 김 없이 진한 커피를 담고 있고, 뒤쪽 중앙에는 빨강-흰색 깅엄 체크 뚜껑의 딸기잼 병이 놓입니다. 오른쪽에는 파란 테두리 접시 위에 버터 한 덩이와 버터나이프가 함께 놓입니다.
+
+구도와 비율:
+1:1 정사각형 완성형 일러스트. 식탁을 비스듬히 내려다보는 아이소메트릭 3/4 부감 시점으로, 접시 정물을 화면 중앙 하단에 배치하고 커피, 잼 병, 버터 접시를 뒤쪽에 여유 있게 배열합니다. 주 피사체인 접시 위 음식의 실루엣이 먼저 읽히게 하고, 보조 소품은 형태와 색을 설명하는 역할에 머물게 합니다.
+
+맥락과 배경:
+따뜻한 색감의 나무 널판 식탁 위 장면. 왼쪽 위에는 초록 잎이 보이는 창이 있고 오른쪽 위 벽에는 시골 풍경(집·언덕·하늘)을 담은 액자가 걸립니다. 왼쪽 아래에는 화분에 심긴 초록 잎 식물, 오른쪽 아래에는 파랑-흰 격자 무늬 천 냅킨이 식탁 모서리에 걸쳐 있습니다. 배경은 아늑한 아침 식탁 분위기를 설명하는 근거가 되어야 하며 시선을 과하게 빼앗지 않습니다.
+
+스타일과 매체:
+픽셀 질감이 분명한 완성형 픽셀 아트 일러스트. 선명한 픽셀 가장자리, 계단식 픽셀 디테일, 색면, 질감이 하나의 제작 방식으로 통일되어야 합니다.
+
+빛과 디테일:
+조명: 따뜻한 제한 팔레트에 창에서 들어오는 아침 햇살이 식탁에 부드러운 사선 그림자를 드리웁니다. 작은 하이라이트와 그림자를 절제해 각 사물의 형태가 무너지지 않게 합니다.
+카메라 시점: 정물이 가장 잘 읽히는 아이소메트릭 3/4 부감 시점 하나로 고정합니다.
+디테일: 잼 병 라벨의 딸기 그림, 접시 테두리 선, 토스트의 질감, 격자 냅킨 패턴 같은 반복 규칙을 또렷한 픽셀로 표현합니다.
+
+정확성 조건:
+주 피사체(접시 위 아침 식사)가 장식에 묻히지 않아야 합니다. 잼 병 라벨에는 "STRAWBERRY JAM" 문구를 정확히 표기하며, 글자 왜곡을 피하고 서로 다른 매체 질감을 섞지 않습니다. 인물은 등장하지 않습니다. 원작이 없는 신규 정물 장면으로 만듭니다.
 ```

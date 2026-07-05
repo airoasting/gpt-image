@@ -181,7 +181,7 @@ description이 약속하는 두 갈래다. 백지 작성과 절차는 같되 시
 | 인포그래픽 | 인포그래픽 또는 설명형 시각 자료 | 제목·번호 단계·라벨·아이콘·그래프·화살표 | 필드 가이드/기술 다이어그램, 정보 위계 우선 | `gallery-infographics-and-field-guides.md` (3/10), `gallery-scientific-and-educational.md` (3/10), `gallery-research-paper-figures.md` (3/10), `gallery-technical-illustration.md` (1/10) |
 | UI·대시보드 | UI 화면 또는 데이터 대시보드 | 상단 바·메뉴·카드·그래프·표·버튼·범례 | 실무형 UI, 가독성·정렬·간격·색 의미 | `gallery-ui-ux-mockups.md` (5/10), `gallery-data-visualization.md` (5/10) |
 
-일부 항목(게임·시네마틱·포스터·제품·브랜드·건물 사진 각 1~4개)은 특정 레퍼런스 파일 없이 사이트 갤러리 예시만으로 만들어졌다 — 이런 경우 사이트 갤러리 예시만으로 충분하다는 뜻이니 2차 파일을 억지로 찾지 않는다. 기타 소재(문신 `gallery-tattoo-design.md`, 레퍼런스 편집 `gallery-edit-endpoint-showcase.md`, 공식 쿡북 예시 `gallery-official-openai-cookbook-examples.md`)는 가장 가까운 카테고리에 붙여 처리한다.
+일부 항목(게임·시네마틱·포스터·제품·브랜드·건물 사진 각 1~4개)은 특정 레퍼런스 파일 없이 사이트 갤러리 예시만으로 만들어졌다 — 이런 경우 사이트 갤러리 예시만으로 충분하다는 뜻이니 2차 파일을 억지로 찾지 않는다.
 
 ## 필드 어휘 (정본)
 
@@ -216,7 +216,7 @@ description이 약속하는 두 갈래다. 백지 작성과 절차는 같되 시
 **1차 — 사이트 갤러리.** `docs/js/gallery-data.js`에서 `"category": "<카테고리>"`를 검색해 같은 카테고리의 실제 예시 2~3개를 확인한다. 각 항목은 `title`(주제)·`image`(실제 이미지 경로)·`prompt`(완성된 7블록 한국어 프롬프트)를 담고 있다 — 형식·밀도·어휘를 그대로 참고할 최우선 소스다. 대부분의 요청은 이 단계만으로 충분하다.
 
 **2차 — 영어 레퍼런스 라이브러리.** 사이트 갤러리 10개로 부족한 세부 기법(다이어그램 문법, 이색 화풍, 편집 위계, 니치 소재)이 필요할 때만 연다.
-- `references/gallery.md` — 162개 프롬프트 라우팅 인덱스.
+- `references/gallery.md` — 사이트 갤러리 기준 카테고리 라우팅 인덱스.
 - `references/gallery-*.md` — "10 결과물 카테고리" 표의 2차 갤러리 파일. 1개(혼합이면 2~3개)만 읽는다.
 - `references/craft.md` — 프롬프트 정밀화 체크리스트(이미지 속 글자, JSON형 프롬프트, 고정 영역 인포그래픽, 다이어그램 문법, UI 스펙, 멀티패널 일관성, 편집 불변식, 한글·중문 밀집 레이아웃). 해당 이슈가 있을 때만 해당 절을 연다.
 - `references/openai-cookbook.md` — 공식 모델·파라미터 의미. 모델 역량이나 API 동작 질문일 때만 연다.

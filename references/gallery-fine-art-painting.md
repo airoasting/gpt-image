@@ -1,50 +1,73 @@
-# 🎨 Fine Art Painting
+# 🎨 일러스트
 
-Range: No. 136–140 · Count: 5
+파일: `gallery-fine-art-painting.md` · 2개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 136 · Vibrant Impasto: Floral Rhythms
+---
 
-- Image: `docs/fine-art-painting/impasto-floral-swirls.png`
-- Metadata: Fine Art Painting · `square` · `1024x1024` · Curated
+## 1. 두꺼운 물감의 꽃 회화
+
+![두꺼운 물감의 꽃 회화](../docs/assets/generated-gallery/gallery-019.png)
+
+- 카테고리: 일러스트
+- 사이즈: Fine Art Painting · square · 1024x1024
 
 ```text
-A vivid oil painting in the lineage of post-impressionist impasto, featuring a dense garden of sunflowers and irises. The paint is applied in thick, rhythmic swirls and heavy dollops with a palette knife, creating a tangible 3D texture on the canvas. The color palette is an explosion of 'Chrome Yellow', 'Deep Ultramarine', and 'Vermilion Red', with visible strokes of white lead to indicate shimmering light. The composition is a tight, chaotic floral arrangement that seems to vibrate with energy. The lighting is harsh midday sun, which creates deep shadows within the ridges of the thick paint. There are no flat surfaces; every inch of the 'canvas' is covered in expressive, turbulent movement. The overall effect is one of raw emotion and the physical presence of the medium, focusing on the light-play over the peaks of the oil paint.
+결과물 유형:
+완성형 회화 작품. 주제는 "두꺼운 물감의 꽃 회화"입니다. 완성 이미지는 두꺼운 임파스토 유화 한 매체로 끝까지 제작된 작품처럼 보여야 하며, 꽃다발의 형태가 장식보다 먼저 읽혀야 합니다.
+
+주 피사체:
+두꺼운 물감 질감이 살아 있는 꽃 정물 회화. 장미와 라넌큘러스, 데이지, 라일락 등 다양한 꽃이 어우러진 풍성한 꽃다발을 화면 중앙에 꽉 차게 배치하고, 화면 하단에는 꽃다발을 담은 밝은 색 화병을 두어 정물 구도를 완성합니다. 산호빛 핑크, 크림 화이트, 노랑, 연보라 꽃들이 주역이며, 배경은 붓질 질감이 남은 어두운 청록 색면으로 처리합니다.
+
+구도와 비율:
+1:1 정사각형 정물화. 풍성한 꽃다발의 실루엣을 화면 가득 먼저 읽히게 배치하고, 화병은 하단에 자연스럽게 걸쳐 정물의 무게 중심을 잡습니다. 정면에서 살짝 위를 향한 한 가지 시점으로 고정하여 꽃 무리가 가장 잘 읽히게 합니다.
+
+맥락과 배경:
+두꺼운 붓질, 물감 덩어리(임파스토), 강한 색 대비, 캔버스 질감이 보이게 만듭니다. 어두운 청록 배경은 밝은 꽃들의 채도를 끌어올리는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+임파스토 유화의 질감이 분명한 완성형 회화. 팔레트 나이프와 붓질의 두께, 색면, 질감, 여백이 하나의 제작 방식으로 통일되어야 합니다.
+
+빛과 디테일:
+조명: 두꺼운 붓질, 물감 덩어리, 강한 색 대비, 캔버스 질감이 보이게 만듭니다. 형태가 무너지지 않도록 그림자와 하이라이트를 절제하고, 꽃잎 능선에 물감이 쌓인 하이라이트가 얹히게 합니다.
+카메라 시점: 정면에서 살짝 위를 향한 한 가지 시점으로 고정합니다.
+디테일: 꽃송이 하나하나의 겹친 꽃잎, 두터운 물감 능선, 잎사귀와 화병 표면의 붓 자국을 또렷하게 표현합니다.
+
+정확성 조건:
+주 피사체인 꽃다발이 배경에 묻히지 않아야 합니다. 인물, 글자, 반복 패턴은 넣지 않으며 서로 다른 매체 질감을 섞지 않습니다. 임파스토 유화라는 단일 매체로 통일하고, 원작이 없는 신규 정물 구성으로 만듭니다.
 ```
 
-### No. 137 · Impressionist Lineage: River at Dusk
+---
 
-- Image: `docs/fine-art-painting/impressionist-river-dusk.png`
-- Metadata: Fine Art Painting · `wide` · `2048x1152` · Curated
+## 2. 해질녘 강가 인상주의 회화
 
-```text
-A serene landscape painting in the lineage of late 19th-century Impressionism, depicting a wide river reflecting a hazy violet and gold sunset. The water is rendered with short, horizontal dabs of color—'Lavender', 'Pale Peach', and 'Sage Green'—that suggest the gentle ripple of the surface. On the banks, weeping willows are suggested by soft, blurred strokes of dark emerald and charcoal. The atmosphere is thick with moisture and light, where the sky and water seem to merge at the horizon. There are no sharp lines or defined edges; the entire scene is a study of light, color, and atmospheric perspective. The lighting is the fleeting 'blue hour,' where the last rays of sun catch the tips of the waves. The mood is tranquil and meditative, capturing a fleeting moment of natural beauty through a soft, atmospheric lens.
-```
+![해질녘 강가 인상주의 회화](../docs/assets/generated-gallery/gallery-020.png)
 
-### No. 138 · Mid-Century Modern: The Blue Pool
-
-- Image: `docs/fine-art-painting/hockney-california-backyard.png`
-- Metadata: Fine Art Painting · `landscape` · `1536x1024` · Curated
+- 카테고리: 일러스트
+- 사이즈: Fine Art Painting · wide · 2520x1080
 
 ```text
-A flat, vibrant acrylic painting in the lineage of 1960s California modernism. The scene features a sparkling turquoise swimming pool in the foreground, with highly stylized white splash lines indicating a recent dive. In the background, a minimalist glass-and-steel house sits under a cloudless 'Cerulean' sky, flanked by two perfectly manicured palm trees. The color palette is dominated by saturated primaries: 'Turquoise Blue', 'Lemon Yellow', and 'Terracotta'. The lighting is the flat, shadowless glare of a Los Angeles afternoon, emphasizing the geometric shapes and clean lines of the architecture. The composition is strictly horizontal and balanced, with a sense of artificial stillness and leisure. The texture is smooth and matte, avoiding any visible brushstrokes to maintain a clean, graphic quality. It is a portrait of a sunny, suburban utopia.
-```
+결과물 유형:
+완성형 인상주의 풍경 회화. 주제는 "해질녘 강가 인상주의 회화"입니다. 완성 이미지는 유화 한 매체로 끝까지 제작된 작품처럼 보여야 하며, 강과 노을이라는 주 장면이 장식보다 먼저 읽혀야 합니다.
 
-### No. 139 · Color Field Abstract: Crimson and Ochre
+주 피사체:
+해질녘 강가 풍경을 그린 인상주의 유화. 화면 중앙에서 수평선 위로 낮게 걸린 붉은 태양과 물 위로 길게 뻗은 노을 반사가 중심이 됩니다. 강 건너에는 아치형 석교가 가로지르고, 오른쪽으로는 붉은 지붕 집들과 교회 첨탑이 있는 작은 마을이 실루엣으로 보입니다. 왼쪽 강변 산책로에는 모자 쓴 남녀 두 사람(정장 차림 남성과 흰 드레스에 챙 모자를 쓴 여성)이 걸어가며, 강변 좌측을 키 큰 나무들이 채웁니다.
 
-- Image: `docs/fine-art-painting/rothko-color-field-meditation.png`
-- Metadata: Fine Art Painting · `tall` · `2160x3840` · Curated
+구도와 비율:
+21:9 와이드 가로 풍경 구도. 왼쪽 나무와 산책로가 근경을, 중앙의 태양과 강물 반사가 중경을, 강 건너 다리와 마을이 원경을 이루는 3단 깊이로 배치합니다. 시선은 물 위 노을 반사를 따라 태양으로 모이도록 고정합니다.
 
-```text
-A large-scale abstract painting in the lineage of mid-century Color Field expressionism. The composition consists of three stacked, soft-edged rectangular forms that appear to float against a darker background. The top rectangle is a deep 'Oxblood Red', the middle is a vibrating 'Burnt Orange', and the bottom is a dusty 'Ochre'. The edges of the shapes are hazy and feathered, allowing the colors to bleed into one another and create a sense of profound depth. The texture of the canvas is subtly visible through the thin, layered washes of pigment. There is no representational subject matter; the focus is entirely on the emotional resonance of the color and the monumental scale. The lighting is soft and ambient, making the colors seem to glow from within the canvas. The mood is spiritual, somber, and deeply immersive.
-```
+맥락과 배경:
+짧고 두꺼운 붓터치(임파스토), 따뜻한 노을색, 물 위 반사, 부드러운 대기 원근을 표현합니다. 배경은 저녁 강가의 고요한 분위기를 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
 
-### No. 140 · Social Realism: The Great Foundry
+스타일과 매체:
+두꺼운 임파스토 질감이 분명한 완성형 인상주의 유화. 색면, 붓터치, 질감, 여백이 하나의 유화 제작 방식으로 통일되어야 합니다.
 
-- Image: `docs/fine-art-painting/rivera-social-industrial-mural.png`
-- Metadata: Fine Art Painting · `wide` · `2048x1152` · Curated
+빛과 디테일:
+조명: 지는 해의 따뜻한 주황빛이 하늘과 물을 물들이고, 물 위로 태양 반사가 수직으로 길게 내려옵니다. 형태가 무너지지 않도록 그림자와 하이라이트를 절제합니다.
+카메라 시점: 강변에서 수면과 노을을 바라보는 눈높이의 한 가지 시점으로 고정합니다.
+디테일: 하늘과 물의 붓터치 리듬, 나뭇잎 덩어리, 마을 실루엣과 첨탑을 인상주의적 필치로 또렷하게 표현합니다.
 
-```text
-A grand-scale public mural in the lineage of early 20th-century social realism and Mexican muralism. The scene depicts an industrial foundry where diverse workers are engaged in the heroic labor of forging massive steel gears. The figures are rendered with heavy, rounded forms and powerful muscularity, colored in earthy tones of 'Sienna', 'Slate Grey', and 'Iron Rust'. The composition is dense and rhythmic, filled with the interlocking shapes of machinery, pipes, and human bodies. In the center, a golden glow emanates from a crucible of molten metal, illuminating the faces of the workers with a dramatic 'Fire Orange'. The style is bold and graphic, with strong black outlines and a flattened perspective that emphasizes the collective effort. The mural covers a vast curved wall, suggesting a narrative of progress, unity, and the dignity of the working class.
+정확성 조건:
+주 장면(강, 노을, 다리, 마을)이 장식에 묻히지 않아야 합니다. 인물은 두 명(모자 쓴 남녀 한 쌍)만 작게 배치하고 군중으로 늘리지 않으며, 얼굴과 손의 과도한 디테일 대신 인상주의적 실루엣으로 처리합니다. 화면에 글자나 문구는 넣지 않습니다. 임파스토 유화 질감을 다른 매체와 섞지 않고, 원작이 없는 신규 장면으로 만듭니다.
 ```

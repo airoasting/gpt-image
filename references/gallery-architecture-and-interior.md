@@ -1,50 +1,141 @@
-# 🏛️ Architecture & Interior
+# 🏛️ 건물 사진
 
-Range: No. 117–121 · Count: 5
+파일: `gallery-architecture-and-interior.md` · 4개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-Load this file only when the request matches this category. For cross-cutting writing rules, pair it with `craft.md`.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`craft.md`](craft.md)와 함께 봅니다.
 
-### No. 117 · Japanese Minimalist Living Room
+---
 
-- Image: `docs/architecture-interior/japanese-minimalist-living-room-render.png`
-- Metadata: Architecture & Interior · `landscape` · `1536x1024` · Curated
+## 1. 브루탈리즘 콘크리트 박물관 아트리움
+
+![브루탈리즘 콘크리트 박물관 아트리움](../docs/assets/generated-gallery/gallery-073.png)
+
+- 카테고리: 건물 사진
+- 사이즈: Architecture & Interior · wide · 2520x1080
 
 ```text
-Render a serene Japanese minimalist living room interior in photorealistic architectural visualization style, viewed from eye level with a 28 mm lens feel. The space should feature light oak flooring, shoji-inspired sliding panels, low modular seating, a recessed tokonoma niche, linen textures, and soft morning light entering from the left. Use a restrained palette of warm beige, pale oak, charcoal, muted moss green, and rice-paper white. Include subtle in-image text on a small framed floor plan board that reads "Room 6.4 m x 4.8 m" and "AURAE House". Add a low tea table, one ceramic vase, a bonsai-like plant, and indirect cove lighting at 3000 K. Composition should be calm and balanced with strong negative space, realistic shadows, accurate material behavior, and magazine-quality interior rendering. Prioritize photorealism, architectural detail, crisp edges, and tasteful minimalism rather than stylized fantasy.
+결과물 유형:
+건축 사진 렌더링. 주제는 "브루탈리즘 콘크리트 박물관 아트리움"입니다. 완성 이미지는 공간의 구조와 사용 목적을 동시에 설명해야 하며, 사람이 이동하고 머무를 수 있는 크기감이 보여야 합니다.
+
+주 피사체:
+브루탈리즘 콘크리트 박물관의 거대한 아트리움. 왼쪽에는 폭 넓은 기념비적 계단이 위층으로 이어지고, 중앙 바닥에는 낮은 받침대 위에 거친 표면의 대형 추상 석조 조각이 놓입니다. 높은 천장, 노출 콘크리트 벽, 천창, 상층 통로와 여러 층의 개구부가 함께 보이며, 계단과 바닥과 상층 통로에 흩어진 여러 명의 관람객이 스케일 기준으로 배치됩니다. 중심 피사체의 형태, 위치, 행동이 먼저 읽히고 보조 요소는 주제를 설명하는 단서로만 사용합니다.
+
+구도와 비율:
+21:9 와이드 건축 사진. 사람 눈높이에서 아트리움 전체를 담아 계단, 중앙 조각, 상층 통로, 좌우 콘크리트 벽의 안내 표식과 우측 전시실 개구부가 한눈에 읽히게 배치합니다. 계단을 오르내리는 사람과 바닥을 걷는 사람을 스케일 기준으로 넣어 공간의 크기를 판단할 수 있게 합니다.
+
+맥락과 배경:
+차가운 자연광, 거친 콘크리트 질감, 큰 스케일 대비, 조용한 전시 공간 분위기를 사용합니다. 천창에서 들어오는 빛이 콘크리트 표면과 광택 있는 바닥에 부드럽게 번지고, 우측에는 그림이 걸린 전시실 개구부가 이어집니다. 배경은 주 피사체를 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+실무용 건축 사진 렌더링. 구조, 재료, 채광, 사용 목적이 실제 공간처럼 읽히는 정돈된 사실적 렌더링을 사용합니다.
+
+빛과 디테일:
+조명: 차가운 자연광, 거친 콘크리트 질감, 큰 스케일 대비, 조용한 전시 공간 분위기를 사용합니다. 천장, 벽, 바닥 재료에 빛이 다르게 닿는 느낌을 살립니다.
+카메라 시점: 사람 눈높이의 넓은 건축 사진 시점을 선택하고 원근을 끝까지 유지합니다.
+디테일: 계단, 난간, 통로, 표면 재료, 벽면 안내 표식을 실제 사용 가능한 수준으로 정리합니다.
+
+정확성 조건:
+좌측 콘크리트 벽에는 위에서부터 "2 전시실 Exhibition", "1 전시실 Exhibition", "B1 교육실 Education" 안내 표식이 화살표와 함께 표시되고, 우측 벽에는 "전시실 1, 2 / Exhibition 1, 2", "기획전시실 / Special Exhibition", "카페 / Cafe", "뮤지엄샵 / Museum Shop"과 화장실·장애인 픽토그램이 화살표와 함께 표시됩니다. 중앙 상층부에는 현수막 "시간의 구조"가 걸립니다. 문, 통로, 계단, 안내 표식의 위치가 실제로 사용할 수 있게 보여야 하며, 불가능한 원근감, 막힌 동선, 과도한 장식, 의미 없는 간판 문자는 피합니다.
 ```
 
-### No. 118 · Brutalist Concrete Museum Atrium
+---
 
-- Image: `docs/architecture-interior/brutalist-concrete-museum-atrium.png`
-- Metadata: Architecture & Interior · `wide` · `2048x1152` · Curated
+## 2. 미드센추리 모던 사무실
+
+![미드센추리 모던 사무실](../docs/assets/generated-gallery/gallery-074.png)
+
+- 카테고리: 건물 사진
+- 사이즈: Architecture & Interior · landscape · 1920x1080
 
 ```text
-Create a photorealistic interior render of a monumental brutalist museum atrium with exposed board-formed concrete, dramatic skylights, long ramps, and massive geometric voids. Viewpoint is slightly low and wide, emphasizing vertical scale and shadow. Use a palette of cool gray concrete, black steel, muted sandstone, pale daylight, and a few rust-colored wayfinding accents. Include sparse signage with crisp in-image text: "Gallery A", "Level 02", and "Atrium 18.0 m". Add a few small human figures for scale, but keep the architecture dominant. The space should include suspended walkways, a central sculpture plinth, and reflected light from polished concrete floors. Composition must feel cinematic yet architecturally precise, with realistic material textures, accurate lighting, controlled contrast, and gallery-quality rendering. Prioritize believable spatial depth, clean geometry, subtle atmospheric perspective, and sharp signage.
+결과물 유형:
+실내 공간 렌더링, 건축·인테리어 시각화. 주제는 "미드센추리 모던 사무실"입니다. 완성 이미지는 임원 집무실의 구조와 사용 목적을 동시에 설명해야 하며, 사람이 이동하고 머무를 수 있는 크기감이 보여야 합니다.
+
+주 피사체:
+미드센추리 모던 스타일의 임원 집무실 렌더. 중앙에 큰 원목 임원 책상과 그 위 데스크톱 컴퓨터, 황동 데스크 램프를 두고, 책상 뒤에는 녹색 가죽 하이백 회전 의자, 책상 앞에는 러스트 오렌지색 가죽 회전 의자 두 개를 배치합니다. 배경 벽에는 책과 액자, 식물, 소품이 놓인 원목 붙박이 책장 벽을 세웁니다. 중심 피사체의 형태, 위치, 배치가 먼저 읽히고 보조 요소는 주제를 설명하는 단서로만 사용합니다.
+
+구도와 비율:
+16:9 가로형 실내 사진 시점. 왼쪽에는 도시 스카이라인과 나무가 보이는 큰 통창, 오른쪽에는 낮은 녹색 벨벳 소파와 원목 타원형 커피 테이블을 두어 공간의 좌우 깊이가 한눈에 읽히게 배치합니다. 책상·의자·가구를 스케일 기준으로 넣어 공간의 크기를 판단할 수 있게 합니다.
+
+맥락과 배경:
+따뜻한 목재 질감, 절제된 색상(우드톤, 오렌지, 올리브 그린), 잡지 인테리어 화보 같은 정돈된 구도를 사용합니다. 창가 원목 콘솔 위 램프와 화분, 오른쪽 벽의 건축 도면·사진·재료 스와치가 붙은 무드보드가 배경을 채웁니다. 배경은 주 피사체를 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+실무용 인테리어 시각화. 구조, 재료, 채광, 사용 목적이 실제 공간처럼 읽히는 정돈된 포토리얼 렌더링을 사용합니다.
+
+빛과 디테일:
+조명: 왼쪽 통창에서 들어오는 따뜻한 자연광과 천장 코브 조명, 넬슨 스타일 버블 펜던트, 황동 테이블 램프가 어우러진 따뜻한 색온도를 사용합니다. 천장, 원목 벽, 테라조 바닥 재료에 빛이 다르게 닿는 느낌을 살립니다.
+카메라 시점: 사람 눈높이의 넓은 실내 건축 사진 시점을 사용하고 원근을 끝까지 유지합니다.
+디테일: 가구 배치, 표면 재료, 책장 소품, 창밖 풍경, 무드보드 질감을 실제 공간 수준으로 정리합니다.
+
+정확성 조건:
+책상, 의자, 소파, 책장, 통로의 위치가 실제로 사용할 수 있게 보여야 합니다. 인물은 등장하지 않습니다. 불가능한 원근감, 막힌 동선, 과도한 장식, 읽히는 간판 문자나 의미 없는 글자는 피합니다.
 ```
 
-### No. 119 · Mid-Century Modern Office
+---
 
-- Image: `docs/architecture-interior/mid-century-modern-office-studio.png`
-- Metadata: Architecture & Interior · `landscape` · `1536x1024` · Curated
+## 3. 바이오필릭 바이오테크 연구실
+
+![바이오필릭 바이오테크 연구실](../docs/assets/generated-gallery/gallery-075.png)
+
+- 카테고리: 건물 사진
+- 사이즈: Architecture & Interior · wide · 2520x1080
 
 ```text
-Render a sophisticated mid-century modern creative office in photorealistic interior style, with walnut millwork, brass accents, olive upholstery, terrazzo flooring, smoked glass partitions, and large windows casting late-afternoon light. Use a rich palette of walnut brown, olive green, cream, brass gold, and muted terracotta. The composition should show a central executive desk, built-in shelving, a lounge corner, and a wall-mounted planning board. On the board, include subtle in-image text "Studio North", "Q3 Review", and "14:30". Add realistic accessories like drafting tools, books, ceramic lamps, and a record player, but keep the scene curated and uncluttered. Camera angle should feel editorial, around 32 mm, with balanced perspective lines and realistic depth of field. Prioritize tactile materials, believable lighting, clean geometry, and polished architectural-visualization quality with crisp details and intentional composition.
+결과물 유형:
+건축 인테리어 사진. 주제는 "바이오필릭 바이오테크 연구실"입니다. 완성 이미지는 사람이 실제로 이동하고 머무는 실내 공간의 구조와 사용 목적을 동시에 설명해야 하며, 여러 명이 동시에 일하는 크기감이 보여야 합니다.
+
+주 피사체:
+식물과 첨단 장비가 공존하는 넓은 바이오테크 연구실 내부. 흰 가운을 입은 아시아계 연구원 약 아홉 명이 각자 다른 작업을 합니다. 왼쪽 앞에는 여성 연구원이 앉아 현미경을 보고, 중앙에서는 두 연구원이 태블릿을 들고 대화하며, 오른쪽에서는 남성 연구원이 발광하는 유리 배양 챔버 앞에 서 있습니다. 유리 실험대, 시험관, 녹색 벽, 발광하는 원통형 배양 장치가 함께 배치되고, 보조 요소는 연구실이라는 주제를 설명하는 단서로만 사용합니다.
+
+구도와 비율:
+21:9 와이드 건축 인테리어 사진. 사람 눈높이 시점으로 중앙 통로가 안쪽으로 뻗어 깊이가 읽히게 배치합니다. 왼쪽 실험대 열, 중앙 라운지, 오른쪽 배양 챔버 열의 위치 관계가 한눈에 들어오고, 상층 메자닌에도 인물이 보여 공간의 층과 규모를 판단할 수 있게 합니다.
+
+맥락과 배경:
+깨끗한 흰색과 녹색, 금속과 유리 재질, 유리 채광 천장에서 쏟아지는 자연광, 실험실의 기능성이 보이게 합니다. 왼쪽 벽면 전체를 덮은 녹색 리빙월, 곳곳의 화분, 녹색 라운지 의자와 오른쪽 앞의 원목 테이블이 바이오필릭 분위기를 만듭니다. 배경은 주 피사체를 설명하는 근거가 되어야 하며, 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+실무용 건축 인테리어 사진. 구조, 재료, 채광, 사용 목적이 실제 공간처럼 읽히는 정돈된 사실적 렌더링을 사용합니다.
+
+빛과 디테일:
+조명: 유리 채광 천장에서 들어오는 밝은 자연광이 반들거리는 바닥에 반사되고, 오른쪽 배양 챔버는 보라·청색 그로우 라이트로 은은하게 빛납니다. 천장, 벽, 바닥 재료에 빛이 다르게 닿는 느낌을 살립니다.
+카메라 시점: 사람 눈높이의 넓은 건축 사진 시점을 사용하고 원근을 끝까지 유지합니다.
+디테일: 통로, 가구 배치, 표면 재료, 모니터의 DNA 그래픽, 시험관과 실험 기구를 실제 사용 가능한 수준으로 정리합니다.
+
+정확성 조건:
+중앙 상단의 녹색 세로 배너에는 "INNOVATE", "CURE", "GROW", "TOGETHER"와 그 아래 "BIO FUTURE"가 읽히게 하고, 오른쪽 앞 원목 테이블 위 책등에는 "PLANT BIOLOGY"와 "MOLECULAR BIOLOGY"가 보이게 합니다. 통로와 가구, 사이니지의 위치가 실제로 사용할 수 있게 보여야 하며, 불가능한 원근감, 막힌 동선, 뜻 없는 간판 문자는 피합니다.
 ```
 
-### No. 120 · Biophilic Biotech Lab
+---
 
-- Image: `docs/architecture-interior/biophilic-biotech-lab-render.png`
-- Metadata: Architecture & Interior · `wide` · `2048x1152` · Curated
+## 4. 고딕 대성당 내부
 
-```text
-Generate a high-end photorealistic render of a future-facing biotech laboratory that integrates biophilic design. Show a bright open lab with glass partitions, living moss walls, hanging plants, pale wood details, white composite worktops, and advanced research equipment. Use a fresh palette of white, sage green, pale oak, stainless steel, and clear cyan monitor accents. Include precise architectural lighting at 4200 K, skylight diffusion, and clean reflections. Add subtle wall graphics with crisp in-image text "HELIX BIO LAB 03", "Clean Zone", and "22 C". The scene should include lab benches, microscopes, sample storage towers, and collaborative seating, arranged with strong spatial clarity. Composition must feel aspirational but credible, with realistic equipment proportions, hygienic surfaces, controlled clutter, and premium visualization quality. Emphasize photorealism, accurate material rendering, clean hierarchy, and an elegant fusion of nature and scientific workspace design.
-```
+![고딕 대성당 내부](../docs/assets/generated-gallery/gallery-076.png)
 
-### No. 121 · Gothic Cathedral Interior
-
-- Image: `docs/architecture-interior/gothic-cathedral-interior-render.png`
-- Metadata: Architecture & Interior · `tall` · `2160x3840` · Curated
+- 카테고리: 건물 사진
+- 사이즈: Architecture & Interior · tall · 1536x2048
 
 ```text
-Render a majestic Gothic cathedral interior in photorealistic architectural style, viewed down the central nave with towering ribbed vaults, pointed arches, intricate tracery, and colored light from stained glass windows. Use a palette of cool stone gray, deep burgundy, sapphire blue, candle gold, and dusty ambient light. Include realistic worn limestone textures, carved choir stalls, a patterned stone floor, and a distant altar. Add a discreet informational plaque near the foreground with the in-image text "Nave Height 28.5 m" and "Westminster Hall of Light". The composition should emphasize verticality, symmetry, and sacred atmosphere while remaining architecturally believable. Lighting should mix soft daylight shafts and warm candlelight, with subtle volumetric dust. Prioritize accurate Gothic detailing, strong perspective, material realism, and crisp small text, producing a museum-grade architectural render rather than a fantasy scene.
+결과물 유형:
+사실적 실내 건축 사진. 주제는 "고딕 대성당 내부"입니다. 완성 이미지는 웅장한 성당 신랑(nave) 공간의 구조와 압도적인 수직감을 실제 촬영한 사진처럼 담아야 하며, 사람이 그 안을 걷고 머무는 크기감이 드러나야 합니다.
+
+주 피사체:
+고딕 대성당 내부의 중앙 통로를 정면으로 바라본 웅장한 공간. 하늘로 치솟는 뾰족 아치와 리브 볼트 천장, 좌우로 늘어선 거대한 석조 기둥, 중앙 안쪽의 큰 장미창과 세로로 긴 스테인드글라스, 그 아래 금빛 고딕 제단이 대칭 구도로 놓입니다. 전경 중앙에는 베이지색 재킷을 입고 크로스백을 멘 방문객 한 명이 제단 쪽으로 걸어가고, 원경 제단 근처에 여러 방문객의 작은 실루엣이 흩어져 있어 공간의 스케일을 보여줍니다.
+
+구도와 비율:
+3:4 세로형, 사람 눈높이에서 중앙 통로를 정면으로 응시하는 완전 대칭 구도. 소실점은 안쪽 제단과 장미창에 모이며, 좌우 기둥 열과 나무 신도석이 원근으로 뻗어 깊이감을 만듭니다. 전경의 인물을 스케일 기준으로 삼아 공간의 거대함을 판단할 수 있게 합니다.
+
+맥락과 배경:
+좌우 벽에는 금빛 십자 문양이 새겨진 짙은 붉은색 세로 배너가 대칭으로 걸려 있고, 양옆으로 촛불이 켜진 촛대들이 늘어섭니다. 바닥은 검고 흰 체크무늬 대리석이며 좌우로 짙은 색 나무 신도석이 규칙적으로 배열됩니다. 배경은 주 피사체를 설명하는 근거가 되며 불필요한 장식으로 시선을 빼앗지 않습니다.
+
+스타일과 매체:
+사실적 건축 실내 사진. 석재 질감, 스테인드글라스의 색광, 목재와 대리석 표면이 실제 공간처럼 읽히는 자연스러운 사진 톤을 사용합니다.
+
+빛과 디테일:
+조명: 오른쪽 상단에서 비스듬히 쏟아지는 뚜렷한 빛기둥(god ray)이 통로를 가로지르고, 스테인드글라스를 통과한 푸른 색광이 어두운 석조 실내에 스며듭니다. 전체는 어둡고 장엄하며 조용한 분위기이고, 천장·벽·바닥 재료에 빛이 다르게 닿습니다.
+카메라 시점: 사람 눈높이의 넓은 건축 사진 시점으로 중앙 통로를 정면 대칭으로 잡고 원근을 끝까지 유지합니다.
+디테일: 기둥의 세로 홈, 볼트 천장의 리브, 장미창과 스테인드글라스의 문양, 촛대의 불꽃, 배너의 금빛 자수, 대리석 바닥의 반사와 인물의 그림자를 사실적으로 정리합니다.
+
+정확성 조건:
+인물 수는 전경에 걷는 방문객 한 명과 원경 제단 근처의 여러 방문객 실루엣으로 정확히 유지합니다. 좌우 붉은 배너, 촛대, 기둥, 신도석은 완전 대칭으로 배치합니다. 화면 어디에도 문자·간판·표지판·로고를 넣지 않습니다. 불가능한 원근감이나 과장된 왜곡은 피하고 실제 성당 사진처럼 자연스럽게 유지합니다.
 ```
