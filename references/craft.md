@@ -115,7 +115,7 @@ Craft rules:
 - A short header comment can carry `VERSION:` and `AESTHETIC:`. The version is not for code execution; it makes the prompt feel like a deliberate spec and helps future agents compare variants.
 - Values should be concrete visual constraints, not vague praise.
 - Arrays are good for visible elements; nested objects are good for materials, physics, lighting, and output goals.
-- Use `render_flags` for **result-level** constraints such as `sharp_foreground`, `micro_texture_visible`, `soft_background_falloff`, or `editorial_finish`. Do **not** use SD-era resolution tokens (`8K_UHD`, `masterpiece`, `best quality`). 해상도 토큰은 통제가 아니라 노이즈다.
+- Use `render_flags` for **result-level** constraints such as `sharp_foreground`, `micro_texture_visible`, `soft_background_falloff`, or `editorial_finish`. Do **not** use SD-era resolution tokens (`8K_UHD`, `masterpiece`, `best quality`). 해상도 토큰은 결과를 통제하지 못하고 묘사만 흐린다.
 - JSON does not have to be machine-valid if comments help the model, but keep it clean and readable.
 - Still include aspect ratio and output mood inside the schema.
 
@@ -311,9 +311,9 @@ GPT 이미지 모델은 장면 네거티브("군중 없이", "로고 없이")를
 
 | 빼려는 것 | 나쁨(네거티브) | 좋음(긍정형 재서술) |
 |---|---|---|
-| 군중 | "사람 없이" | "프레임 안엔 인물 한 명, 단독" |
-| 잡다한 배경 | "배경 지저분하지 않게" | "깨끗한 단색 배경, 넉넉한 여백" |
-| 워터마크/로고 | "로고 없이" | "브랜드 표기 없는 클린 마감" |
+| 여러 명 | "사람 여럿 말고" | "화면엔 주인공 한 사람만, 나머지는 비운다" |
+| 어수선한 배경 | "배경 지저분하지 않게" | "한 가지 색조의 평평한 배경, 여백 위주" |
+| 워터마크/로고 | "로고 없이" | "표면에 아무 표기 없이 매끈하게" |
 | 조잡한 스타일 | "애니풍 피하기" | "실사 사진 질감, 자연스러운 그림자" |
 
 **유일한 예외 = 텍스트 렌더 가드.** 이미지 안에 따옴표 카피가 **실제로 있을 때만**, 가독성 화이트리스트 1줄을 붙일 수 있다:

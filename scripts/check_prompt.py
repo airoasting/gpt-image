@@ -12,8 +12,8 @@ errors가 0이면 exit 0, 하나라도 있으면 exit 1.
 규칙 근거는 SKILL.md·references/craft.md. 핵심:
 - 7블록 존재·순서
 - 모호 형용사 환원 (E-VAGUE)
-- 화면비 토큰 + 5종 사이즈 락 (E-AR-MISSING / W-AR-NONCANON)
-- SD 시대 죽은 단어 금지 (E-DEAD-WORD)
+- 화면비 토큰 + 5종 정본 (E-AR-MISSING / W-AR-NONCANON)
+- 낡은 품질 토큰(8k·masterpiece 등) 금지 (E-DEAD-WORD)
 - 네거티브 최소화: 라벨형 금지(E-NEG-LABEL), 한국어 배제형은 경고(W-NEG-KO)
 - 언어 혼용 경고 (W-LANG-MIX)
 - 따옴표 텍스트에 가독성 가드 (W-TEXT-GUARD)
@@ -29,7 +29,7 @@ VAGUE = ["예쁘게", "예쁜", "고급스럽게", "감성적으로", "감성적
 DEAD = ["8k", "4k", "uhd", "masterpiece", "best quality", "ultra-detailed",
         "ultra detailed", "highly detailed", "sharp focus", "trending on artstation"]
 
-# 5종 정본 화면비 (사이즈 락)
+# 5종 정본 화면비
 CANON_AR = {"3:4", "16:9", "1:1", "9:16", "21:9"}
 AR_ANY = re.compile(r"\b(\d{1,2}:\d{1,2})\b")
 
@@ -72,7 +72,7 @@ def check(text):
             warnings.append({"code": "W-STAGE",
                              "msg": f"무대 지정 '{w}' — 기준이 프롬프트 밖. 구체 명세로 대체"})
 
-    # 3) 화면비 + 사이즈 락
+    # 3) 화면비 (5종 정본)
     ars = AR_ANY.findall(text)
     if not ars:
         errors.append({"code": "E-AR-MISSING", "msg": "화면비 토큰 없음 (예: 3:4 세로형)"})
@@ -82,11 +82,11 @@ def check(text):
             warnings.append({"code": "W-AR-NONCANON",
                              "msg": f"비정본 화면비 {noncanon} — 5종(3:4·16:9·1:1·9:16·21:9) 권장"})
 
-    # 4) SD 죽은 단어
+    # 4) 낡은 품질 토큰
     for w in DEAD:
         if re.search(rf"(?<![a-z0-9]){re.escape(w)}(?![a-z0-9])", low):
             errors.append({"code": "E-DEAD-WORD",
-                           "msg": f"SD 시대 죽은 단어 '{w}' — 결과 기반 서술로 대체"})
+                           "msg": f"낡은 품질 토큰 '{w}' — 결과를 구체 명세로 대체"})
 
     # 5) 네거티브
     if re.search(r"(?mi)^\s*(negative|avoid)\s*:", text) or re.search(r"(?i)\bavoid\b\s+[a-z]", text):
