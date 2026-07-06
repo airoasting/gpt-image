@@ -2762,9 +2762,29 @@ input[type="text"]:focus,
     justify-content: space-between;
     padding: 12px 0;
   }
-  /* 브랜드 글자 숨기고 로고만 */
+  .brand {
+    gap: 8px;
+    min-width: 0;
+  }
   .brand-label {
+    display: block;
+    min-width: 0;
+    overflow: hidden;
+    color: var(--ink);
+    font-family: var(--font-latin), var(--font-korean);
+    font-size: 0.95rem;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    text-transform: none;
+    white-space: nowrap;
+  }
+  .brand-label .wc {
     display: none;
+  }
+  .brand-label::after {
+    content: "GPT 이미지 프롬프트 랩";
   }
   .menu-toggle {
     display: flex;
