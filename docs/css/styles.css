@@ -2847,6 +2847,32 @@ input[type="text"]:focus,
 
 /* ── 모바일 최적화 (≤768px): 갤러리 칩·상세 버튼 한 줄 ── */
 @media (max-width: 768px) {
+  .usage-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .usage-card {
+    gap: 12px;
+    padding: 20px;
+    border-radius: 18px;
+  }
+  .usage-card h3 {
+    font-size: 1.05rem;
+    line-height: 1.25;
+    word-break: keep-all;
+  }
+  .usage-card p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    word-break: keep-all;
+  }
+  .usage-example {
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
   /* 갤러리 카테고리 칩: 한 줄 가로 스크롤 */
   .gallery-category-list {
     display: flex;
