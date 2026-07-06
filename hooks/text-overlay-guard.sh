@@ -11,7 +11,7 @@
 #   PreToolUse hook, matcher "Bash".
 #
 # Self-test:
-#   hooks/gpt-image-block-text-overlay.sh --test
+#   hooks/text-overlay-guard.sh --test
 
 set -u
 
