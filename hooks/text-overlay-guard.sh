@@ -35,7 +35,7 @@ DENY_REASON = (
     "Text must be rendered inside the image from the prompt. "
     "Post-generation text overlays are blocked. Revise the prompt, reduce copy, "
     "increase canvas size if needed, and regenerate. See SKILL.md and "
-    "references/gpt-image-prompt-craft.md."
+    "references/prompt-craft.md."
 )
 
 SIGNATURES = [
@@ -129,8 +129,8 @@ def run_tests() -> int:
     }
     allow_cases = {
         "validator": "python3 scripts/check_prompt.py draft.txt",
-        "craft_ref": "cat references/gpt-image-prompt-craft.md",
-        "variation_ref": "cat references/gpt-image-variation-recipes.md",
+        "craft_ref": "cat references/prompt-craft.md",
+        "variation_ref": "cat references/variation-recipes.md",
         "ffmpeg_scale": "ffmpeg -i a.mp4 -vf scale=1280:720 out.mp4",
         "imagemagick_resize": "convert in.png -resize 50% out.png",
         "search_signature": "rg 'drawtext|ImageDraw|fillText' hooks scripts",

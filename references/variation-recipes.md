@@ -30,7 +30,7 @@ Open this file for requests like:
 - "Show me three campaign routes."
 - "Make versions that feel meaningfully different."
 
-Do not use it for a single precise prompt unless the user asks for alternatives. For a single prompt, use `gallery.md`, the matching `gallery-*.md` file, and `gpt-image-prompt-craft.md`.
+Do not use it for a single precise prompt unless the user asks for alternatives. For a single prompt, use `gallery.md`, the matching `gallery-*.md` file, and `prompt-craft.md`.
 
 ## 2. The Invariant Stack
 
@@ -274,6 +274,6 @@ Use this 10-point rubric before accepting a variation set or future changes to t
 | Batch usability | 1 | Are IDs, sizes, titles, and prompts ready for separate generation? |
 | Distinctiveness | 1 | Are the variants meaningfully different at first glance? |
 | Set coherence | 1 | Do the variants still feel like one family or campaign? |
-| Maintainability | 1 | Is the document English-only, concise, synced with `gpt-image-prompt-craft.md`, and easy to update? |
+| Maintainability | 1 | Is the document English-only, concise, synced with `prompt-craft.md`, and easy to update? |
 
 Score 9 or below: revise before shipping. A 10-point variation set is controlled, visibly distinct, coherent as a family, and directly usable as separate seven-block prompts or JSONL rows.

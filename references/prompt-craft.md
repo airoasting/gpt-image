@@ -5,7 +5,7 @@ This file is the English craft layer for the `references/` folder. It turns the 
 Use it with:
 - `gallery.md` as the routing index.
 - One matching `gallery-*.md` category file, or two to three files for mixed requests.
-- `gpt-image-variation-recipes.md` when the user asks for multiple concepts or deliberate variants.
+- `variation-recipes.md` when the user asks for multiple concepts or deliberate variants.
 - `openai-cookbook.md` when the request depends on current model capabilities, generation/edit workflows, or API parameter behavior.
 
 The gallery files are written in Korean because they mirror the site examples. This file is intentionally English so the craft rules can be inspected, reused, and maintained independently.
@@ -40,8 +40,8 @@ Do not draft from memory first. The skill is meant to remix the repository's col
 Reference workflow:
 1. Open `gallery.md` and choose the closest category.
 2. Read the matching `gallery-*.md` file and compare three to eight nearby examples.
-3. Apply this `gpt-image-prompt-craft.md` file for cross-category rules.
-4. For batches or concept variations, also read `gpt-image-variation-recipes.md`.
+3. Apply this `prompt-craft.md` file for cross-category rules.
+4. For batches or concept variations, also read `variation-recipes.md`.
 5. For generation/edit/API questions, check `openai-cookbook.md`.
 
 The current reference set is exactly 100 gallery examples: 10 categories with 10 examples each. Do not cite obsolete example numbers from older atlases. Refer to the current category file and entry title instead.
@@ -333,7 +333,7 @@ For bilingual layouts, define hierarchy. Example: Korean headline first, English
 
 ## 17. Variant Generation Uses One Changing Axis
 
-When the user asks for multiple directions, do not make random variations. Use `gpt-image-variation-recipes.md` and change one axis at a time.
+When the user asks for multiple directions, do not make random variations. Use `variation-recipes.md` and change one axis at a time.
 
 Available axes:
 - Art movement swap: same subject, different shape/color/type/composition system.

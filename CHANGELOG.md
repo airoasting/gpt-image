@@ -13,7 +13,7 @@
 
 ### 번들 스킬 (`SKILL.md`, `references/`, `scripts/`, `hooks/`)
 - 7원칙 프롬프트 설계 규칙과 10개 카테고리 라우팅
-- 레퍼런스 라이브러리: 10개 카테고리 파일(각 10개, 사이트 갤러리 100개와 1:1) + 작성 규칙(`gpt-image-prompt-craft.md`) + 변주 레시피(`gpt-image-variation-recipes.md`)
+- 레퍼런스 라이브러리: 10개 카테고리 파일(각 10개, 사이트 갤러리 100개와 1:1) + 작성 규칙(`prompt-craft.md`) + 변주 레시피(`variation-recipes.md`)
 - 품질 도구: 규칙 검증기(`scripts/check_prompt.py`), 생성물 위 글자 후처리 차단 훅(`hooks/text-overlay-guard.sh`), 실측 채점(`experiments/`)
 - 비개발자 비즈니스 리더용 설치 안내
 

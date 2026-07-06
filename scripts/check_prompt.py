@@ -18,8 +18,8 @@ Exit codes:
 
 Rule sources:
     SKILL.md
-    references/gpt-image-prompt-craft.md
-    references/gpt-image-variation-recipes.md
+    references/prompt-craft.md
+    references/variation-recipes.md
 """
 
 from __future__ import annotations

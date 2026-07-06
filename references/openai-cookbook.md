@@ -42,9 +42,9 @@ The upstream cookbook is an official OpenAI notebook with examples for `gpt-imag
 
 Keep these boundaries clear:
 - This file can summarize official cookbook patterns.
-- `gpt-image-prompt-craft.md` decides how those patterns become reusable prompt-writing rules.
+- `prompt-craft.md` decides how those patterns become reusable prompt-writing rules.
 - `gallery.md` and the `gallery-*.md` files provide the repository's actual examples.
-- `gpt-image-variation-recipes.md` controls multi-concept ideation.
+- `variation-recipes.md` controls multi-concept ideation.
 - The upstream cookbook remains the source of truth for newly changed API details.
 
 ## 2. Model Selection
@@ -338,7 +338,7 @@ Continuation prompt should repeat:
 For this repository, character consistency guidance should also consult:
 - `gallery-webtoon.md` for mobile comic story hooks;
 - `gallery-illustration.md` for reference sheets and character boards;
-- `gpt-image-prompt-craft.md` for identity consistency and multi-panel constraints.
+- `prompt-craft.md` for identity consistency and multi-panel constraints.
 
 ## 13. API Parameter Quick Reference
 
@@ -366,14 +366,14 @@ Use the official cookbook patterns together with the local reference files:
 
 | Cookbook use case | Local reference file |
 |---|---|
-| Infographics, educational visuals, slides, charts | `gallery-infographics-and-field-guides.md`, `gallery-ui-ux-mockups.md`, `gpt-image-prompt-craft.md` |
-| Translation and text replacement | `gpt-image-prompt-craft.md` sections on exact text and edit invariants |
-| Photorealistic images and people | `gallery-photography.md`, `gpt-image-prompt-craft.md` |
-| Logo, ads, products, packaging, merch | `gallery-product-and-brand.md`, `gallery-typography-and-posters.md`, `gpt-image-prompt-craft.md` |
-| Story-to-comic and character consistency | `gallery-webtoon.md`, `gallery-illustration.md`, `gpt-image-prompt-craft.md` |
-| UI mockups | `gallery-ui-ux-mockups.md`, `gpt-image-prompt-craft.md` |
-| Interior swap and architecture edits | `gallery-architecture-and-interior.md`, `gpt-image-prompt-craft.md` |
-| Multi-concept batches | `gpt-image-variation-recipes.md` |
+| Infographics, educational visuals, slides, charts | `gallery-infographics-and-field-guides.md`, `gallery-ui-ux-mockups.md`, `prompt-craft.md` |
+| Translation and text replacement | `prompt-craft.md` sections on exact text and edit invariants |
+| Photorealistic images and people | `gallery-photography.md`, `prompt-craft.md` |
+| Logo, ads, products, packaging, merch | `gallery-product-and-brand.md`, `gallery-typography-and-posters.md`, `prompt-craft.md` |
+| Story-to-comic and character consistency | `gallery-webtoon.md`, `gallery-illustration.md`, `prompt-craft.md` |
+| UI mockups | `gallery-ui-ux-mockups.md`, `prompt-craft.md` |
+| Interior swap and architecture edits | `gallery-architecture-and-interior.md`, `prompt-craft.md` |
+| Multi-concept batches | `variation-recipes.md` |
 
 This file should not duplicate every gallery example. It should explain how OpenAI API behavior and cookbook workflow patterns affect the local prompt design.
 

@@ -2,7 +2,7 @@
 
 파일: `gallery-illustration.md` · 10개 · 사이트 갤러리(index)의 실제 한국어 프롬프트
 
-이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`gpt-image-prompt-craft.md`](gpt-image-prompt-craft.md)와 함께 봅니다.
+이 파일은 사이트 갤러리에 실제로 실린 완성 프롬프트를 담습니다. 공통 작성 규칙은 [`prompt-craft.md`](prompt-craft.md)와 함께 봅니다.
 
 ---
 
