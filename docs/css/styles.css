@@ -156,11 +156,17 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 7px;
   width: 36px;
   height: 36px;
   border-radius: 999px;
   color: var(--muted);
   flex-shrink: 0;
+}
+
+.github-label,
+.github-external-icon {
+  display: none;
 }
 
 .github-link:hover {
@@ -2800,8 +2806,22 @@ input[type="text"]:focus,
   }
   .topbar-actions .github-link {
     width: auto;
+    height: auto;
     align-self: flex-start;
     margin-top: 2px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-family: var(--font-site);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .topbar-actions .github-label,
+  .topbar-actions .github-external-icon {
+    display: inline-block;
   }
 }
 
