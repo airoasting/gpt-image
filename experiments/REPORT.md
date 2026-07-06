@@ -1,72 +1,90 @@
-# 실측 검증 리포트: 사이트 갤러리 프롬프트 정합 (2026-07-05)
+# Gallery Prompt-Fit Evaluation Report (2026-07-05)
 
-10개 카테고리에서 각 1컷씩(총 10컷) 뽑아, 각 프롬프트가 실제 이미지를 얼마나 충실히 재현하는지 비전 채점했다. 고정 루브릭은 [`RUBRIC.md`](RUBRIC.md), 채점 원본은 [`scores/gallery.scores.jsonl`](scores/gallery.scores.jsonl), 표본은 [`select_sample.py`](select_sample.py)로 재현한다. 점수 파일의 스키마와 집계는 [`validate_scores.py`](validate_scores.py)로 검증한다.
+This report evaluates 10 gallery images, one deterministic sample from each
+category, against the prompt that produced it. The fixed rubric is
+[`RUBRIC.md`](RUBRIC.md), raw scores live in
+[`scores/gallery.scores.jsonl`](scores/gallery.scores.jsonl), samples are
+reproducible with [`select_sample.py`](select_sample.py), and schema plus
+aggregate checks run through [`validate_scores.py`](validate_scores.py).
 
-이 리포트의 목적은 스킬 규칙(네거티브 정책, 검증기 설계)의 근거를 실측으로 확인하는 것이다. 결론을 데이터보다 크게 말하지 않으려고, 방법과 한계를 먼저 밝힌다.
+The purpose is narrow: verify whether the current skill rules are supported by
+observed prompt-image fit, text rendering quality, and negative-instruction
+behavior. The conclusion is intentionally limited to this sample.
 
-## 방법
+## Method
 
-- **표본**: 카테고리당 중앙 항목 1개(`select_sample.py`의 결정적 선택). 컷당 이미지와 프롬프트를 한 쌍으로 본다.
-- **채점**: 비전 판독이 가능한 독립 에이전트가 컷당 1회, `RUBRIC.md`의 4개 품질 축(goal_fit·text_accuracy·layout·material_realism 각 0~5)과 `neg_rendered`(불리언)를 매긴다. 컷마다 다른 에이전트가 병렬로 맡되, **같은 컷을 여러 명이 교차 채점하지는 않았다**(회차 1회).
-- **집계**: 축별 산술평균. `text_accuracy`는 이미지에 글자가 없으면 `null`로 두고 평균에서 뺀다.
-- **통과 기준**: 4개 축 평균 ≥ 4 이고, 글자가 있는 컷은 `text_accuracy` ≥ 4.
-- **자동 검증**: `python3 experiments/validate_scores.py --pretty`가 `ok: true`를 반환해야 한다.
+- **Sample**: one middle item per gallery category, selected deterministically by `select_sample.py`.
+- **Scoring**: each image-prompt pair is scored once on four 0-5 axes: `goal_fit`, `text_accuracy`, `layout`, and `material_realism`.
+- **Text rows**: `text_accuracy` is `null` when the image has no intentional text, and those rows are excluded from the text average.
+- **Pass rule**: an image passes when the scored axes average at least 4, and any text-bearing image also has `text_accuracy >= 4`.
+- **Validation**: `python3 experiments/validate_scores.py --pretty` must return `ok: true`.
 
-## 컷별 채점
+## Per-Image Scores
 
-| 컷 | 카테고리 | goal_fit | text | layout | material | neg |
+| Image | Category | goal_fit | text | layout | material | neg_rendered |
 |---|---|:--:|:--:|:--:|:--:|:--:|
-| ref-6  | 웹툰 | 5 | 4 | 5 | 5 | 아니오 |
-| ref-16 | 일러스트 | 5 | 없음 | 5 | 5 | 아니오 |
-| ref-26 | 게임 | 5 | 5 | 5 | 5 | 아니오 |
-| ref-36 | 시네마틱 | 5 | 없음 | 5 | 5 | 아니오 |
-| ref-46 | 포스터 | 5 | 4 | 5 | 5 | 아니오 |
-| ref-56 | 제품·브랜드 | 5 | 4 | 5 | 5 | 아니오 |
-| ref-66 | 인물 사진 | 5 | 없음 | 5 | 5 | 아니오 |
-| ref-76 | 건물 사진 | 5 | 없음 | 5 | 5 | 아니오 |
-| ref-86 | 인포그래픽 | 5 | 5 | 5 | 5 | 아니오 |
-| ref-96 | UI·대시보드 | 5 | 5 | 5 | 5 | 아니오 |
+| ref-6 | webtoon | 5 | 4 | 5 | 5 | false |
+| ref-16 | illustration | 5 | none | 5 | 5 | false |
+| ref-26 | gaming | 5 | 5 | 5 | 5 | false |
+| ref-36 | cinematic | 5 | none | 5 | 5 | false |
+| ref-46 | posters | 5 | 4 | 5 | 5 | false |
+| ref-56 | product-and-brand | 5 | 4 | 5 | 5 | false |
+| ref-66 | photography | 5 | none | 5 | 5 | false |
+| ref-76 | architecture-and-interior | 5 | none | 5 | 5 | false |
+| ref-86 | infographics | 5 | 5 | 5 | 5 | false |
+| ref-96 | ui-and-dashboard | 5 | 5 | 5 | 5 | false |
 
-`없음`은 이미지에 글자가 없어 `text_accuracy`를 평균에서 뺀 컷이다(텍스트 있는 6컷만 집계).
+`none` means the image contains no intentional text, so `text_accuracy` is
+excluded from the text average.
 
-## 집계
+## Aggregate Results
 
-| 지표 | 값 | 비고 |
+| Metric | Value | Note |
 |---|---:|---|
-| goal_fit (프롬프트↔이미지 일치) | **5.00 / 5** | 10컷 전부 5 |
-| text_accuracy (렌더 텍스트) | **4.50 / 5** | 글자 있는 6컷(4·5·4·4·5·5) 평균, 전부 ≥4 |
-| layout (영역·구성) | 5.00 / 5 | 10컷 전부 5 |
-| material_realism (재질) | 5.00 / 5 | 10컷 전부 5 |
-| neg_rendered (배제 문구가 그림에 나옴) | **0 / 10** | 한 컷도 없음 |
-| 통과(축 평균 ≥4 AND 글자 컷 text ≥4) | **10 / 10** | |
+| goal_fit | **5.00 / 5** | All 10 images scored 5 |
+| text_accuracy | **4.50 / 5** | Six text-bearing images: 4, 5, 4, 4, 5, 5 |
+| layout | 5.00 / 5 | All 10 images scored 5 |
+| material_realism | 5.00 / 5 | All 10 images scored 5 |
+| neg_rendered | **0 / 10** | No exclusion phrase or excluded object appeared |
+| pass_count | **10 / 10** | Every sampled image passed |
 
-## 결론
+## Findings
 
-1. **프롬프트-이미지 정합은 만점 수준이다**(goal_fit 10컷 전부 5). 표본에서 "없는 요소를 요구"하거나 "핵심 요소 누락"한 사례는 0건이었다. 실제 픽셀 기준으로 프롬프트를 맞춘 작업이 실측으로 확인된다.
+1. Prompt-image fit is excellent in this sample. Every image scored 5 on
+   `goal_fit`, with no missing required subject, wrong count, or unsupported
+   major object.
 
-2. **한글 텍스트는 4.50/5로 안정적이지만 완벽하지는 않다.** 감점은 전부 경미했다. 포스터 `ref-46`의 "전국" 한 단어 누락, 제품 `ref-56`의 SPF/PA fine print 흐림, 웹툰 `ref-6`의 약병 라벨 소형 잉여 글자. 심각한 오탈자, 알 수 없는 글자 덩어리, 문구를 통째로 지어낸 경우는 없었다. 따옴표 고정 정책은 유효하며, 남은 결함은 전부 **작고 밀집한 텍스트(fine print, 라벨)**에 몰려 있다.
-   - **개선 방향**: 글자가 몰리거나 작을 때는 긴 변을 크게(예: 2048) 잡거나 카피 수를 줄인다(`SKILL.md` 출력 크기 표, `prompt-craft.md` §1). 꼭 지킬 문구만 따옴표로 고정하고 작은 안내문은 최소화한다.
+2. Text rendering is strong but not perfect. The text average is 4.50/5 across
+   six text-bearing images. The only losses are small: an extra tiny string on a
+   potion label, one missing word in a poster title, and soft SPF/PA fine print
+   on a product tube. This supports the rule that quoted text should be fixed
+   explicitly, while very small dense text should be minimized or rendered at a
+   larger canvas size.
 
-3. **꼬리 네거티브는 이 표본에서 무해했다**(neg_rendered 0/10, goal_fit 손상 0). "의미 없는 글자는 피합니다" 같은 꼬리 배제 문구가 이미지에 글자로 렌더되지 않았고, 배제 대상이 잘못 렌더되지도 않았다. 검증기가 한국어 배제형(`W-NEG-KO`)을 error가 아니라 warning으로 둔 판단이 데이터와 일치한다. 긍정형 재서술은 품질·명료성 차원에서 원칙으로 권장하되, 꼬리 배제 문구를 실격 사유로 강제하지는 않는다.
+3. Negative tail phrases did not appear in the image output. `neg_rendered` is
+   0/10, and no image lost `goal_fit` because of an exclusion phrase. This
+   supports treating negative phrasing as a quality warning rather than an
+   automatic failure, while still preferring clear positive phrasing.
 
-## 한계
+## Limits
 
-- **표본이 작다.** 카테고리당 1컷(총 10컷)이라 점수가 위쪽에 몰려 카테고리 간 우열은 가리기 어렵다. 이 리포트는 "정합이 무너지지 않았다"와 "배제 문구가 그림에 나오지 않았다"를 확인하는 용도다.
-- **교차 채점이 없다.** 컷당 1회 채점이라 채점자 간 신뢰도(같은 컷을 여러 명이 매겼을 때의 일치도)는 측정하지 못했다. 반복·교차 채점은 후속 과제.
-- **주효과 정량 비교는 별도 실험이 필요하다.** 캔버스 크기가 글자 정확도에 실제로 얼마나 기여하는지 같은 인과 비교는 조건을 바꿔 이미지를 새로 생성해야 한다. 이 표본으로는 확인할 수 없다.
+- The sample is small: one image per category, 10 images total.
+- Each image was scored once, so inter-rater agreement was not measured.
+- This is not a causal test. For example, measuring the effect of canvas size on
+  text accuracy would require regenerating images under controlled conditions.
 
-## 재현
+## Reproduction
 
 ```bash
-# 1. 표본 재선정(결정적): 카테고리당 중앙 항목 1개 → experiments/_work/sample.json
+# 1. Recreate the deterministic sample.
 python3 experiments/select_sample.py
 
-# 2. sample.json의 각 (이미지, 프롬프트)를 비전 판독 에이전트에 주고
-#    RUBRIC.md 기준으로 컷당 1회 채점 → scores/gallery.scores.jsonl 로 기록
-#    (축별 산술평균, text_accuracy=null 제외는 위 "집계"와 동일)
+# 2. Score each image-prompt pair with RUBRIC.md and write one JSON object per
+#    line to experiments/scores/gallery.scores.jsonl.
 
-# 3. 점수 파일 스키마와 집계 재계산
+# 3. Validate the score file and recompute the aggregate metrics.
 python3 experiments/validate_scores.py --pretty
 ```
 
-2단계 채점은 비전 판독이 가능한 모델이 있어야 한다. 표본 선택(1단계)은 결정적이라 누가 돌려도 같은 10컷이 나온다. 3단계 검증은 로컬에서 실행 가능하며, 현재 원자료 기준 집계는 `goal_fit=5.0`, `text_accuracy=4.5`, `layout=5.0`, `material_realism=5.0`, `neg_rendered=0`, `pass_count=10`이다.
+The current source scores validate with `goal_fit=5.0`, `text_accuracy=4.5`,
+`layout=5.0`, `material_realism=5.0`, `neg_rendered=0`, and `pass_count=10`.

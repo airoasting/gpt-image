@@ -13,8 +13,18 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_SCORES = os.path.join(ROOT, "experiments/scores/gallery.scores.jsonl")
 
-ORDER = ["웹툰", "일러스트", "게임", "시네마틱", "포스터",
-         "제품 · 브랜드", "인물 사진", "건물 사진", "인포그래픽", "UI·대시보드"]
+CATEGORIES = [
+    "webtoon",
+    "illustration",
+    "gaming",
+    "cinematic",
+    "posters",
+    "product-and-brand",
+    "photography",
+    "architecture-and-interior",
+    "infographics",
+    "ui-and-dashboard",
+]
 AXES = ["goal_fit", "text_accuracy", "layout", "material_realism"]
 REQUIRED_QA = set(AXES)
 
@@ -43,7 +53,7 @@ def validate_row(row):
 
     for key in ("id", "category", "qa", "neg_rendered", "notes"):
         if key not in row:
-            errors.append({"line": line, "code": "E-MISSING", "msg": f"필수 필드 없음: {key}"})
+            errors.append({"line": line, "code": "E-MISSING", "msg": f"Missing required field: {key}"})
 
     if "qa" not in row or not isinstance(row["qa"], dict):
         return errors
@@ -51,9 +61,9 @@ def validate_row(row):
     missing_axes = REQUIRED_QA - set(row["qa"])
     extra_axes = set(row["qa"]) - REQUIRED_QA
     if missing_axes:
-        errors.append({"line": line, "code": "E-QA-MISSING", "msg": f"qa 축 누락: {sorted(missing_axes)}"})
+        errors.append({"line": line, "code": "E-QA-MISSING", "msg": f"Missing qa axes: {sorted(missing_axes)}"})
     if extra_axes:
-        errors.append({"line": line, "code": "E-QA-EXTRA", "msg": f"알 수 없는 qa 축: {sorted(extra_axes)}"})
+        errors.append({"line": line, "code": "E-QA-EXTRA", "msg": f"Unknown qa axes: {sorted(extra_axes)}"})
 
     for axis in AXES:
         value = row["qa"].get(axis)
@@ -61,14 +71,18 @@ def validate_row(row):
             continue
         if not isinstance(value, int) or not 0 <= value <= 5:
             errors.append(
-                {"line": line, "code": "E-QA-RANGE", "msg": f"{axis}는 0~5 정수 또는 text_accuracy null이어야 함: {value!r}"}
+                {
+                    "line": line,
+                    "code": "E-QA-RANGE",
+                    "msg": f"{axis} must be an integer from 0 to 5, or null for text_accuracy: {value!r}",
+                }
             )
 
     if "neg_rendered" in row and not isinstance(row["neg_rendered"], bool):
-        errors.append({"line": line, "code": "E-NEG-TYPE", "msg": "neg_rendered는 boolean이어야 함"})
+        errors.append({"line": line, "code": "E-NEG-TYPE", "msg": "neg_rendered must be a boolean."})
 
-    if "category" in row and row["category"] not in ORDER:
-        errors.append({"line": line, "code": "E-CATEGORY", "msg": f"알 수 없는 카테고리: {row['category']}"})
+    if "category" in row and row["category"] not in CATEGORIES:
+        errors.append({"line": line, "code": "E-CATEGORY", "msg": f"Unknown category: {row['category']}"})
 
     return errors
 
@@ -120,23 +134,23 @@ def validate_dataset(rows):
     ids = [row.get("id") for row in rows]
     duplicate_ids = sorted({id_ for id_ in ids if ids.count(id_) > 1})
     if duplicate_ids:
-        errors.append({"line": None, "code": "E-DUP-ID", "msg": f"중복 id: {duplicate_ids}"})
+        errors.append({"line": None, "code": "E-DUP-ID", "msg": f"Duplicate ids: {duplicate_ids}"})
 
     categories = [row.get("category") for row in rows]
-    missing_categories = [category for category in ORDER if category not in categories]
+    missing_categories = [category for category in CATEGORIES if category not in categories]
     if missing_categories:
-        errors.append({"line": None, "code": "E-CAT-MISSING", "msg": f"누락 카테고리: {missing_categories}"})
+        errors.append({"line": None, "code": "E-CAT-MISSING", "msg": f"Missing categories: {missing_categories}"})
 
-    if len(rows) != len(ORDER):
-        errors.append({"line": None, "code": "E-ROW-COUNT", "msg": f"행 수는 {len(ORDER)}이어야 함: {len(rows)}"})
+    if len(rows) != len(CATEGORIES):
+        errors.append({"line": None, "code": "E-ROW-COUNT", "msg": f"Expected {len(CATEGORIES)} rows, found {len(rows)}."})
 
     return errors
 
 
 def parse_args(argv):
-    parser = argparse.ArgumentParser(description="실험 점수 JSONL을 검증하고 집계한다.")
+    parser = argparse.ArgumentParser(description="Validate and aggregate experiment score JSONL.")
     parser.add_argument("scores", nargs="?", default=DEFAULT_SCORES)
-    parser.add_argument("--pretty", action="store_true", help="들여쓰기 JSON 출력")
+    parser.add_argument("--pretty", action="store_true", help="Print indented JSON.")
     return parser.parse_args(argv)
 
 
@@ -153,7 +167,7 @@ def main(argv=None):
         "errors": errors,
         "summary": summary,
     }
-    print(json.dumps(payload, ensure_ascii=False, indent=2 if args.pretty else None))
+    print(json.dumps(payload, ensure_ascii=True, indent=2 if args.pretty else None))
     return 0 if not errors else 1
 
 

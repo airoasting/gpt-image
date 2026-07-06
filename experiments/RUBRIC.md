@@ -1,22 +1,24 @@
-# 갤러리 실측 채점 기준
+# Gallery Evaluation Rubric
 
-사이트 갤러리의 각 프롬프트가 실제 이미지를 얼마나 충실히 만들어 내는지를 사람 또는 비전 모델이 눈으로 보고 점수 매기는 기준이다. 목적은 스킬 규칙을 감이 아니라 관찰 가능한 데이터로 점검하는 것이다.
+Use this rubric to judge how faithfully each gallery prompt produced its
+paired image. The goal is to evaluate the skill rules with observable evidence,
+not taste or memory.
 
-## 파일 역할
+## File Roles
 
-- `select_sample.py`: `docs/js/gallery-data.js`에서 카테고리별 표본 1개를 결정적으로 고른다.
-- `scores/gallery.scores.jsonl`: 컷별 채점 원자료다. 한 컷당 JSON 한 줄이다.
-- `validate_scores.py`: JSONL 스키마를 검사하고 집계를 재계산한다.
-- `REPORT.md`: 사람이 읽는 결론, 한계, 재현 절차다.
+- `select_sample.py`: selects one deterministic sample from each category in `docs/js/gallery-data.js`.
+- `scores/gallery.scores.jsonl`: stores one scored JSON object per sampled image.
+- `validate_scores.py`: checks the JSONL schema and recomputes aggregate metrics.
+- `REPORT.md`: explains the result, limits, and reproduction steps for humans.
 
-## JSONL 스키마
+## JSONL Schema
 
-한 컷당 한 줄로 `scores/gallery.scores.jsonl`에 기록한다. 각 줄은 아래 형식을 따른다.
+Write one JSON object per line in `scores/gallery.scores.jsonl`.
 
 ```json
 {
   "id": "ref-6",
-  "category": "웹툰",
+  "category": "webtoon",
   "qa": {
     "goal_fit": 5,
     "text_accuracy": 4,
@@ -24,85 +26,100 @@
     "layout": 5
   },
   "neg_rendered": false,
-  "notes": "한 문장 소견"
+  "notes": "One-sentence finding."
 }
 ```
 
-- `qa`의 네 축은 0~5 정수. 아래 anchor(5·4·3·2·1·0) 사이의 짝수·중간값은 이웃 anchor를 보간해서 준다(예: 5와 3 사이면 4).
-- `text_accuracy`는 이미지 안에 글자가 없으면 `null`로 두고 평균에서 뺀다.
-- `neg_rendered`는 배제 문구가 그림에 글자나 그림으로 나타났으면 `true`.
-- `notes`는 짧게 쓴다. 감점이 있으면 감점 이유를 반드시 적는다.
+- The four `qa` axes use integer scores from 0 to 5.
+- Use `null` for `text_accuracy` when the image contains no intentional text.
+- Set `neg_rendered` to `true` only when an exclusion phrase appears in the image as visible text or as a visible unwanted object.
+- Keep `notes` short. If a score drops below 5, state the reason.
 
-검증:
+Validate the file with:
 
 ```bash
 python3 experiments/validate_scores.py --pretty
 ```
 
-이 명령이 `ok: true`를 반환해야 `REPORT.md`의 집계를 신뢰한다.
+The command must return `ok: true` before `REPORT.md` can cite the aggregate numbers.
 
-## 집계 공식
+## Aggregation
 
-- **축 평균** = 해당 축의 모든 컷 산술평균. `text_accuracy`가 `null`인 컷은 그 축 평균에서만 제외한다.
-- **컷 통과** = `goal_fit·layout·material_realism`(그리고 글자가 있으면 `text_accuracy`)의 평균 ≥ 4. 글자가 있는 컷은 `text_accuracy` 단독으로도 ≥ 4여야 한다.
-- **표본 통과율** = 통과한 컷 수 / 전체 컷 수.
-- **실험 통과** = `validate_scores.py`가 통과하고, `REPORT.md`에 한계가 명시되어 있으며, 결론이 데이터 범위를 넘지 않는다.
+- **Axis average**: arithmetic mean for each axis. Rows with `text_accuracy: null` are excluded only from the text average.
+- **Image pass**: average of `goal_fit`, `layout`, `material_realism`, and `text_accuracy` when present is at least 4. If text is present, `text_accuracy` must also be at least 4 on its own.
+- **Sample pass rate**: passed images divided by total scored images.
+- **Experiment pass**: the score file validates, `REPORT.md` states the limits, and the conclusion does not exceed the data.
 
-## goal_fit · 프롬프트와 그림이 같은가 (핵심)
+## goal_fit
 
-프롬프트가 말한 피사체·수·구성·색·분위기가 그림에 그대로 있는지 본다.
+Measures whether the prompt and image describe the same core result: subject,
+count, composition, color, mood, and required details.
 
-- 5: 프롬프트가 요구한 것이 전부 있고, 그림의 핵심도 프롬프트에 다 적혀 있다.
-- 4: 피사체·구성은 맞지만 색이나 무드가 조금 어긋난다.
-- 3: 주 피사체는 맞으나 수나 배치가 다르다.
-- 2: 주 피사체는 맞으나 여러 핵심 요소가 어긋난다.
-- 1: 사실상 다른 그림. / 0: 프롬프트와 무관한 그림.
+- 5: All required prompt elements are present, and the image's major elements are explained by the prompt.
+- 4: Subject and composition are right, with minor color or mood drift.
+- 3: Main subject is right, but count or placement differs.
+- 2: Main subject is recognizable, but several core details are wrong.
+- 1: The image is effectively a different result.
+- 0: The image is unrelated to the prompt.
 
-특히 본다: 프롬프트가 없는 인물·사물을 요구했는지, 그림의 중요한 요소가 프롬프트에 빠졌는지.
+Check especially for requested people or objects that are missing, extra major
+objects that the prompt never asked for, and missing required details.
 
-## text_accuracy · 그림 속 글자
+## text_accuracy
 
-- 5: 따옴표로 지정한 글자가 그대로, 겹치지 않고, 없던 글자도 안 생겼다.
-- 4: 글자는 다 맞지만 자간·굵기 같은 스타일이 흔들린다.
-- 3: 한 글자 틀렸거나 같은 문구가 한 번 겹쳤다.
-- 2: 두 글자 이상 틀렸거나 알 수 없는 글자 덩어리가 끼었다.
-- 1: 문구 절반 이상이 망가졌다. / 0: 글자를 알아볼 수 없다.
+Measures visible text inside the image.
 
-본다: 지정 문구의 받침·띄어쓰기, 같은 문구 중복, 프롬프트에 없던 글자의 등장.
+- 5: Quoted text appears exactly, does not overlap, and no stray text appears.
+- 4: Text content is correct, but spacing, weight, or small styling details drift.
+- 3: One character is wrong, or one specified phrase is duplicated.
+- 2: Two or more characters are wrong, or unreadable stray text appears.
+- 1: More than half of the requested text is broken.
+- 0: Requested text cannot be recognized.
 
-## layout · 자리와 짜임
+Check spelling, spacing, duplicate phrases, and text that was not requested.
 
-- 5: 지정한 영역대로다(제목이 위쪽, 단계가 순서대로, 격자 칸 수 정확).
-- 4: 영역은 맞고 정렬도 대체로 맞으나 여백이 조금 들쭉날쭉하다.
-- 3: 영역은 맞으나 여백·정렬이 들쭉날쭉하다.
-- 2: 영역 일부가 어긋났다.
-- 1: 자리 지정이 대부분 무시됐다.
+## layout
 
-## material_realism · 재질
+Measures placement, ordering, and visual structure.
 
-- 5: 지정 질감(무광·수채 번짐·평면 벡터 등)이 그럴듯하고, 인물이면 피부가 자연스럽다.
-- 4: 질감은 맞으나 한두 곳이 어색하다.
-- 3: 질감이 밋밋하거나 플라스틱 같다.
-- 2: 질감이 지정과 다르다.
-- 1: 피부가 밀랍 같거나 AI 특유의 뭉갬이 뚜렷하다.
+- 5: Regions match the prompt exactly, such as title at top, steps in order, or correct grid count.
+- 4: Regions are correct, with minor uneven spacing or alignment.
+- 3: Regions are recognizable, but spacing or alignment is unstable.
+- 2: Some major regions are misplaced.
+- 1: Most placement instructions are ignored.
+- 0: Layout is unusable or unrelated.
 
-## neg_rendered · 배제 문구가 그림에 나왔는가 (정책 점검)
+## material_realism
 
-프롬프트 끝의 "~ 피합니다", "없이" 같은 배제 문구가 그림에 **글자나 그림으로 나타났는지**를 표시한다. 자주 나타나면 "빼려는 것은 긍정형으로 다시 쓴다"는 규칙의 근거가 강해진다.
+Measures whether the requested surface, medium, and physical feel are believable.
 
-## 레드팀 체크
+- 5: Requested material or medium is convincing, such as matte product finish, watercolor bleed, flat vector, natural skin, or architectural light.
+- 4: Material is mostly right, with one or two awkward areas.
+- 3: Material is generic, plastic, or too smooth.
+- 2: Material visibly contradicts the prompt.
+- 1: Material is heavily distorted or visibly artificial.
+- 0: Material cannot be evaluated or is unrelated.
 
-채점자가 마지막에 확인한다.
+## neg_rendered
 
-- 같은 기준이 모든 컷에 적용되었는가.
-- 점수와 `notes`가 서로 모순되지 않는가.
-- 텍스트 없는 컷은 `text_accuracy: null`인가.
-- 배제 문구가 실제로 보이지 않으면 `neg_rendered: false`인가.
-- 좋은 결과만 과대해석하지 않고 `REPORT.md`의 한계에 반영했는가.
+Tracks whether a negative instruction was rendered into the image. Mark `true`
+only when an exclusion phrase itself appears as visible text, or when the image
+visibly includes the object or effect that the prompt explicitly excluded.
 
-## 모아 보기 (REPORT.md)
+This metric is a policy check. A high rate supports stricter positive rewriting;
+a low rate means negative phrasing should remain a quality warning rather than
+an automatic failure.
 
-- 카테고리별·전체 평균과 통과 비율.
-- 글자 있는 컷의 text_accuracy 분포로 따옴표 지정과 캔버스 크기 규칙을 점검.
-- neg_rendered 비율로 긍정형 재서술 규칙을 점검.
-- goal_fit이 낮은 컷은 프롬프트와 그림의 정합을 다시 손볼 대상.
+## Red-Team Checklist
+
+- Apply the same anchors to every image.
+- Make sure scores and `notes` do not contradict each other.
+- Use `text_accuracy: null` only when there is no intentional text.
+- Use `neg_rendered: false` when no excluded phrase or object is visible.
+- Record limits in `REPORT.md` instead of overstating a good sample.
+
+## Report Expectations
+
+`REPORT.md` should include category-level rows, overall averages, text accuracy
+distribution for text-bearing images, `neg_rendered` rate, and a concise list of
+limits. Any low `goal_fit` image should become a prompt repair candidate.

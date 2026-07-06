@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
-"""RUBRIC.md 채점용 표본 선정기.
+"""Select deterministic samples for gallery scoring.
 
-`docs/js/gallery-data.js`가 정본이다. 이 스크립트는 그 안의 JSON 배열만 뽑아
-카테고리별 표본을 골라 `experiments/_work/sample.json`으로 저장한다.
+`docs/js/gallery-data.js` is the source of truth. This script extracts the
+embedded JSON array, selects one sample per gallery category, and writes the
+result to `experiments/_work/sample.json`.
 
-기본 전략은 `middle`이다. 각 카테고리 항목 수가 10개라면 0-based index 5,
-즉 ref-6, ref-16 ... ref-96이 선택된다. 결정적 선택이라 누가 돌려도 같은
-표본이 나온다.
+The default strategy is `middle`. With 10 items per category, this selects
+zero-based index 5, producing ref-6, ref-16, ..., ref-96. The selection is
+deterministic so every reviewer evaluates the same sample set.
 """
+
 import argparse
 import json
 import os
@@ -18,43 +20,49 @@ DATA_JS = os.path.join(ROOT, "docs/js/gallery-data.js")
 OUT_DIR = os.path.join(ROOT, "experiments/_work")
 OUT = os.path.join(OUT_DIR, "sample.json")
 
-# 사이트 갤러리의 10개 카테고리 (gallery-data.js의 category 값과 일치해야 함)
-ORDER = ["웹툰", "일러스트", "게임", "시네마틱", "포스터",
-         "제품 · 브랜드", "인물 사진", "건물 사진", "인포그래픽", "UI·대시보드"]
+CATEGORY_FILES = [
+    ("gallery-webtoon.md", "webtoon"),
+    ("gallery-illustration.md", "illustration"),
+    ("gallery-gaming.md", "gaming"),
+    ("gallery-cinematic.md", "cinematic"),
+    ("gallery-typography-and-posters.md", "posters"),
+    ("gallery-product-and-brand.md", "product-and-brand"),
+    ("gallery-photography.md", "photography"),
+    ("gallery-architecture-and-interior.md", "architecture-and-interior"),
+    ("gallery-infographics-and-field-guides.md", "infographics"),
+    ("gallery-ui-ux-mockups.md", "ui-and-dashboard"),
+]
 
 
 def load_references(path):
-    """gallery-data.js에서 JSON 배열만 견고하게 추출한다.
-
-    `window.GALLERY_REFERENCES = [ ... ];` 형태라 대입 접두어나 끝의 세미콜론
-    표기가 바뀌어도 깨지지 않도록, 첫 '['부터 마지막 ']'까지를 파싱한다.
-    """
+    """Extract the JSON array from `gallery-data.js`."""
     with open(path, encoding="utf-8") as f:
         raw = f.read()
     start = raw.find("[")
     end = raw.rfind("]")
     if start == -1 or end == -1 or end < start:
-        raise ValueError(f"{path}에서 JSON 배열을 찾지 못했다.")
+        raise ValueError(f"Cannot find a JSON array in {path}.")
     return json.loads(raw[start:end + 1])
 
 
-def group_by_category(data):
-    by = {}
-    for d in data:
-        for key in ("id", "category", "title", "image", "metadata", "prompt"):
-            if key not in d:
-                raise KeyError(f"gallery-data.js 항목에 필수 키가 없음: {key}")
-        by.setdefault(d["category"], []).append(d)
+def group_by_category_file(data):
+    grouped = {}
+    for item in data:
+        for key in ("id", "categoryFile", "title", "image", "metadata", "prompt"):
+            if key not in item:
+                raise KeyError(f"gallery-data.js item is missing required key: {key}")
+        grouped.setdefault(item["categoryFile"], []).append(item)
 
-    missing = [c for c in ORDER if c not in by]
+    expected_files = [category_file for category_file, _category in CATEGORY_FILES]
+    missing = [category_file for category_file in expected_files if category_file not in grouped]
     if missing:
-        raise KeyError(f"gallery-data.js에 없는 카테고리: {missing}")
+        raise KeyError(f"gallery-data.js is missing category files: {missing}")
 
-    extra = sorted(set(by) - set(ORDER))
+    extra = sorted(set(grouped) - set(expected_files))
     if extra:
-        raise KeyError(f"ORDER에 없는 카테고리: {extra}")
+        raise KeyError(f"Unknown category files in gallery-data.js: {extra}")
 
-    return by
+    return grouped
 
 
 def pick_index(items, strategy):
@@ -64,46 +72,47 @@ def pick_index(items, strategy):
         return len(items) - 1
     if strategy == "middle":
         return len(items) // 2
-    raise ValueError(f"알 수 없는 전략: {strategy}")
+    raise ValueError(f"Unknown selection strategy: {strategy}")
 
 
 def pick_sample(data, strategy="middle", expected_per_category=10):
-    """카테고리별 표본 1개를 결정적으로 고른다."""
-    by = group_by_category(data)
+    """Pick one deterministic sample from each gallery category."""
+    grouped = group_by_category_file(data)
     sample = []
-    for c in ORDER:
-        items = by[c]
+    for category_file, category in CATEGORY_FILES:
+        items = grouped[category_file]
         if expected_per_category and len(items) != expected_per_category:
             raise ValueError(
-                f"{c} 항목 수가 {expected_per_category}개가 아님: {len(items)}개"
+                f"{category_file} has {len(items)} item(s), expected {expected_per_category}."
             )
         index = pick_index(items, strategy)
-        d = items[index]
+        item = items[index]
         sample.append({
-            "id": d["id"],
-            "category": c,
+            "id": item["id"],
+            "category": category,
+            "category_file": category_file,
             "category_count": len(items),
             "selected_index": index,
             "selection_strategy": strategy,
-            "title": d["title"],
-            "image": d["image"].lstrip("./"),
-            "metadata": d["metadata"],
-            "prompt": d["prompt"],
+            "title": item["title"],
+            "image": item["image"].lstrip("./"),
+            "metadata": item["metadata"],
+            "prompt": item["prompt"],
         })
     return sample
 
 
 def parse_args(argv):
-    parser = argparse.ArgumentParser(description="갤러리 채점 표본을 결정적으로 선정한다.")
+    parser = argparse.ArgumentParser(description="Select deterministic gallery scoring samples.")
     parser.add_argument("--strategy", choices=("first", "middle", "last"), default="middle")
-    parser.add_argument("--output", default=OUT, help="표본 JSON 출력 경로")
+    parser.add_argument("--output", default=OUT, help="Path for the sample JSON output.")
     parser.add_argument(
         "--expected-per-category",
         type=int,
         default=10,
-        help="카테고리별 기대 항목 수. 0이면 검사하지 않음",
+        help="Expected item count per category. Use 0 to skip this check.",
     )
-    parser.add_argument("--dry-run", action="store_true", help="파일을 쓰지 않고 표본만 출력")
+    parser.add_argument("--dry-run", action="store_true", help="Print the sample without writing a file.")
     return parser.parse_args(argv)
 
 
@@ -113,18 +122,19 @@ def main(argv=None):
     sample = pick_sample(data, args.strategy, args.expected_per_category)
 
     output = os.path.abspath(args.output)
-    os.makedirs(OUT_DIR, exist_ok=True)
     if not args.dry_run:
         os.makedirs(os.path.dirname(output), exist_ok=True)
         with open(output, "w", encoding="utf-8") as f:
             json.dump(sample, f, ensure_ascii=False, indent=2)
 
-    target = "(dry-run)" if args.dry_run else os.path.relpath(output, ROOT)
-    print(f"표본 {len(sample)}개 → {target}")
-    for s in sample:
+    target = "(dry run)" if args.dry_run else os.path.relpath(output, ROOT)
+    print(f"Selected {len(sample)} sample item(s) -> {target}")
+    for item in sample:
         print(
-            f'  {s["id"]:8} {s["category"]} '
-            f'(index {s["selected_index"]}/{s["category_count"] - 1}, {s["selection_strategy"]})'
+            f'  {item["id"]:8} {item["category"]} '
+            f'(file {item["category_file"]}, index '
+            f'{item["selected_index"]}/{item["category_count"] - 1}, '
+            f'{item["selection_strategy"]})'
         )
 
 
