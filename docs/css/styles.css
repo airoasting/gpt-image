@@ -1521,7 +1521,7 @@ body.reference-detail-open .footer {
   }
 
   .gallery-tools {
-    top: 126px;
+    top: 68px;
   }
 
   .topbar-inner {
@@ -1547,7 +1547,7 @@ body.reference-detail-open .footer {
   .quick-actions {
     display: grid;
     grid-template-columns: 1fr;
-    width: min(100%, 220px);
+    width: 100%;
     gap: 10px;
   }
 
