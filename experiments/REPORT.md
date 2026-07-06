@@ -1,6 +1,6 @@
 # 실측 검증 리포트: 사이트 갤러리 프롬프트 정합 (2026-07-05)
 
-10개 카테고리에서 각 1컷씩(총 10컷) 뽑아, 각 프롬프트가 실제 이미지를 얼마나 충실히 재현하는지 비전 채점했다. 고정 루브릭은 [`RUBRIC.md`](RUBRIC.md), 채점 원본은 [`scores/gallery.scores.jsonl`](scores/gallery.scores.jsonl), 표본은 [`select_sample.py`](select_sample.py)로 재현한다.
+10개 카테고리에서 각 1컷씩(총 10컷) 뽑아, 각 프롬프트가 실제 이미지를 얼마나 충실히 재현하는지 비전 채점했다. 고정 루브릭은 [`RUBRIC.md`](RUBRIC.md), 채점 원본은 [`scores/gallery.scores.jsonl`](scores/gallery.scores.jsonl), 표본은 [`select_sample.py`](select_sample.py)로 재현한다. 점수 파일의 스키마와 집계는 [`validate_scores.py`](validate_scores.py)로 검증한다.
 
 이 리포트의 목적은 스킬 규칙(네거티브 정책, 검증기 설계)의 근거를 실측으로 확인하는 것이다. 결론을 데이터보다 크게 말하지 않으려고, 방법과 한계를 먼저 밝힌다.
 
@@ -10,6 +10,7 @@
 - **채점**: 비전 판독이 가능한 독립 에이전트가 컷당 1회, `RUBRIC.md`의 4개 품질 축(goal_fit·text_accuracy·layout·material_realism 각 0~5)과 `neg_rendered`(불리언)를 매긴다. 컷마다 다른 에이전트가 병렬로 맡되, **같은 컷을 여러 명이 교차 채점하지는 않았다**(회차 1회).
 - **집계**: 축별 산술평균. `text_accuracy`는 이미지에 글자가 없으면 `null`로 두고 평균에서 뺀다.
 - **통과 기준**: 4개 축 평균 ≥ 4 이고, 글자가 있는 컷은 `text_accuracy` ≥ 4.
+- **자동 검증**: `python3 experiments/validate_scores.py --pretty`가 `ok: true`를 반환해야 한다.
 
 ## 컷별 채점
 
@@ -63,6 +64,9 @@ python3 experiments/select_sample.py
 # 2. sample.json의 각 (이미지, 프롬프트)를 비전 판독 에이전트에 주고
 #    RUBRIC.md 기준으로 컷당 1회 채점 → scores/gallery.scores.jsonl 로 기록
 #    (축별 산술평균, text_accuracy=null 제외는 위 "집계"와 동일)
+
+# 3. 점수 파일 스키마와 집계 재계산
+python3 experiments/validate_scores.py --pretty
 ```
 
-2단계 채점은 비전 판독이 가능한 모델이 있어야 한다. 표본 선택(1단계)은 결정적이라 누가 돌려도 같은 10컷이 나온다.
+2단계 채점은 비전 판독이 가능한 모델이 있어야 한다. 표본 선택(1단계)은 결정적이라 누가 돌려도 같은 10컷이 나온다. 3단계 검증은 로컬에서 실행 가능하며, 현재 원자료 기준 집계는 `goal_fit=5.0`, `text_accuracy=4.5`, `layout=5.0`, `material_realism=5.0`, `neg_rendered=0`, `pass_count=10`이다.
