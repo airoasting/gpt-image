@@ -218,59 +218,6 @@ let activeReference = null;
 let galleryScrollSpyFrame = null;
 let galleryVisibleCount = GALLERY_PAGE_SIZE;
 
-function buildCommand() {
-  const purpose = document.querySelector("#purpose").value;
-  const ratio = document.querySelector("#ratio").value;
-  const detail = document.querySelector("#detail").value;
-  const style = document.querySelector("#style").value;
-  const lighting = document.querySelector("#lighting").value;
-  const camera = document.querySelector("#camera").value;
-  const subject = document.querySelector("#subject").value.trim();
-  const context = document.querySelector("#context").value.trim();
-  const blueprint = promptBlueprints[purpose];
-  const detailGuide = detailGuides[detail];
-  const styleGuide = styleGuides[style] || blueprint.style;
-  const lightingGuide = lightingGuides[lighting];
-  const cameraGuide = cameraGuides[camera];
-
-  document.querySelector("#builtCode").textContent = `결과물 유형:
-${blueprint.artifact}
-
-주 피사체:
-${subject}
-
-구도와 비율:
-${ratio}. ${blueprint.structure}
-
-맥락과 배경:
-${context}
-
-스타일과 매체:
-${styleGuide}
-
-빛과 디테일:
-${lightingGuide}
-${cameraGuide}
-
-정확성 조건:
-${detailGuide}
-따옴표 안의 문구는 철자와 띄어쓰기를 그대로 유지해주세요. 전체 이미지는 하나의 완성된 장면처럼 자연스럽고 구체적으로 보여야 합니다. 모호한 일반 표현, 왜곡된 타이포그래피, 불필요한 장식, 맞지 않는 조명은 피해주세요.`;
-  syncBuilderHeight();
-}
-
-function syncBuilderHeight() {
-  const form = document.querySelector(".builder-form");
-  const output = document.querySelector(".generated-command");
-  if (!form || !output) return;
-
-  if (window.matchMedia("(max-width: 980px)").matches) {
-    output.style.height = "";
-    return;
-  }
-
-  output.style.height = `${form.offsetHeight}px`;
-}
-
 function renderPrinciples() {
   if (!principleGrid) return;
 
@@ -321,9 +268,32 @@ function createExampleFigure(kind, index, label, text) {
   return figure;
 }
 
-document.querySelectorAll("#promptForm select, #promptForm input, #promptForm textarea").forEach((input) => {
-  input.addEventListener("input", buildCommand);
-});
+const downloadPromptButton = document.querySelector("#downloadPromptButton");
+if (downloadPromptButton) {
+  downloadPromptButton.addEventListener("click", () => {
+    const source = document.querySelector("#projectPrompt");
+    if (!source) return;
+
+    const markdown = `# ChatGPT 프로젝트 지침 프롬프트\n\n${source.textContent.trim()}\n`;
+    const blob = new Blob([markdown], { type: "text/markdown;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "gpt-image-project-instructions.md";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+
+    const original = downloadPromptButton.textContent;
+    downloadPromptButton.textContent = "완료";
+    downloadPromptButton.classList.add("copied");
+    window.setTimeout(() => {
+      downloadPromptButton.textContent = original;
+      downloadPromptButton.classList.remove("copied");
+    }, 1200);
+  });
+}
 
 function formatMetadata(text, item = null) {
   const itemCategoryParts = new Set(
@@ -735,16 +705,13 @@ if (galleryMoreButton) {
   galleryMoreButton.addEventListener("click", showMoreGallery);
 }
 
-buildCommand();
 renderPrinciples();
 populateCategories();
 renderGallery();
 scheduleGalleryScrollSpy();
 openReferenceFromHash();
-syncBuilderHeight();
 
 window.addEventListener("scroll", scheduleGalleryScrollSpy, { passive: true });
-window.addEventListener("resize", syncBuilderHeight);
 window.addEventListener("hashchange", openReferenceFromHash);
 
 /* ── 브랜드 글자 물결 애니메이션용: 문자 단위 span 분할 ── */

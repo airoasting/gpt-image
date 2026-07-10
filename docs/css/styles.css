@@ -750,6 +750,61 @@ pre code {
   max-height: 100%;
 }
 
+.project-prompt {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.project-prompt-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-prompt-titles h3 {
+  margin: 0;
+}
+
+.project-prompt-titles p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.project-prompt-actions {
+  flex: 0 0 auto;
+  display: inline-flex;
+  gap: 8px;
+}
+
+.project-prompt-pre {
+  min-height: 0;
+  max-height: 520px;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .project-prompt-head {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .project-prompt-actions {
+    width: 100%;
+  }
+
+  .project-prompt-actions .copy-button {
+    flex: 1 1 auto;
+  }
+}
+
 label {
   display: grid;
   gap: 7px;
