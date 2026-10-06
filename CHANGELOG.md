@@ -6,7 +6,7 @@
 
 첫 공식 릴리스.
 
-### 사이트 (`docs/`, 라이브: https://airoasting-image.vercel.app)
+### 사이트 (`docs/`, 라이브: https://airoasting.github.io/gpt-image)
 - 7가지 품질 원칙과 7블록 프롬프트 템플릿
 - 프롬프트 도움창(빌더)
 - 10개 카테고리 · 100개 선별 레퍼런스 갤러리

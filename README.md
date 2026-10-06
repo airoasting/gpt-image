@@ -6,7 +6,7 @@
 
 한국어로 구상한 장면을 GPT 이미지 모델에 바로 넣을 수 있는 프롬프트로 바꾸는 실전 가이드입니다. **7가지 품질 원칙**, **프롬프트 도움창**, **선별 레퍼런스 갤러리**를 한곳에서 제공합니다.
 
-**▶ 라이브 사이트: [airoasting-image.vercel.app](https://airoasting-image.vercel.app)** · 버전 1.0 (2026-07-05, [변경 이력](CHANGELOG.md))
+**▶ 라이브 사이트: [airoasting.github.io/gpt-image](https://airoasting.github.io/gpt-image)** · 버전 1.0 (2026-07-05, [변경 이력](CHANGELOG.md))
 
 ## 7가지 원칙
 
@@ -265,7 +265,7 @@ cd docs && python3 -m http.server 8000
 
 ## 프로젝트 구조
 
-사이트(`docs/`)와 번들 스킬(`SKILL.md`, `references/`, `scripts/`, `hooks/`, `experiments/`)이 분리되어 있습니다. Vercel 등으로 `docs/` 폴더를 배포하면 사이트만 서빙되고([airoasting-image.vercel.app](https://airoasting-image.vercel.app)), 스킬은 프로젝트 루트에서 그대로 로드됩니다. 사이트의 "MD 다운로드" 링크는 GitHub 원본 URL(`raw.githubusercontent.com`)을 가리켜, 레퍼런스가 사이트 배포본 밖에 있어도 항상 접근됩니다.
+사이트(`docs/`)와 번들 스킬(`SKILL.md`, `references/`, `scripts/`, `hooks/`, `experiments/`)이 분리되어 있습니다. Vercel 등으로 `docs/` 폴더를 배포하면 사이트만 서빙되고([airoasting.github.io/gpt-image](https://airoasting.github.io/gpt-image)), 스킬은 프로젝트 루트에서 그대로 로드됩니다. 사이트의 "MD 다운로드" 링크는 GitHub 원본 URL(`raw.githubusercontent.com`)을 가리켜, 레퍼런스가 사이트 배포본 밖에 있어도 항상 접근됩니다.
 
 ```
 .
